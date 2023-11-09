@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   fill="none"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="person.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="25.65625"
+     inkscape:cx="16"
+     inkscape:cy="16"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     style="color:#000000;fill:#000000;fill-opacity:0.95;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"
+     d="m 16,3 c -3.485939,0 -6.3320312,2.8480313 -6.3320312,6.3339844 0,3.4859936 2.8460942,6.3320316 6.3320312,6.3320316 3.485937,0 6.333984,-2.846015 6.333984,-6.3320316 C 22.333984,5.8480087 19.485939,3 16,3 Z m 0,2 c 2.405055,0 4.333984,1.928926 4.333984,4.3339844 0,2.4051176 -1.928927,4.3320316 -4.333984,4.3320316 -2.405057,0 -4.332031,-1.926891 -4.332031,-4.3320316 C 11.667969,6.9289033 13.594945,5 16,5 Z"
+     id="path1" />
+  <path
+     style="color:#000000;fill:#000000;fill-opacity:0.95;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"
+     d="M 8,19 C 5.9868055,19 4.3339844,20.652796 4.3339844,22.666016 V 28 a 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 V 22.666016 C 6.3339844,21.733638 7.0676775,21 8,21 h 16 c 0.932377,0 1.666016,0.733593 1.666016,1.666016 V 28 a 1,1 0 0 0 1,1 1,1 0 0 0 1,-1 V 22.666016 C 27.666016,20.652841 26.01322,19 24,19 Z"
+     id="path2" />
+</svg>

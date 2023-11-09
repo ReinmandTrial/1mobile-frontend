@@ -1,0 +1,130 @@
+
+@font-face {
+  font-family: 'icons';
+  src:  url('../img/svg/icons/icons.eot?li01w2');
+  src:  url('../img/svg/icons/icons.eot?li01w2#iefix') format('embedded-opentype'),
+    url('../img/svg/icons/icons.ttf?li01w2') format('truetype'),
+    url('../img/svg/icons/icons.woff?li01w2') format('woff'),
+    url('../img/svg/icons/icons.svg?li01w2#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-telephone:before {
+  content: "\e90b";
+}
+._icon-exit:before {
+  content: "\e91a";
+}
+._icon-order:before {
+  content: "\e91b";
+}
+._icon-star:before {
+  content: "\e91c";
+}
+._icon-other:before {
+  content: "\e91d";
+}
+._icon-auto:before {
+  content: "\e91e";
+}
+._icon-close:before {
+  content: "\e91f";
+}
+._icon-pc:before {
+  content: "\e920";
+}
+._icon-usb:before {
+  content: "\e921";
+}
+._icon-arrow-down:before {
+  content: "\e900";
+}
+._icon-arrow-left:before {
+  content: "\e901";
+}
+._icon-arrow-link:before {
+  content: "\e902";
+}
+._icon-arrow-open:before {
+  content: "\e903";
+}
+._icon-arrow-right:before {
+  content: "\e904";
+}
+._icon-arrow-up:before {
+  content: "\e905";
+}
+._icon-basket:before {
+  content: "\e906";
+}
+._icon-bucket:before {
+  content: "\e907";
+}
+._icon-burger:before {
+  content: "\e908";
+}
+._icon-calculator:before {
+  content: "\e909";
+}
+._icon-chat:before {
+  content: "\e90a";
+}
+._icon-geo:before {
+  content: "\e90c";
+}
+._icon-heart:before {
+  content: "\e90d";
+}
+._icon-heart-red:before {
+  content: "\e90e";
+}
+._icon-letter:before {
+  content: "\e90f";
+}
+._icon-mail:before {
+  content: "\e910";
+}
+._icon-minus:before {
+  content: "\e911";
+}
+._icon-person:before {
+  content: "\e912";
+}
+._icon-phone:before {
+  content: "\e913";
+}
+._icon-plus:before {
+  content: "\e914";
+}
+._icon-question:before {
+  content: "\e915";
+}
+._icon-search:before {
+  content: "\e916";
+}
+._icon-telegram:before {
+  content: "\e917";
+}
+._icon-viber:before {
+  content: "\e918";
+}
+._icon-whatsapp:before {
+  content: "\e919";
+}
