@@ -25,6 +25,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+._icon-arrow-expand:before {
+  content: "\e922";
+}
 
 ._icon-telephone:before {
   content: "\e90b";
@@ -89,10 +92,10 @@
 ._icon-geo:before {
   content: "\e90c";
 }
-._icon-heart:before {
+._icon-wish:before {
   content: "\e90d";
 }
-._icon-heart-red:before {
+._icon-wish-red:before {
   content: "\e90e";
 }
 ._icon-letter:before {

@@ -10,21 +10,47 @@
         @@include('html/header.html', {})
 
         <main class="main">
-            <section class="banner">
+
+            <aside class="sidebar">
+                <div class="container">
+                    <div class="sidebar__body">
+                        <div class="sidebar__social">
+                            <a href="#" class="sidebar__item">
+                                <img src="./img/icons/whatsapp.svg" alt="icon">
+                            </a>
+                            <a href="#" class="sidebar__item">
+                                <img src="./img/icons/telegram.svg" alt="icon">
+                            </a>
+                            <a href="#" class="sidebar__item">
+                                <img src="./img/icons/viber.svg" alt="icon">
+                            </a>
+                        </div>
+
+                        <a href="#" class="sidebar__icon sidebar__chat">
+                            <span class="_icon-chat"></span>
+                        </a>
+                        <button type="button" class="sidebar__icon sidebar__up">
+                            <span class="_icon-arrow-up"></span>
+                        </button>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="banner page-section">
                 <div class="container">
                     <div class="banner__container">
+                        <div class="banner__title">Категории</div>
                         <div class="banner__items">
                             <a href="#" class="banner__item item-banner">
                                 <img class="item-banner__image" src="./img/banner/img1.png" alt="image">
                                 <div class="item-banner__heading">
-                                    <span>Discounts for</span>
-                                    <span>computers</span>
+                                    Discounts for computers
                                 </div>
                             </a>
                              <a href="#" class="banner__item banner__item_big item-banner">
                                 <img class="item-banner__image" src="./img/banner/img2.png" alt="image">
                                 <div class="item-banner__heading">
-                                    <span>Chargers</span>
+                                    Chargers
                                 </div>
                                 
                             </a>
@@ -33,34 +59,33 @@
                             <a href="#" class="banner__item item-banner ">
                                 <img class="item-banner__image" src="./img/banner/img3.png" alt="image">
                                 <div class="item-banner__heading">
-                                    <span>Phones</span>
+                                    Phones
                                 </div>
                                 
                             </a>
                             <a href="#" class="banner__item item-banner">
                                 <img class="item-banner__image" src="./img/banner/img3.png" alt="image">
                                 <div class="item-banner__heading">
-                                    <span>Phones</span>
+                                    Phones
                                 </div>
                             </a>
                              <a href="#" class="banner__item item-banner">
                                 <img class="item-banner__image" class="item-banner__image" src="./img/banner/img1.png" alt="image">
                                 <div class="item-banner__heading">
-                                    <span>Discounts for</span>
-                                    <span>computers</span>
+                                    Discounts for computers
                                 </div>
                             </a>
                             <a href="#" class="banner__item item-banner">
                                 <img class="item-banner__image" src="./img/banner/img4.png" alt="image">
                                 <div class="item-banner__heading">
-                                    <span>Cases Iphone</span>
+                                    Cases Iphone
                                 </div>
                                 
                             </a>
                             <a href="#" class="banner__item item-banner">
                                 <img class="item-banner__image" src="./img/banner/img4.png" alt="image">
                                 <div class="item-banner__heading">
-                                    <span>Cases Iphone</span>
+                                    Cases Iphone
                                 </div>
                             </a>
                         </div>
@@ -68,24 +93,30 @@
                 </div>
             </section>
 
-            <section class="popular page-section">
+            <section class="popular page-section block-section">
                 <div class="container">
-                    <div class="popular__container">
-                        <div class="popular__title title-popular">
-                            <h2 class="title-popular__text">Популярные продукты</h2>
-                            <div class="title-popular__bg">
+                    <div class="popular__container block-section__container">
+                        <div class="block-section__title">
+                            <h3 class="popular__title block-section__heading heading-3">
+                                <a href="#" class="block-section__link">Популярные продукты</a>
+                            </h3>
+                            <div class="block-section__bg">
                                 <img src="./img/bg/section-bg.png" alt="bg">
                             </div>
-                            
                         </div>
-                        <ul class="popular__items">
-                            <li class="popular__item">
+                        <!-- При раскрытом списке удаляется класс .block-section__items_collapse -->
+                        <ul class="popular__items block-section__items">
+                             <!-- При раскрытом списке удаляется класс .expand-btn_collapse -->
+                            <button class="expand-btn">
+                                <span class="_icon-arrow-expand"></span>
+                            </button>
+                            <li class="popular__item block-section__item">
                                 <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
                                     </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
                                     </button>
                                     
                                     <div class="product-card__image">
@@ -93,7 +124,7 @@
                                     </div>
                         
                                     <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
+                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it <span class="product-card__name_color"></span> 
                                         </a>
                             
                                         <div class="product-card__info">
@@ -113,7 +144,10 @@
                                             </div>
                             
                                             <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
                                             </div>
                                         </div>
                                         
@@ -121,21 +155,21 @@
                                     
                                     </div>
                             </li>
-                            <li class="popular__item">
+                            <li class="popular__item block-section__item">
                                 <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
                                     </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
                                     </button>
                                     
                                     <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
+                                        <img src="./img/popular/image2.png" alt="img">
                                     </div>
                         
                                     <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.) <span class="product-card__name_color"></span>  
                                         </a>
                             
                                         <div class="product-card__info">
@@ -155,7 +189,10 @@
                                             </div>
                             
                                             <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
                                             </div>
                                         </div>
                                         
@@ -163,13 +200,56 @@
                                     
                                     </div>
                             </li>
-                            <li class="popular__item">
+                            <li class="popular__item block-section__item">
                                 <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
                                     </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image3.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iphone 11 <span class="product-card__name_color">(Green)</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="popular__item block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
                                     </button>
                                     
                                     <div class="product-card__image">
@@ -177,7 +257,7 @@
                                     </div>
                         
                                     <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
+                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it <span class="product-card__name_color"></span> 
                                         </a>
                             
                                         <div class="product-card__info">
@@ -197,7 +277,10 @@
                                             </div>
                             
                                             <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
                                             </div>
                                         </div>
                                         
@@ -205,13 +288,13 @@
                                     
                                     </div>
                             </li>
-                            <li class="popular__item">
+                            <li class="popular__item block-section__item">
                                 <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
                                     </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
                                     </button>
                                     
                                     <div class="product-card__image">
@@ -219,7 +302,7 @@
                                     </div>
                         
                                     <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
+                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it <span class="product-card__name_color"></span> 
                                         </a>
                             
                                         <div class="product-card__info">
@@ -239,469 +322,10 @@
                                             </div>
                             
                                             <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>        
-                                    
-                                    </div>
-                            </li>
-                            <li class="popular__item">
-                                <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
-                                    </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
-                                    </button>
-                                    
-                                    <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
-                                    </div>
-                        
-                                    <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
-                                        </a>
-                            
-                                        <div class="product-card__info">
-                                            <div class="product-card__article">
-                                                <span>Артикул: </span>
-                                                <span>132940</span>
-                                            </div>
-                                            <div class="product-card__availability">
-                                                <div class="lable-status lable-status_available">В наличии</div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="product-card__purchase">
-                                            <div class="product-card__price price-card">
-                                                <div class="price-card__old">1500$</div>
-                                                <div class="price-card__new">900$</div>
-                                            </div>
-                            
-                                            <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>        
-                                    
-                                    </div>
-                            </li>
-                            <li class="popular__item">
-                                <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
-                                    </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
-                                    </button>
-                                    
-                                    <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
-                                    </div>
-                        
-                                    <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
-                                        </a>
-                            
-                                        <div class="product-card__info">
-                                            <div class="product-card__article">
-                                                <span>Артикул: </span>
-                                                <span>132940</span>
-                                            </div>
-                                            <div class="product-card__availability">
-                                                <div class="lable-status lable-status_available">В наличии</div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="product-card__purchase">
-                                            <div class="product-card__price price-card">
-                                                <div class="price-card__old">1500$</div>
-                                                <div class="price-card__new">900$</div>
-                                            </div>
-                            
-                                            <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>        
-                                    
-                                    </div>
-                            </li>
-                            <li class="popular__item">
-                                <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
-                                    </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
-                                    </button>
-                                    
-                                    <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
-                                    </div>
-                        
-                                    <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
-                                        </a>
-                            
-                                        <div class="product-card__info">
-                                            <div class="product-card__article">
-                                                <span>Артикул: </span>
-                                                <span>132940</span>
-                                            </div>
-                                            <div class="product-card__availability">
-                                                <div class="lable-status lable-status_available">В наличии</div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="product-card__purchase">
-                                            <div class="product-card__price price-card">
-                                                <div class="price-card__old">1500$</div>
-                                                <div class="price-card__new">900$</div>
-                                            </div>
-                            
-                                            <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>        
-                                    
-                                    </div>
-                            </li>
-                            <li class="popular__item">
-                                <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
-                                    </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
-                                    </button>
-                                    
-                                    <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
-                                    </div>
-                        
-                                    <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
-                                        </a>
-                            
-                                        <div class="product-card__info">
-                                            <div class="product-card__article">
-                                                <span>Артикул: </span>
-                                                <span>132940</span>
-                                            </div>
-                                            <div class="product-card__availability">
-                                                <div class="lable-status lable-status_available">В наличии</div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="product-card__purchase">
-                                            <div class="product-card__price price-card">
-                                                <div class="price-card__old">1500$</div>
-                                                <div class="price-card__new">900$</div>
-                                            </div>
-                            
-                                            <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>        
-                                    
-                                    </div>
-                            </li>
-                            <li class="popular__item">
-                                <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
-                                    </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
-                                    </button>
-                                    
-                                    <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
-                                    </div>
-                        
-                                    <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
-                                        </a>
-                            
-                                        <div class="product-card__info">
-                                            <div class="product-card__article">
-                                                <span>Артикул: </span>
-                                                <span>132940</span>
-                                            </div>
-                                            <div class="product-card__availability">
-                                                <div class="lable-status lable-status_available">В наличии</div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="product-card__purchase">
-                                            <div class="product-card__price price-card">
-                                                <div class="price-card__old">1500$</div>
-                                                <div class="price-card__new">900$</div>
-                                            </div>
-                            
-                                            <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>        
-                                    
-                                    </div>
-                            </li>
-                            <li class="popular__item">
-                                <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
-                                    </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
-                                    </button>
-                                    
-                                    <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
-                                    </div>
-                        
-                                    <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
-                                        </a>
-                            
-                                        <div class="product-card__info">
-                                            <div class="product-card__article">
-                                                <span>Артикул: </span>
-                                                <span>132940</span>
-                                            </div>
-                                            <div class="product-card__availability">
-                                                <div class="lable-status lable-status_available">В наличии</div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="product-card__purchase">
-                                            <div class="product-card__price price-card">
-                                                <div class="price-card__old">1500$</div>
-                                                <div class="price-card__new">900$</div>
-                                            </div>
-                            
-                                            <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>        
-                                    
-                                    </div>
-                            </li>
-                            <li class="popular__item">
-                                <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
-                                    </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
-                                    </button>
-                                    
-                                    <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
-                                    </div>
-                        
-                                    <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
-                                        </a>
-                            
-                                        <div class="product-card__info">
-                                            <div class="product-card__article">
-                                                <span>Артикул: </span>
-                                                <span>132940</span>
-                                            </div>
-                                            <div class="product-card__availability">
-                                                <div class="lable-status lable-status_available">В наличии</div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="product-card__purchase">
-                                            <div class="product-card__price price-card">
-                                                <div class="price-card__old">1500$</div>
-                                                <div class="price-card__new">900$</div>
-                                            </div>
-                            
-                                            <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>        
-                                    
-                                    </div>
-                            </li>
-                            <li class="popular__item">
-                                <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
-                                    </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
-                                    </button>
-                                    
-                                    <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
-                                    </div>
-                        
-                                    <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
-                                        </a>
-                            
-                                        <div class="product-card__info">
-                                            <div class="product-card__article">
-                                                <span>Артикул: </span>
-                                                <span>132940</span>
-                                            </div>
-                                            <div class="product-card__availability">
-                                                <div class="lable-status lable-status_available">В наличии</div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="product-card__purchase">
-                                            <div class="product-card__price price-card">
-                                                <div class="price-card__old">1500$</div>
-                                                <div class="price-card__new">900$</div>
-                                            </div>
-                            
-                                            <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>        
-                                    
-                                    </div>
-                            </li>
-                            <li class="popular__item">
-                                <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
-                                    </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
-                                    </button>
-                                    
-                                    <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
-                                    </div>
-                        
-                                    <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
-                                        </a>
-                            
-                                        <div class="product-card__info">
-                                            <div class="product-card__article">
-                                                <span>Артикул: </span>
-                                                <span>132940</span>
-                                            </div>
-                                            <div class="product-card__availability">
-                                                <div class="lable-status lable-status_available">В наличии</div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="product-card__purchase">
-                                            <div class="product-card__price price-card">
-                                                <div class="price-card__old">1500$</div>
-                                                <div class="price-card__new">900$</div>
-                                            </div>
-                            
-                                            <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>        
-                                    
-                                    </div>
-                            </li>
-                            <li class="popular__item">
-                                <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
-                                    </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
-                                    </button>
-                                    
-                                    <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
-                                    </div>
-                        
-                                    <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
-                                        </a>
-                            
-                                        <div class="product-card__info">
-                                            <div class="product-card__article">
-                                                <span>Артикул: </span>
-                                                <span>132940</span>
-                                            </div>
-                                            <div class="product-card__availability">
-                                                <div class="lable-status lable-status_available">В наличии</div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="product-card__purchase">
-                                            <div class="product-card__price price-card">
-                                                <div class="price-card__old">1500$</div>
-                                                <div class="price-card__new">900$</div>
-                                            </div>
-                            
-                                            <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>        
-                                    
-                                    </div>
-                            </li>
-                            <li class="popular__item">
-                                <div class="product-card">
-                                    <button class="product-card__like">
-                                        <img src="" alt="">
-                                    </button>
-                                    <button class="product-card__like product-card__like_red">
-                                        <img src="" alt="">
-                                    </button>
-                                    
-                                    <div class="product-card__image">
-                                        <img src="./img/popular/image1.png" alt="img">
-                                    </div>
-                        
-                                    <div class="product-card__about">
-                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
-                                        </a>
-                            
-                                        <div class="product-card__info">
-                                            <div class="product-card__article">
-                                                <span>Артикул: </span>
-                                                <span>132940</span>
-                                            </div>
-                                            <div class="product-card__availability">
-                                                <div class="lable-status lable-status_available">В наличии</div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="product-card__purchase">
-                                            <div class="product-card__price price-card">
-                                                <div class="price-card__old">1500$</div>
-                                                <div class="price-card__new">900$</div>
-                                            </div>
-                            
-                                            <div class="product-card__button">
-                                                <button class="btn btn_red">Купить</button>
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
                                             </div>
                                         </div>
                                         
@@ -714,13 +338,1134 @@
                 </div>
             </section>
 
-            <section class="slider page-section"></section>
+            <section class="slider page-section">
+                <div class="container">
+                    <div class="slider__wrapper">
+                        <!-- Slides -->
+                        <div class="slider__slide slide-slider">
+                          <img class="slide-slider__image" src="./img/slider/slider-img1.png" alt="slider">
+                          <div class="slide-slider__content">
+                              <h2 class="slide-slider__title heading-2">Iphone 14 Pro Max </h2>
+                              <div class="slide-slider__price">
+                                  <span class="slide-slider__price_old">1299$</span>
+                                  <span class="slide-slider__price_new">1000$</span>
+                              </div>
+                              <button type="submit" class="slide-slider__btn btn btn_red">
+                                  <span>Buy now</span>
+                                  <span class="_icon-arrow-open"></span>
+                              </button>
+                              
+                              
+                          </div>
+                          
+                        </div>
+                        <div class="slider__slide slide-slider">
+                          <img class="slide-slider__image" src="./img/slider/slider-img1.png" alt="slider">
+                          <div class="slide-slider__content">
+                              <h2 class="slide-slider__title heading-2">Iphone 14 pro </h2>
+                              <div class="slide-slider__price">
+                                  <span class="slide-slider__price_old">1299$</span>
+                                  <span class="slide-slider__price_new">1000$</span>
+                              </div>
+                              <button type="submit" class="slide-slider__btn btn btn_red">
+                                  Buy now
+                              </button>
+                              
+                              
+                          </div>
+                          
+                        </div>
+                        <div class="slider__slide slide-slider">
+                          <img class="slide-slider__image" src="./img/slider/slider-img1.png" alt="slider">
+                          <div class="slide-slider__content">
+                              <h2 class="slide-slider__title heading-2">Iphone 14 pro </h2>
+                              <div class="slide-slider__price">
+                                  <span class="slide-slider__price_old">1299$</span>
+                                  <span class="slide-slider__price_new">1000$</span>
+                              </div>
+                              <button type="submit" class="slide-slider__btn btn btn_red">
+                                  Buy now
+                              </button>
+                              
+                              
+                          </div>
+                          
+                        </div>
 
-            <section class="recomendation page-section"></section>
+                      </div>
+                    
+                      <div class="slider__pagination pagination-slider">
+                          <span class="pagination-slider__bullet pagination-slider__bullet_active"></span>
+                          <span class="pagination-slider__bullet"></span>
+                          <span class="pagination-slider__bullet"></span>
+                          
+                      </div>
+                    
+                      <button type="button" class="slider__button_prev slider__button">
+                        <span class="_icon-arrow-left"></span>
+                      </button>
+                      <button type="button" class="slider__button_next slider__button">
+                        <span class="_icon-arrow-right"></span>
+                      </button>
+                  
+                </div>
+            </section>
 
-            <section class="advantages page-section"></section>
+            <section class="arrivals page-section block-section">
+                <div class="container">
+                    <div class="arrivals__container block-section__container">
+                        <div class="block-section__title">
+                            <h3 class="arrivals__title block-section__heading heading-3">
+                                <a href="#" class="block-section__link">Новые поступления</a>
+                            </h3>
+                            <div class="block-section__bg">
+                                <img src="./img/bg/section-bg.png" alt="bg">
+                            </div>
+                            
+                        </div>
+                        <!-- При раскрытом списке удаляется класс .block-section__items_collapse -->
+                        <ul class="arrivals__items block-section__items block-section__items_collapse">
+                             <!-- При раскрытом списке удаляется класс .expand-btn_collapse -->
+                            <button class="expand-btn expand-btn_collapse">
+                                <span class="_icon-arrow-expand"></span>
+                            </button>
+                            <li class="arrivals__item block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it <span class="product-card__name_color"></span>  
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item  block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image2.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.) <span class="product-card__name_color"></span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image3.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iohone 11  <span class="product-card__name_color">(Green)</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it <span class="product-card__name_color"></span>  
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item  block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image2.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.) <span class="product-card__name_color"></span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image3.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iohone 11  <span class="product-card__name_color">Green</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it <span class="product-card__name_color"></span>  
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item  block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image2.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.) <span class="product-card__name_color"></span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image3.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iohone 11  <span class="product-card__name_color">Green</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it <span class="product-card__name_color"></span>  
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item  block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image2.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.) <span class="product-card__name_color"></span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image3.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iohone 11  <span class="product-card__name_color">Green</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it <span class="product-card__name_color"></span>  
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item  block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image2.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.) <span class="product-card__name_color"></span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            <li class="arrivals__item block-section__item">
+                                <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/popular/image3.png" alt="img">
+                                    </div>
+                        
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iohone 11  <span class="product-card__name_color">Green</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                           
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-            <section class="categories page-section"></section>
+            <section class="advantages page-section block-section">
+                <div class="container">
+                    <div class="advantages__container block-section__container">
+                        <div class="block-section__title">
+                            <h3 class="advantages__title block-section__heading heading-3">Наши преимущества</h3>
+                            <div class="block-section__bg">
+                                <img src="./img/bg/section-bg.png" alt="bg">
+                            </div>
+                        </div>
+                        
+                        <div class="advantages__body">
+                            <div class="advantages__item">
+                                <img src="./img/icons/clock.svg" alt="icon">
+                                <span>Быстрое время работы</span>
+                            </div>
+                            <div class="advantages__item">
+                                <img src="./img/icons/net.png" alt="icon">
+                                <span>Огромная сеть</span>
+                            </div>
+                            <div class="advantages__item">
+                                <img src="./img/icons/item.png" alt="icon">
+                                <span>Большой асортимент</span>
+                            </div>
+                            <div class="advantages__item">
+                                <img src="./img/icons/gift.svg" alt="icon">
+                                <span>Бонусная система </span>
+                            </div>
+                            <div class="advantages__item">
+                                <img src="./img/icons/headphone.svg" alt="icon">
+                                <span>Поддержка 24/7</span>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="sale page-section">
+                <div class="container">
+                    <div class="sale__container">
+                        <div class="sale__banner">
+                            <img  src="./img/sale/img-banner.png" alt="banner">
+                            <button type="button" class="sale__btn btn btn_red">
+                                Текст кнопки
+                            </button>
+                        </div>
+                        <div class="sale__slider slider-sale">
+                            <h3 class="slider-sale__title heading-3">Laptops</h3>
+                            <div class="slider-sale__wrapper">
+                                <div class="slider-sale__slide"> 
+                                    <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/sale/image1.png" alt="img">
+                                    </div>
+                    
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iohone 11 <span class="product-card__name_color">(Green)</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                                </div>
+                                <div class="slider-sale__slide"> 
+                                    <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/sale/image1.png" alt="img">
+                                    </div>
+                    
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iohone 11 <span class="product-card__name_color">(Green)</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                                </div>
+                                <div class="slider-sale__slide"> 
+                                    <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/sale/image1.png" alt="img">
+                                    </div>
+                    
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iohone 11 <span class="product-card__name_color">(Green)</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                                </div>
+                                 <div class="slider-sale__slide"> 
+                                    <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/sale/image1.png" alt="img">
+                                    </div>
+                    
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iohone 11 <span class="product-card__name_color">(Green)</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                                </div>
+                                <div class="slider-sale__slide"> 
+                                    <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/sale/image1.png" alt="img">
+                                    </div>
+                    
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iohone 11 <span class="product-card__name_color">(Green)</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                                </div>
+                                <div class="slider-sale__slide"> 
+                                    <div class="product-card">
+                                    <button class="product-card__icon product-card__icon_active">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+                                    
+                                    <div class="product-card__image">
+                                        <img src="./img/sale/image1.png" alt="img">
+                                    </div>
+                    
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Case for iohone 11 <span class="product-card__name_color">(Green)</span> 
+                                        </a>
+                            
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                            
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                <span class="btn-text">Купить</span>
+                                                <span class="_icon-basket"></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>        
+                                    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider-sale__buttons">
+                                <button type="button" class="slider-sale__btn slider-sale__btn_prev">
+                                    <span class="_icon-arrow-open"></span>
+                                </button>
+                                <button type="button" class="slider-sale__btn slider-sale__btn_next">
+                                    <span class="_icon-arrow-open"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info page-section">
+                <div class="container">
+                    <div class="info__container">
+                        <a href="#" class="info__item">
+                            <span class="info__icon _icon-calculator"></span>
+                            <span class="info__text">Ask for the price</span>
+                        </a>
+                        <a href="#" class="info__item">
+                            <span class="info__icon _icon-person"></span>
+                            <span class="info__text">Personal account </span>
+                        </a>
+                        <a href="#" class="info__item">
+                            <span class="info__icon _icon-question"></span>
+                            <span class="info__text">Ask question</span>
+                        </a>
+                        <a href="#" class="info__item">
+                            <span class="info__icon _icon-mail"></span>
+                            <span class="info__text">Text to manager</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
         
         @@include('html/footer.html', {})  
