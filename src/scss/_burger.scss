@@ -38,7 +38,7 @@ body.burger-open {
 
     &__body {
         overflow: scroll;
-        width: 100%;
+        width: 80%;
         height: 100%;
         position: fixed;
         z-index: 2000;
@@ -52,9 +52,6 @@ body.burger-open {
         justify-content: flex-start;
         color: var(--Black-2);
 
-        @media (min-width: 480px) {
-            width: 80%;
-        }
 
         @media (min-width: 480px) {
             width: 75%;
@@ -282,8 +279,12 @@ body.burger-open {
         @media (min-width: 480px) {
             font-size: 16px;
         }
-        
-        
+
+        span {
+            width: max-content;
+            display: inline-block;
+            white-space: nowrap;
+        }
     }
 
     &__photo {
@@ -297,8 +298,8 @@ body.burger-open {
 
     &__name {
         margin-left: 6px;
-        display: inline-block;
-        white-space: nowrap; 
+        // display: inline-block;
+        // white-space: nowrap; 
         overflow: hidden; 
         text-overflow: ellipsis; 
         max-width: 110px; 

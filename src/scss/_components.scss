@@ -48,7 +48,7 @@
         
         border-radius: 5px;
         border: 1px solid var(--Grey, #9F9A9A);
-        padding: 12.5px 0 12.5px 12px;
+        padding: 12.5px 85px 12.5px 12px;
         line-height: 17px;
         color:var(--Black-2, #373737);
         font-size: 14px;
@@ -286,9 +286,7 @@
 		// .products-request__list
 
 		&__list {
-            width: 100%;
-            
-            
+            width: 100%;           
 		}
 
 		// .products-request__item
