@@ -2,7 +2,7 @@
 <html lang="en">
 
 @@include('html/head.html', {
-    "title": "Components"
+"title": "Components"
 })
 
 
@@ -14,13 +14,13 @@
 
         <main class="main">
             <div class="container">
-                 <!----------------------------- Input search ------------------------>
+                <!----------------------------- Input search ------------------------>
 
                 <div style="margin: 25px 0;" class="search-block">
                     <form class="search-block__form" action="">
                         <div class="search-block__wrapper search-wrapper">
                             <input class="search-wrapper__input" type="search" placeholder="Поиск...">
-                            <button type='button' class="_icon-close"></butt>
+                            <button type='button' class="_icon-close"></button>
                             <button class="search-wrapper__btn" type="submit">
                                 <span class="_icon-search"></span>
                             </button>
@@ -29,15 +29,15 @@
                 </div>
 
 
-              <!---------------------------Input Search request-->
+                <!---------------------------Input Search request-->
                 <div style="margin: 25px 0;" class="search-block">
-                
+
                     <form class="search-block__form" action="">
-                        
+
                         <div class="search-block__wrapper search-wrapper">
                             <!-- При поиске открываются запросы поиска и на инпут добавляется класс .border-request -->
                             <input class="search-wrapper__input  border-request" type="search" placeholder="Поиск...">
-                            <button type='button' class="_icon-close"></butt>
+                            <button type='button' class="_icon-close"></button>
                             <button class="search-wrapper__btn" type="submit">
                                 <span class="_icon-search"></span>
                             </button>
@@ -49,9 +49,9 @@
                                 <div class="search-request__section unfound-request">
                                     <span class="_icon-search"></span>
                                     <span class="unfound-request__text">Ничего не найдено</span>
-                                </div>                       
+                                </div>
                             </div>
-                            
+
                             <div class="search-request__wrapper">
                                 <div class="search-request__section prompt-request">
                                     <ul class="prompt-request__list">
@@ -93,57 +93,57 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
+
                             </div>
 
                             <div class="search-request__wrapper">
-                                    <div class="search-request__section products-request">
-                                        <h4 class="products-request__title">Товары</h4>
-                                        <ul class="products-request__list">
-                                            <li class="products-request__item">
-                                                <a href="#" class="products-request__link product-link">
-                                                    <div class="product-link__main">
-                                                        <div class="product-link__image">
-                                                            <img src="./img/productImg-s.png" alt="product">
-                                                        </div>
-                                                        <div class="product-link__info">
-                                                            <div class="product-link__name">Iphone X 64 gb
-                                                                <span>(White)</span>
-                                                            </div>
-                                                            <div class="product-link__price">499$</div>
-                                                
-                                                        </div>               
+                                <div class="search-request__section products-request">
+                                    <h4 class="products-request__title">Товары</h4>
+                                    <ul class="products-request__list">
+                                        <li class="products-request__item">
+                                            <a href="#" class="products-request__link product-link">
+                                                <div class="product-link__main">
+                                                    <div class="product-link__image">
+                                                        <img src="./img/productImg-s.png" alt="product">
                                                     </div>
-                                                    <span class="_icon-arrow-right"></span>
-                                                    
-                                                </a>
-                                                
-                                            </li>
-                                            
-                                            <li class="products-request__item">
-                                                <a href="#" class="products-request__link product-link">
-                                                    <div class="product-link__main">
-                                                        <div class="product-link__image">
-                                                            <img src="./img/productImg-s.png" alt="product">
+                                                    <div class="product-link__info">
+                                                        <div class="product-link__name">Iphone X 64 gb
+                                                            <span>(White)</span>
                                                         </div>
-                                                        <div class="product-link__info">
-                                                            <div class="product-link__name">Iphone X 64 gb
-                                                                <span>(White)</span>
-                                                            </div>
-                                                            <div class="product-link__price">499$</div>
-                                                
-                                                        </div>               
+                                                        <div class="product-link__price">499$</div>
+
                                                     </div>
-                                                    <span class="_icon-arrow-right"></span>
-                                                    
-                                                </a>
-                                                
-                                            </li>
-                                        </ul>
-                                    </div>
+                                                </div>
+                                                <span class="_icon-arrow-right"></span>
+
+                                            </a>
+
+                                        </li>
+
+                                        <li class="products-request__item">
+                                            <a href="#" class="products-request__link product-link">
+                                                <div class="product-link__main">
+                                                    <div class="product-link__image">
+                                                        <img src="./img/productImg-s.png" alt="product">
+                                                    </div>
+                                                    <div class="product-link__info">
+                                                        <div class="product-link__name">Iphone X 64 gb
+                                                            <span>(White)</span>
+                                                        </div>
+                                                        <div class="product-link__price">499$</div>
+
+                                                    </div>
+                                                </div>
+                                                <span class="_icon-arrow-right"></span>
+
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            
-                            
+
+
                         </div>
                     </form>
                 </div>
@@ -162,48 +162,50 @@
                 </form>
 
 
-                    <!-- ------------------Cards Row------------------------- -->
+                <!-- ------------------Cards Row------------------------- -->
                 <div style="margin-top: 25px;" class="card-row">
-                    <button type="button" class="card-row__like">
-                        <img src="./img/svg/wish.svg" alt="like">
+                    <button class="card-row__icon card-row__icon_active">
+                        <span class="_icon-wish"></span>
                     </button>
-                    <button type="button" class="card-row__like card-row__like_red">
-                        <img src="./img/svg/wish-red.svg" alt="like">
+                    <button class="card-row__icon card-row__icon_red">
+                        <span class="_icon-wish-red"></span>
+                    </button>
+
                     </button>
                     <div class="card-row__description">
                         <div class="card-row__image">
                             <img src="./img/productImg-l.png" alt="item">
                         </div>
-            
+
                         <div class="card-row__info">
                             <a href="#" class="card-row__name">Powerbank Xiaomi 92010</a>
                             <div class="card-row__characteristics characteristics-card">
                                 <div class="characteristics-card__item article-card">
                                     <span class="article-card__name">Артикул:</span>
-                                    <span class="article-card__value">132940</span>  
+                                    <span class="article-card__value">132940</span>
                                 </div>
                                 <div class="characteristics-card__item item-characteristic">
-                                        <div class="item-characteristic__name">Тип:</div>
-                                        <div class="item-characteristic__value">накладка</div>
+                                    <div class="item-characteristic__name">Тип:</div>
+                                    <div class="item-characteristic__value">накладка</div>
                                 </div>
                                 <div class="characteristics-card__item item-characteristic">
-                                        <div class="item-characteristic__name">Материал:</div>
-                                        <div class="item-characteristic__value">силикон</div>
+                                    <div class="item-characteristic__name">Материал:</div>
+                                    <div class="item-characteristic__value">силикон</div>
                                 </div>
                                 <div class="characteristics-card__item item-characteristic">
-                                        <div class="item-characteristic__name">Цвет:</div>
-                                        <div class="item-characteristic__value">синий</div>
+                                    <div class="item-characteristic__name">Цвет:</div>
+                                    <div class="item-characteristic__value">синий</div>
                                 </div>
                                 <div class="characteristics-card__item item-characteristic">
-                                        <div class="item-characteristic__name">Прочее:</div>
-                                        <div class="item-characteristic__value">встроенные магниты</div>
+                                    <div class="item-characteristic__name">Прочее:</div>
+                                    <div class="item-characteristic__value">встроенные магниты</div>
                                 </div>
                             </div>
-                            
-                            
+
+
                         </div>
                     </div>
-                
+
 
                     <div class="card-row__trade">
                         <div class="card-row__availability">
@@ -215,7 +217,7 @@
                             <div class="card-row__price price-card">
                                 <div class="price-card__old">1500$</div>
                                 <div class="price-card__new">900$</div>
-                                
+
                             </div>
                             <div class="card-row__button">
                                 <button type="submit" class="btn btn_red">
@@ -227,78 +229,184 @@
                                     <div class="counter__item">
                                         <button type="button" class="counter__minus counter__minus_disabled" disabled>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z" fill="#373737"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
+                                                    fill="#373737" />
                                             </svg>
                                         </button>
                                     </div>
                                     <div class="counter__item">
                                         <div class="counter__value">
                                             <form action="">
-                                            <input type="number" value="1">
+                                                <input type="number" value="1">
                                             </form>
+                                        </div>
                                     </div>
-                                </div>
                                     <div class="counter__item">
                                         <button type="button" class="counter__plus">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                <path d="M12 5V19" stroke="#373737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M5 12H19" stroke="#373737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 5V19" stroke="#373737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M5 12H19" stroke="#373737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
 
-                 <!-- --------------------------Product card ---------------------------->
+                <!-- --------------------------Product card ---------------------------->
 
                 <div style="margin: 50px 0;" class="product-card">
-                <button class="product-card__icon product-card__icon_active">
-                    <span class="_icon-wish"></span>
-                </button>
-                <button class="product-card__icon product-card__icon_red">
-                    <span class="_icon-wish-red"></span>
-                </button>
-                
-                <div class="product-card__image">
-                    <img src="./img/popular/image1.png" alt="img">
+                    <button class="product-card__icon product-card__icon_active">
+                        <span class="_icon-wish"></span>
+                    </button>
+                    <button class="product-card__icon product-card__icon_red">
+                        <span class="_icon-wish-red"></span>
+                    </button>
+
+                    <div class="product-card__image">
+                        <img src="./img/popular/image1.png" alt="img">
+                    </div>
+
+                    <div class="product-card__about">
+                        <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
+                                class="product-card__name_color">(Green)</span>
+                        </a>
+
+                        <div class="product-card__info">
+                            <div class="product-card__article">
+                                <span>Артикул: </span>
+                                <span>132940</span>
+                            </div>
+                            <div class="product-card__availability">
+                                <div class="lable-status lable-status_available">В наличии</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card__purchase">
+                            <div class="product-card__price price-card">
+                                <div class="price-card__old">1500$</div>
+                                <div class="price-card__new">900$</div>
+                            </div>
+
+                            <div class="product-card__button">
+                                <button class="btn btn_red">Купить</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card__hidden hidden-card">
+                            <div class="hidden-card__row">
+                                <span class="hidden-card__name">Тип:</span>
+                                <span class="hidden-card__value">накладка</span>
+                            </div>
+                            <div class="hidden-card__row">
+                                <span class="hidden-card__name">Материал:</span>
+                                <span class="hidden-card__value">силикон</span>
+                            </div>
+                            <div class="hidden-card__row">
+                                <span class="hidden-card__name">Цвет:</span>
+                                <span class="hidden-card__value">синий</span>
+                            </div>
+                            <div class="hidden-card__row">
+                                <span class="hidden-card__name">Прочее:</span>
+                                <span class="hidden-card__value">встроенные магниты</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="product-card__about">
-                    <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span class="product-card__name_color">(Green)</span> 
-                    </a>
-        
-                    <div class="product-card__info">
-                        <div class="product-card__article">
-                            <span>Артикул: </span>
-                            <span>132940</span>
-                        </div>
-                        <div class="product-card__availability">
-                            <div class="lable-status lable-status_available">В наличии</div>
-                        </div>
-                    </div>
-        
-                    <div class="product-card__purchase">
-                        <div class="product-card__price price-card">
-                            <div class="price-card__old">1500$</div>
-                            <div class="price-card__new">900$</div>
-                        </div>
-        
-                        <div class="product-card__button">
-                            <button class="btn btn_red">Купить</button>
-                        </div>
-                    </div>
-                    
-                </div>        
-                
-                </div>
 
+                <!---------------------------Bars card------------------------>
+
+
+                <div style="margin-top: 25px;" class="bars-card">
+                    <button class="bars-card__icon">
+                        <span class="_icon-wish"></span>
+                    </button>
+                    <button class="bars-card__icon card-row__icon_red">
+                        <span class="_icon-wish-red"></span>
+                    </button>
+
+                    </button>
+                    <div class="bars-card__description">
+                        <div class="bars-card__image">
+                            <img src="./img/productImg-l.png" alt="item">
+                        </div>
+
+                        <div class="bars-card__info">
+                            <a href="#" class="bars-card__name">гаджет телефон iphone красный цвет купить онлайн телефон ноутбук laptop top smile белый купить
+                                ноутбук</a>
+                            <div class="bars-card__characteristics characteristics-card">
+                                <div class="characteristics-card__item article-card">
+                                    <span class="article-card__name">Артикул:</span>
+                                    <span class="article-card__value">132940</span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="bars-card__trade">
+                        <div class="bars-card__availability">
+                            <div class="lable-status lable-status_available">
+                                В наличии
+                            </div>
+                        </div>
+                        <div class="bars-card__purchase">
+                            <div class="bars-card__price price-card">
+                                <div class="price-card__old">1500$</div>
+                                <div class="price-card__new">900$</div>
+                            </div>
+                            <div class="bars-card__button">
+                                <button type="submit" class="btn btn_red">
+                                    Buy
+                                </button>
+                            </div>
+                            <div class="bars-card__count _hidden">
+                                <div class="counter">
+                                    <div class="counter__item">
+                                        <button type="button" class="counter__minus counter__minus_disabled" disabled>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
+                                                    fill="#373737" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="counter__item">
+                                        <div class="counter__value">
+                                            <form action="">
+                                                <input type="number" value="1">
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="counter__item">
+                                        <button type="button" class="counter__plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M12 5V19" stroke="#373737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M5 12H19" stroke="#373737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
                 <!-- ---------------------Label-------------------- -->
-                 <div class="lable-status lable-status_available">
+                <div class="lable-status lable-status_available">
                     В наличии
                 </div>
 
@@ -306,31 +414,24 @@
 
                 <div style="width: max-content;" class="counter-wrapper">
                     <div class="counter">
-                        <div class="counter__item">
-                            <button type="button" class="counter__minus counter__minus_disabled" disabled>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z" fill="#373737"/>
-                                </svg>
-                            </button>
+                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                            <span class='_icon-minus'></span>
+                        </button>
+
+
+                        <div class="counter__value">
+                            <form action="">
+                                <input type="number" value="1" placeholder='1'>
+                            </form>
                         </div>
-                        <div class="counter__item">
-                            <div class="counter__value">
-                                <form action="">
-                                    <input type="number" value="1">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="counter__item">
-                            <button type="button" class="counter__plus">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M12 5V19" stroke="#373737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M5 12H19" stroke="#373737" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
+
+
+                        <button type="button" class="counter__icon">
+                            <span class='_icon-plus'></span>
+                        </button>
                     </div>
                 </div>
-            
+
                 <!-------------------------Block Section--------------------------->
 
                 <section class="page-section block-section">
@@ -341,7 +442,7 @@
                                 <div class="block-section__bg">
                                     <img src="./img/bg/section-bg.png" alt="bg">
                                 </div>
-                                
+
                             </div>
                             <ul class="block-section__items block-section__items_collapse">
                                 <button class="expand-btn">
@@ -355,15 +456,15 @@
                                         <button class="product-card__icon product-card__icon_red">
                                             <span class="_icon-wish-red"></span>
                                         </button>
-                                        
+
                                         <div class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
                                         </div>
-                            
+
                                         <div class="product-card__about">
-                                            <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
+                                            <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt
                                             </a>
-                                
+
                                             <div class="product-card__info">
                                                 <div class="product-card__article">
                                                     <span>Артикул: </span>
@@ -373,21 +474,21 @@
                                                     <div class="lable-status lable-status_available">В наличии</div>
                                                 </div>
                                             </div>
-                                
+
                                             <div class="product-card__purchase">
                                                 <div class="product-card__price price-card">
                                                     <div class="price-card__old">1500$</div>
                                                     <div class="price-card__new">900$</div>
                                                 </div>
-                                
+
                                                 <div class="product-card__button">
                                                     <button class="btn btn_red">Купить</button>
                                                 </div>
                                             </div>
-                                            
-                                        </div>        
-                                        
+
                                         </div>
+
+                                    </div>
                                 </li>
                                 <li class="popular__item block-section__item">
                                     <div class="product-card">
@@ -397,15 +498,15 @@
                                         <button class="product-card__icon product-card__icon_red product-card__icon_active">
                                             <span class="_icon-wish-red"></span>
                                         </button>
-                                        
+
                                         <div class="product-card__image">
                                             <img src="./img/popular/image2.png" alt="img">
                                         </div>
-                            
+
                                         <div class="product-card__about">
-                                            <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
+                                            <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt
                                             </a>
-                                
+
                                             <div class="product-card__info">
                                                 <div class="product-card__article">
                                                     <span>Артикул: </span>
@@ -415,21 +516,21 @@
                                                     <div class="lable-status lable-status_available">В наличии</div>
                                                 </div>
                                             </div>
-                                
+
                                             <div class="product-card__purchase">
                                                 <div class="product-card__price price-card">
                                                     <div class="price-card__old">1500$</div>
                                                     <div class="price-card__new">900$</div>
                                                 </div>
-                                
+
                                                 <div class="product-card__button">
                                                     <button class="btn btn_red">Купить</button>
                                                 </div>
                                             </div>
-                                            
-                                        </div>        
-                                        
+
                                         </div>
+
+                                    </div>
                                 </li>
                                 <li class="popular__item block-section__item">
                                     <div class="product-card">
@@ -439,15 +540,15 @@
                                         <button class="product-card__icon product-card__icon_red">
                                             <span class="_icon-wish-red"></span>
                                         </button>
-                                        
+
                                         <div class="product-card__image">
                                             <img src="./img/popular/image3.png" alt="img">
                                         </div>
-                            
+
                                         <div class="product-card__about">
-                                            <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt  
+                                            <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check it nottttttttt
                                             </a>
-                                
+
                                             <div class="product-card__info">
                                                 <div class="product-card__article">
                                                     <span>Артикул: </span>
@@ -457,41 +558,42 @@
                                                     <div class="lable-status lable-status_available">В наличии</div>
                                                 </div>
                                             </div>
-                                
+
                                             <div class="product-card__purchase">
                                                 <div class="product-card__price price-card">
                                                     <div class="price-card__old">1500$</div>
                                                     <div class="price-card__new">900$</div>
                                                 </div>
-                                
+
                                                 <div class="product-card__button">
                                                     <button class="btn btn_red">Купить</button>
                                                 </div>
                                             </div>
-                                            
-                                        </div>        
-                                        
+
                                         </div>
+
+                                    </div>
                                 </li>
-                                
-                                
+
+
                             </ul>
                         </div>
                     </div>
                 </section>
             </div>
-           
-                      
+
+
         </main>
-    
-    
-        @@include('html/footer.html', {})  
+
+
+        @@include('html/footer.html', {})
     </div>
-   
+
 
 
 
     <script src="js/app.min.js"></script>
-    
+
 </body>
+
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { "title": "Catalog Empty" })
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+
+        <main class="main">
+            <div class="container">
+                <section class="catalog empty-catalog">
+                    <ul class="catalog__breadcrumps breadcrumps">
+                        <li class="breadcrumps__item">
+                            <a href="#" class="breadcrumps__link">
+                                <span class="breadcrumps__icon _icon-home"></span>
+                            </a>
+                        </li>
+                        <li class="breadcrumps__item">
+                            Поиск
+                        </li>
+                    </ul>
+
+                    <div class="empty-page">
+                        <div class="empty-page__icon">
+                            <img src="./img/icons/face.svg" alt="icon">
+                        </div>
+                        <div class="empty-page__result">
+                            <span>Результат поиска:</span>
+                            <span class="empty-page__request">фйцу</span>
+                        </div>
+
+                        <div class="empty-page__text">По вашему запросу ничего не найдено.</div>
+                        <div class="empty-page__text">Попробуйте ввести название товара еще раз.</div>
+                    </div>
+
+                </section>
+            </div>
+        </main>
+
+        @@include('html/footer.html', {})
+    </div>
+</body>
+
+</html>

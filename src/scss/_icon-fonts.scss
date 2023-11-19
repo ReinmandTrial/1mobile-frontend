@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'icons';
-  src: url('../img/svg/icons/icons.eot?li01w2');
-  src: url('../img/svg/icons/icons.eot?li01w2#iefix') format('embedded-opentype'),
-    url('../img/svg/icons/icons.ttf?li01w2') format('truetype'),
-    url('../img/svg/icons/icons.woff?li01w2') format('woff'),
-    url('../img/svg/icons/icons.svg?li01w2#icons') format('svg');
+  src: url('../img/svg/icons/icons.eot?5xgu85');
+  src: url('../img/svg/icons/icons.eot?5xgu85#iefix') format('embedded-opentype'),
+    url('../img/svg/icons/icons.ttf?5xgu85') format('truetype'),
+    url('../img/svg/icons/icons.woff?5xgu85') format('woff'),
+    url('../img/svg/icons/icons.svg?5xgu85#icons') format('svg');
+
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,10 +26,25 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+._icon-filter:before {
+  content: '\e927';
+}
+._icon-bars:before {
+  content: '\e923';
+}
+._icon-home:before {
+  content: '\e924';
+}
+._icon-list:before {
+  content: '\e925';
+}
+._icon-tile:before {
+  content: '\e926';
+}
 ._icon-arrow-expand:before {
   content: '\e922';
 }
-
 ._icon-telephone:before {
   content: '\e90b';
 }
