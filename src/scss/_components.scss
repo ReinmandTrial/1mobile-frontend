@@ -1179,6 +1179,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex: 1 1 auto;
   }
 
   &__price {
@@ -1187,9 +1188,8 @@
     justify-content: space-between;
 
     &.price-card {
-      width: 130px;
       position: relative;
-      flex: 0 0 45%;
+      flex: 0 0 44%;
 
       .price-card__old {
         position: absolute;

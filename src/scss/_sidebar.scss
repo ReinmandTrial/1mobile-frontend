@@ -1,6 +1,8 @@
 body {
   &._block {
-    overflow: hidden;
+    @media (max-width: 1080px) {
+      overflow: hidden;
+    }
   }
 }
 
@@ -37,7 +39,6 @@ body {
   }
 
   &._open {
-    display: none;
     @media (max-width: 1080px) {
       position: fixed;
       display: block;

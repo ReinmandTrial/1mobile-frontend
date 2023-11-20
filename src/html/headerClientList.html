@@ -15,7 +15,7 @@
                             <span class="_icon-burger"> </span>
                             <span>Каталог товаров</span>
                         </button>
-                        <!-- При открытии каталога добавляется модификатор .catalogue-header__menu_show -->
+                        <!-- При открытии каталога добавляется .show -->
                         <div class="catalogue-header__menu">
                             <div class="catalogue-header__categories">
                                 <ul class="catalogue-header__list">
@@ -55,8 +55,8 @@
 
                             <div class="catalogue-header__tabs tabs-catalogue">
 
-                                <!-- На открытой вкладке модификатор .tabs-catalogue__tab-open -->
-                                <div class="tabs-catalogue__tab tabs-catalogue__tab-open">
+                                <!-- На открытой вкладке добавляется .open -->
+                                <div class="tabs-catalogue__tab open">
                                     <ul class="tabs-catalogue__list">
                                         <li class="tabs-catalogue__item">
                                             <a class="tabs-catalogue__link" href="#">Case</a>
@@ -465,6 +465,33 @@
                         <a href="#" class="header__client-account header__client-link _active">
                             <span class="header__client-icon _icon-person"></span>
                         </a>
+                        <ul class="header__client-list _open">
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-wish"></span>
+                                    <span>Избранное</span>
+                                </a>
+                            </li>
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-order"></span>
+                                    <span>История заказов</span>
+                                </a>
+                            </li>
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-person"></span>
+                                    <span>Личные данные</span>
+                                </a>
+                            </li>
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-star"></span>
+                                    <span>Мои отзывы</span>
+                                </a>
+                            </li>
+
+                        </ul>
                     </li>
                     <li class="header__client-item  client-basket">
                         <a href="#" class="header__client-link header__client-basket">
@@ -482,19 +509,15 @@
         </div>
 
         <div class="header__mobile mobile-header">
-            <div class="mobile-header__logo">
+            <a href="#" class="mobile-header__logo">
                 <img src="../img/logo/logo-text-mobile.png" alt="logo">
-            </div>
+            </a>
             <div class="mobile-header__menu">
                 <div class="mobile-header__burger burger">
                     <button type="button" class="burger__btn">
                         <span class="_icon-burger"></span>
                     </button>
-
-                    @@include('burger.html', {})
                 </div>
-
-
 
                 <div class="mobile-header__search">
                     <div class="search-block">
@@ -516,6 +539,7 @@
                         <span class="client-basket__count">999</span>
                     </a>
                 </div>
+
             </div>
 
         </div>
