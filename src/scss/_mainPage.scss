@@ -408,6 +408,147 @@
   &__item {
     display: block;
   }
+
+  &__row {
+    grid-template-columns: repeat(5, minmax(215px, 253px));
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(5, minmax(185px, 1fr));
+      column-gap: 8px;
+    }
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 20px;
+    }
+
+    .block-section__item {
+      .product-card {
+        width: auto;
+        @media (max-width: 992px) {
+          width: 100%;
+          flex-direction: row;
+          align-items: stretch;
+          justify-content: space-between;
+        }
+
+        @media (max-width: 767px) {
+          background-color: transparent;
+        }
+
+        @media (max-width: 479px) {
+          height: 107px;
+        }
+
+        &__image {
+          @media (max-width: 992px) {
+            flex: 0 0 150px;
+          }
+          @media (max-width: 767px) {
+            flex: 0 0 125px;
+          }
+          @media (max-width: 479px) {
+            flex: 0 0 107px;
+          }
+        }
+        &__about {
+          @media (max-width: 992px) {
+            justify-content: space-between;
+            flex: auto;
+          }
+
+          @media (max-width: 479px) {
+            padding: 0;
+            padding-left: 16px;
+          }
+        }
+
+        &__name {
+          @media (max-width: 1200px) {
+          }
+
+          @media (max-width: 992px) {
+            max-width: 75%;
+          }
+
+          @media (max-width: 479px) {
+            margin-bottom: 0;
+            max-width: 100%;
+          }
+        }
+
+        &__info {
+          @media (max-width: 479px) {
+            margin-bottom: 0;
+          }
+        }
+
+        &__article {
+          @media (max-width: 1200px) {
+            font-size: 10px;
+            padding-right: 4px;
+          }
+        }
+
+        &__icon {
+          @media (max-width: 1200px) {
+            font-size: 16px;
+          }
+
+          @media (max-width: 767px) {
+            position: absolute;
+            width: max-content;
+            left: 100px;
+            top: 14px;
+          }
+
+          @media (max-width: 479px) {
+            font-size: 12px;
+            left: 82px;
+            top: 10px;
+          }
+        }
+      }
+
+      .price-card {
+        @media (max-width: 1200px) {
+          width: 77px;
+        }
+      }
+
+      .btn {
+        @media (max-width: 1200px) {
+          min-width: 100px;
+          padding: 8px 14px;
+          font-size: 16px;
+        }
+
+        @media (max-width: 479px) {
+          padding: 10px 16px;
+          min-width: auto;
+        }
+
+        .btn-text {
+          @media (max-width: 479px) {
+            display: none;
+          }
+        }
+
+        ._icon-basket {
+          @media (max-width: 479px) {
+            display: block;
+          }
+        }
+      }
+
+      .lable-status {
+        @media (max-width: 479px) {
+          padding: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 //----------------------------POPULAR SECTION------------------//
@@ -424,147 +565,9 @@
   // .popular__items
 
   &__items {
-    grid-template-columns: repeat(5, minmax(215px, 253px));
-
-    @media (max-width: 1200px) {
-      grid-template-columns: repeat(5, minmax(185px, 1fr));
-      column-gap: 8px;
-    }
-
-    @media (max-width: 992px) {
-      grid-template-columns: repeat(1, 1fr);
-      row-gap: 20px;
-    }
   }
 
   // .popular__item
-
-  &__item {
-    .product-card {
-      width: auto;
-      @media (max-width: 992px) {
-        width: 100%;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: space-between;
-      }
-
-      @media (max-width: 767px) {
-        background-color: transparent;
-      }
-
-      @media (max-width: 479px) {
-        height: 107px;
-      }
-
-      &__image {
-        @media (max-width: 992px) {
-          flex: 0 0 150px;
-        }
-        @media (max-width: 767px) {
-          flex: 0 0 125px;
-        }
-        @media (max-width: 479px) {
-          flex: 0 0 107px;
-        }
-      }
-      &__about {
-        @media (max-width: 992px) {
-          justify-content: space-between;
-          flex: auto;
-        }
-
-        @media (max-width: 479px) {
-          padding: 0;
-          padding-left: 16px;
-        }
-      }
-
-      &__name {
-        @media (max-width: 1200px) {
-        }
-
-        @media (max-width: 992px) {
-          max-width: 75%;
-        }
-
-        @media (max-width: 479px) {
-          margin-bottom: 0;
-          max-width: 100%;
-        }
-      }
-
-      &__info {
-        @media (max-width: 479px) {
-          margin-bottom: 0;
-        }
-      }
-
-      &__article {
-        @media (max-width: 1200px) {
-          font-size: 10px;
-          padding-right: 4px;
-        }
-      }
-
-      &__icon {
-        @media (max-width: 1200px) {
-          font-size: 16px;
-        }
-
-        @media (max-width: 767px) {
-          position: absolute;
-          width: max-content;
-          left: 100px;
-          top: 14px;
-        }
-
-        @media (max-width: 479px) {
-          font-size: 12px;
-          left: 82px;
-          top: 10px;
-        }
-      }
-    }
-
-    .price-card {
-      @media (max-width: 1200px) {
-        width: 77px;
-      }
-    }
-
-    .btn {
-      @media (max-width: 1200px) {
-        min-width: 100px;
-        padding: 8px 14px;
-        font-size: 16px;
-      }
-
-      @media (max-width: 479px) {
-        padding: 10px 16px;
-        min-width: auto;
-      }
-
-      .btn-text {
-        @media (max-width: 479px) {
-          display: none;
-        }
-      }
-
-      ._icon-basket {
-        @media (max-width: 479px) {
-          display: block;
-        }
-      }
-    }
-
-    .lable-status {
-      @media (max-width: 479px) {
-        padding: 0;
-        font-size: 14px;
-      }
-    }
-  }
 }
 
 //----------------------------ARRIVALS SECTION------------------//
@@ -1045,6 +1048,14 @@
 
   &__text {
     text-align: center;
+  }
+
+  &._blue {
+    .info__item {
+      border: 1px solid var(--blue);
+      background-color: transparent;
+      color: var(--blue);
+    }
   }
 }
 

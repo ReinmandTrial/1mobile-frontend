@@ -1229,11 +1229,20 @@
   justify-content: center;
   text-align: center;
   min-width: 78px;
+  width: max-content;
+  background-color: var(--white-1);
 
   &_available {
-    background-color: var(--white-1);
     color: var(--blue);
-    width: max-content;
+  }
+  &_waiting {
+    color: var(--grey);
+  }
+  &_not-available {
+    color: var(--red);
+  }
+  &_runs-out {
+    color: var(--yellow);
   }
 }
 
