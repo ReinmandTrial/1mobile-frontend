@@ -2,6 +2,8 @@
 <html lang="en">
 @@include('html/head.html', { "title": "Product Page" })
 
+<!-- При открытии попапа галлереи добавляется ._block -->
+
 <body>
     <div class="wrapper">
         @@include('html/header.html', {})
@@ -73,7 +75,128 @@
                                             <span class='_icon-arrow-right'></span>
                                         </button>
                                     </div>
+                                    <!-- При открытии попапа галлереи добавляется ._open -->
+                                    <div class="product-page__gallery-popup gallery-popup">
+                                        <button type='button' class="gallery-popup__close">
+                                            <span class='_icon-close'></span>
+                                        </button>
+                                        <div class="product-page__slider">
+                                            <div class="product-page__main-img">
+                                                <img src="../img/product-page/img1.png" alt="product">
+                                            </div>
+                                            <div class="product-page__list-img">
+                                                <button type='button' class="product-page__small-img ">
+                                                    <img src="../img/product-page/img1.png" alt="product">
+                                                </button>
+                                                <button type='button' class="product-page__small-img _active">
+                                                    <img src="../img/product-page/img1.png" alt="product">
+                                                </button>
+                                                <button type='button' class="product-page__small-img">
+                                                    <img src="../img/product-page/img1.png" alt="product">
+                                                </button>
+                                                <button type='button' class="product-page__small-img">
+                                                    <img src="../img/product-page/img1.png" alt="product">
+                                                </button>
+                                                <button type='button' class="product-page__small-img">
+                                                    <img src="../img/product-page/img1.png" alt="product">
+                                                </button>
+                                                <button type='button' class="product-page__small-img">
+                                                    <img src="../img/product-page/img1.png" alt="product">
+                                                </button>
+                                                <button type='button' class="product-page__small-img">
+                                                    <img src="../img/product-page/img1.png" alt="product">
+                                                </button>
+                                                <button type='button' class="product-page__small-img">
+                                                    <img src="../img/product-page/img1.png" alt="product">
+                                                </button>
+                                                <button type='button' class="product-page__small-img">
+                                                    <img src="../img/product-page/img1.png" alt="product">
+                                                </button>
+                                            </div>
+                                            <div class="product-page__pagination">
+                                                <button type='button' class="product-page__arrow product-page__arrow-prev">
+                                                    <span class='_icon-arrow-left'></span>
+                                                </button>
+                                                <button type='button' class="product-page__arrow product-page__arrow-next">
+                                                    <span class='_icon-arrow-right'></span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="gallery-popup__info">
+                                            <div class="gallery-popup__title">iPhone 13 Pro Silicone Case with MagSafe (Blue Jay) MM2G3ZE/A</div>
+                                            <button type='button' class="gallery-popup__btn btn btn_red">Купить</button>
+                                        </div>
+                                    </div>
+                                    <!-- При открытии попапа добавляется ._open -->
+                                    <div class="product-page__pre-order pre-order">
+                                        <!-- При открытии попапа галлереи добавляется ._open -->
+                                        <div class="pre-order__popup-form">
+                                            <button type='button' class="pre-order__close">
+                                                <span class='_icon-close'></span>
+                                            </button>
+                                            <div class="pre-order__title">Предзаказ</div>
+                                            <form class="pre-order__form">
+                                                <div class="pre-order__counter">
+                                                    <label for="" class='pre-order__label'>
+                                                        Количество желаемого товара
+                                                    </label>
+
+                                                    <div class="counter">
+                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                            <span class='_icon-minus'></span>
+                                                        </button>
+
+
+                                                        <div class="counter__value">
+
+                                                            <input type="number" value="1" placeholder='1'>
+
+                                                        </div>
+
+
+                                                        <button type="button" class="counter__icon">
+                                                            <span class='_icon-plus'></span>
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="pre-order__inputs-area">
+                                                    <input type="text" placeholder='Ваше имя' class="pre-order__input">
+                                                    <input type="tel" placeholder='Номер телефона' class="pre-order__input">
+                                                    <input type='email' placeholder='Email' class="pre-order__input">
+                                                    <input type='text' placeholder='Комментарий' class="pre-order__input">
+                                                </div>
+
+
+                                                <button type='submit' class="pre-order__btn btn btn_red">
+                                                    Подтвердить
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <!-- При открытии попапа галлереи добавляется ._open -->
+                                        <div class="pre-order__popup-complete">
+                                            <button type='button' class="pre-order__close">
+                                                <span class='_icon-close'></span>
+                                            </button>
+                                            <div class="pre-order__title">Предзаказ</div>
+                                            <div class="pre-order__text _black">
+                                                Благодарим Вас за выбор на Первом мобильном
+                                            </div>
+                                            <div class="pre-order__text">За несколько дней до поступления товара наш менеджер свяжется с Вами.</div>
+                                            <div class="pre-order__text">Номер вашей заявки: <span class='pre-order__number'>17364023</span></div>
+                                            <div class="pre-order__text"><span class='_red'>Важно! </span>Цена товара на момент отгрузки может отличаться от
+                                                цены, указанной на данный момент.</div>
+                                        </div>
+
+                                    </div>
+
+
                                 </div>
+
                                 <div class="product-page__info">
                                     <button class="product-page__icon _active">
                                         <span class="_icon-wish"></span>
@@ -85,20 +208,7 @@
                                     <div class="product-page__article">
                                         <span>Артикул: 132940</span>
                                         <button class='product-page__copy' type='button'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                                <path
-                                                    d="M13.3333 6.5H7.33333C6.59695 6.5 6 7.09695 6 7.83333V13.8333C6 14.5697 6.59695 15.1667 7.33333 15.1667H13.3333C14.0697 15.1667 14.6667 14.5697 14.6667 13.8333V7.83333C14.6667 7.09695 14.0697 6.5 13.3333 6.5Z"
-                                                    stroke="#9F9A9A" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M13.3333 6.5H7.33333C6.59695 6.5 6 7.09695 6 7.83333V13.8333C6 14.5697 6.59695 15.1667 7.33333 15.1667H13.3333C14.0697 15.1667 14.6667 14.5697 14.6667 13.8333V7.83333C14.6667 7.09695 14.0697 6.5 13.3333 6.5Z"
-                                                    stroke="black" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M3.33301 10.5H2.66634C1.92996 10.5 1.33301 9.90308 1.33301 9.16668V3.16668C1.33301 2.4303 1.92996 1.83334 2.66634 1.83334H8.66634C9.40274 1.83334 9.99967 2.4303 9.99967 3.16668V3.83334"
-                                                    stroke="#9F9A9A" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M3.33301 10.5H2.66634C1.92996 10.5 1.33301 9.90308 1.33301 9.16668V3.16668C1.33301 2.4303 1.92996 1.83334 2.66634 1.83334H8.66634C9.40274 1.83334 9.99967 2.4303 9.99967 3.16668V3.83334"
-                                                    stroke="black" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
+                                            <span class='_icon-copy'></span>
                                         </button>
                                     </div>
                                     <div class="product-page__description">Чехол Apple для iPhone 13 Pro очень тонкий и легкий. Он не увеличит вес смартфона, а
@@ -118,7 +228,6 @@
                                                 <button class='product-page__color-btn' type='button'></button>
                                             </li>
                                         </ul>
-
                                     </div>
 
                                     <div class="product-page__status">
@@ -128,7 +237,11 @@
                                     </div>
 
                                     <div class="product-page__purchase">
-                                        <div class="product-page__price">900 $</div>
+
+                                        <div class="product-page__price price-card">
+                                            <div class="price-card__old"></div>
+                                            <div class="price-card__new">900$</div>
+                                        </div>
                                         <div class="product-page__button">
                                             <button type="submit" class="btn btn_red">
                                                 Купить
@@ -139,16 +252,92 @@
 
                             </div>
 
-                            <div class="product-page__tabs tabs-product">
-                                <div class="tabs-product__head">
-                                    <button type='button' class="tabs-product__title _active">Описание</button>
-                                    <button type='button' class="tabs-product__title">Характеристика</button>
-                                    <button type='button' class="tabs-product__title">Вопросы и ответы</button>
-                                    <button type='button' class="tabs-product__title">Отзывы</button>
+                            <div class="product-page__mobile">
+                                <div class="product-page__title">iPhone 13 Pro Silicone Case with MagSafe (Blue Jay) MM2G3ZE/A</div>
+
+                                <button class="product-page__icon _active">
+                                    <span class="_icon-wish"></span>
+                                </button>
+                                <button class="product-page__icon product-page__icon_red">
+                                    <span class="_icon-wish-red"></span>
+                                </button>
+
+                                <div class="product-page__gallery">
+                                    <div class="product-page__slider">
+                                        <div class="product-page__main-img">
+                                            <img src="../img/product-page/img1.png" alt="product">
+                                        </div>
+                                        <div class="product-page__main-img">
+                                            <img src="../img/product-page/img1.png" alt="product">
+                                        </div>
+                                    </div>
+
+                                    <div class="product-page__pagination">
+                                        <button type='button' class="product-page__arrow product-page__arrow-prev">
+                                            <span class='_icon-arrow-left'></span>
+                                        </button>
+                                        <button type='button' class="product-page__arrow product-page__arrow-next">
+                                            <span class='_icon-arrow-right'></span>
+                                        </button>
+                                    </div>
+                                    <div class="product-page__color">
+
+                                        <ul class="product-page__color-list">
+                                            <li class="product-page__color-item _active _blue">
+                                                <button class='product-page__color-btn' type='button'></button>
+                                            </li>
+                                            <li class="product-page__color-item _red">
+                                                <button class='product-page__color-btn' type='button'></button>
+                                            </li>
+                                            <li class="product-page__color-item _yellow">
+                                                <button class='product-page__color-btn' type='button'></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="product-page__data">
+                                    <div class="product-page__article">
+                                        <span>Артикул: 132940</span>
+                                        <button class='product-page__copy' type='button'>
+                                            <span class='_icon-copy'></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="product-page__status">
+                                        <div class="lable-status lable-status_available">
+                                            В наличии
+                                        </div>
+                                    </div>
 
                                 </div>
+
+                                <div class="product-page__purchase">
+
+                                    <div class="product-psge__price price-card">
+                                        <div class="price-card__old">1500$</div>
+                                        <div class="price-card__new">900$</div>
+                                    </div>
+                                    <div class="product-page__button">
+                                        <button type="submit" class="btn btn_red">
+                                            Купить
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="product-page__tabs tabs-product">
+                                <div class="tabs-product__head">
+                                    <a href='#tab-1' type='button' class="tabs-product__title ">Описание</a>
+                                    <a href='#tab-2' type='button' class="tabs-product__title _active">Характеристика</a>
+                                    <a href='#tab-2' type='button' class="tabs-product__title">Вопросы и ответы</a>
+                                    <a href='#tab-4' type='button' class="tabs-product__title">Отзывы</a>
+                                </div>
                                 <div class="tabs-product__body body-tabs">
-                                    <div class="body-tabs__tab  _open  body-tabs__description">
+                                    <!-- На открытом табе добавляется класс _open -->
+                                    <div id='tab-1' class="body-tabs__tab body-tabs__description">
                                         <div class="body-tabs__title">
                                             Описание
                                         </div>
@@ -158,19 +347,506 @@
                                             Apple специально для своего нового смартфона
                                         </div>
                                     </div>
+                                    <!-- На открытом табе добавляется класс _open -->
+                                    <div id='tab-2' class="body-tabs__tab body-tabs__characteristic ">
+                                        <div class="body-tabs__block characteristic-product">
+                                            <div class="body-tabs__title">
+                                                Общие характеристики
+                                            </div>
+                                            <div class="body-tabs__text">
+                                                <ul class="characteristic-product__list">
+                                                    <li class="characteristic-product__item">
+                                                        <div class='characteristic-product__name'>
+                                                            <span>Тип</span>
+                                                            <span class='dots'></span>
+                                                        </div>
+
+                                                        <span class='characteristic-product__value'>накладка</span>
+                                                    </li>
+                                                    <li class="characteristic-product__item">
+                                                        <div class='characteristic-product__name'>
+                                                            <span>Материал</span>
+                                                            <span class='dots'></span>
+                                                        </div>
+
+                                                        <span class='characteristic-product__value'>силикон</span>
+                                                    </li>
+                                                    <li class="characteristic-product__item">
+                                                        <div class='characteristic-product__name'>
+                                                            <span>Цвет</span>
+                                                            <span class='dots'></span>
+                                                        </div>
+
+                                                        <span class='characteristic-product__value'>синий</span>
+                                                    </li>
+                                                    <li class="characteristic-product__item">
+                                                        <div class='characteristic-product__name'>
+                                                            <span>Прочее</span>
+                                                            <span class='dots'></span>
+                                                        </div>
+
+                                                        <span class='characteristic-product__value'>встроенные магниты</span>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="body-tabs__block characteristic-product">
+                                            <div class="body-tabs__title">
+                                                Совместимость
+                                            </div>
+                                            <div class="body-tabs__text">
+                                                <ul class="characteristic-product__list">
+                                                    <li class="characteristic-product__item">
+                                                        <div class='characteristic-product__name'>
+                                                            <span>Подходит для бренда</span>
+                                                            <span class='dots'></span>
+                                                        </div>
+
+                                                        <span class='characteristic-product__value'>Apple</span>
+                                                    </li>
+                                                    <li class="characteristic-product__item">
+                                                        <div class='characteristic-product__name'>
+                                                            <span>Совместимые модели</span>
+                                                            <span class='dots'></span>
+                                                        </div>
+
+                                                        <span class='characteristic-product__value'>Apple iPhone 13 Pro</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="body-tabs__block characteristic-product">
+                                            <div class="body-tabs__title">
+                                                Дополнительные характеристики
+                                            </div>
+                                            <div class="body-tabs__text">
+                                                <ul class="characteristic-product__list">
+                                                    <li class="characteristic-product__item">
+                                                        <div class='characteristic-product__name'>
+                                                            <span>Габаритные размеры</span>
+                                                            <span class='dots'></span>
+                                                        </div>
+
+                                                        <span class='characteristic-product__value'>146.7 x 71.5 x 7.65 мм</span>
+                                                    </li>
+                                                    <li class="characteristic-product__item">
+                                                        <div class='characteristic-product__name'>
+                                                            <span>Гарантия</span>
+                                                            <span class='dots'></span>
+                                                        </div>
+
+                                                        <span class='characteristic-product__value'>12 месяцев</span>
+                                                    </li>
+                                                    <li class="characteristic-product__item">
+                                                        <div class='characteristic-product__name'>
+                                                            <span>Страна регистрации</span>
+                                                            <span class='dots'></span>
+                                                        </div>
+
+                                                        <span class='characteristic-product__value'>США</span>
+                                                    </li>
+                                                    <li class="characteristic-product__item">
+                                                        <div class='characteristic-product__name'>
+                                                            <span>Страна производитель</span>
+                                                            <span class='dots'></span>
+                                                        </div>
+
+                                                        <span class='characteristic-product__value'>Китай</span>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- На открытом табе добавляется класс _open -->
+                                    <div id='tab-3' class="body-tabs__tab body-tabs__questions">
+
+                                        <div class="body-tabs__block questions-product">
+                                            <div class="questions-product__no-question">
+                                                <div class="body-tabs__title">
+                                                    Вопросы (0)
+                                                </div>
+                                                <div class="body-tabs__text questions-product__text">
+                                                    На данный момент о товаре еще не спрашивали
+                                                </div>
+                                                <button type='button' class="questions-product__btn btn btn_red">Задать вопрос</button>
+                                            </div>
+
+                                            <div class="questions-product__ask-question">
+                                                <div class="body-tabs__title">
+                                                    Вопросы (0)
+                                                </div>
+                                                <div class="body-tabs__text questions-product__text">
+                                                    Оставьте вопрос
+                                                </div>
+                                                <div class="questions-product__form">
+                                                    <input class="questions-product__input" type='text' placeholder='Напишите Ваш вопрос'></input>
+                                                    <button type='submit' class="questions-product__btn btn btn_red">Задать вопрос</button>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="questions-product__popup popup-question">
+                                                <div class="popup-question__btn _icon-close">
+                                                </div>
+                                                <div class="popup-question__check">
+                                                    <span class='_icon-check'></span>
+                                                    <span>Вопрос задан</span>
+                                                </div>
+                                                <div class="popup-question__text">Спасибо, Ваш вопрос был отправлен и будет обработан в течении суток.</div>
+                                            </div>
+
+                                            <div class="questions-product__asked asked-question">
+                                                <div class="body-tabs__title">Вопросы (1)</div>
+                                                <div class="asked-question__content">
+                                                    <div class="asked-question__question">
+                                                        <div class="asked-question__body">
+                                                            <div class="asked-question__header">
+                                                                <div class="asked-question__data">
+                                                                    <div class="asked-question__user">Евгений</div>
+                                                                    <div class="asked-question__date">12.08.2022</div>
+
+                                                                </div>
+                                                                <div class="asked-question__details">
+                                                                    <div class="asked-question__color">
+                                                                        <span>Цвет</span>
+                                                                        <span class='color-item'></span>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="asked-question__text">Есть ли на данную модель гарантия?</div>
+                                                        </div>
+
+                                                        <div class="asked-question__rating">
+                                                            <button type='button' class="asked-question__respond">Ответить</button>
+                                                            <div class="asked-question__like asked-question__reaction">
+                                                                <button type='button' class='_icon-like _active'></button>
+                                                                <span class='asked-question__like-amount'>12</span>
+                                                            </div>
+                                                            <div class="asked-question__dislike asked-question__reaction">
+                                                                <button type='button' class='_icon-dislike'></button>
+                                                                <span class='asked-question__dislike-amount'>0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="asked-question__answer ">
+                                                        <div class="asked-question__wrapper">
+                                                            <img src="./img/icons/respond.svg" alt="icon" class="asked-question__icon">
+                                                            <div class="asked-question__body">
+                                                                <div class="asked-question__header">
+                                                                    <div class="asked-question__data">
+                                                                        <div class="asked-question__user">First mobile</div>
+                                                                        <div class="asked-question__date">12.08.2022</div>
+
+                                                                    </div>
+                                                                    <div class="asked-question__details">
+                                                                        <div class="asked-question__date">
+                                                                            13.08.2022
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="asked-question__text">Добрый день! Да, на данную модель распростроняется гарантия на
+                                                                    12
+                                                                    месяцев
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="asked-question__rating">
+                                                            <button type='button' class="asked-question__respond">Ответить</button>
+                                                            <div class="asked-question__like asked-question__reaction">
+                                                                <button type='button' class='_icon-like'></button>
+                                                                <span class='asked-question__like-amount'>12</span>
+                                                            </div>
+                                                            <div class="asked-question__dislike asked-question__reaction">
+                                                                <button type='button' class='_icon-dislike'></button>
+                                                                <span class='asked-question__dislike-amount'>0</span>
+                                                            </div>
+
+                                                            <button type='button' class="asked-question__show-answer">
+                                                                Скрыть ответы
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="asked-question__sub-answer">
+                                                        <div class="asked-question__answer ">
+                                                            <div class="asked-question__wrapper">
+                                                                <img src="./img/icons/respond.svg" alt="icon" class="asked-question__icon">
+                                                                <div class="asked-question__body">
+                                                                    <div class="asked-question__header">
+                                                                        <div class="asked-question__data">
+                                                                            <div class="asked-question__user">First mobile</div>
+                                                                            <div class="asked-question__date">12.08.2022</div>
+
+                                                                        </div>
+                                                                        <div class="asked-question__details">
+                                                                            <div class="asked-question__date">
+                                                                                13.08.2022
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="asked-question__text">Добрый день! Да, на данную модель распростроняется
+                                                                        гарантия на
+                                                                        12
+                                                                        месяцев
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="asked-question__rating">
+                                                                <button type='button' class="asked-question__respond">Ответить</button>
+                                                                <div class="asked-question__like asked-question__reaction">
+                                                                    <button type='button' class='_icon-like'></button>
+                                                                    <span class='asked-question__like-amount'>12</span>
+                                                                </div>
+                                                                <div class="asked-question__dislike asked-question__reaction">
+                                                                    <button type='button' class='_icon-dislike'></button>
+                                                                    <span class='asked-question__dislike-amount'>0</span>
+                                                                </div>
+
+                                                                <button type='button' class="asked-question__show-answer">
+
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="asked-question__sub-answer">
+                                                        <div class="asked-question__answer ">
+                                                            <div class="asked-question__wrapper">
+                                                                <img src="./img/icons/respond.svg" alt="icon" class="asked-question__icon">
+                                                                <div class="asked-question__body">
+                                                                    <div class="asked-question__header">
+                                                                        <div class="asked-question__data">
+                                                                            <div class="asked-question__user">First mobile</div>
+                                                                            <div class="asked-question__date">12.08.2022</div>
+
+                                                                        </div>
+                                                                        <div class="asked-question__details">
+                                                                            <div class="asked-question__date">
+                                                                                13.08.2022
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="asked-question__text">Добрый день! Да, на данную модель распростроняется
+                                                                        гарантия на
+                                                                        12
+                                                                        месяцев
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="asked-question__rating">
+                                                                <button type='button' class="asked-question__respond">Ответить</button>
+                                                                <div class="asked-question__like asked-question__reaction">
+                                                                    <button type='button' class='_icon-like'></button>
+                                                                    <span class='asked-question__like-amount'>12</span>
+                                                                </div>
+                                                                <div class="asked-question__dislike asked-question__reaction">
+                                                                    <button type='button' class='_icon-dislike'></button>
+                                                                    <span class='asked-question__dislike-amount'>0</span>
+                                                                </div>
+
+                                                                <button type='button' class="asked-question__show-answer">
+
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="asked-question__answer ">
+                                                        <div class="asked-question__wrapper">
+                                                            <img src="./img/icons/respond.svg" alt="icon" class="asked-question__icon">
+                                                            <div class="asked-question__body">
+                                                                <div class="asked-question__header">
+                                                                    <div class="asked-question__data">
+                                                                        <div class="asked-question__user">First mobile</div>
+                                                                        <div class="asked-question__date">12.08.2022</div>
+
+                                                                    </div>
+                                                                    <div class="asked-question__details">
+                                                                        <div class="asked-question__date">
+                                                                            13.08.2022
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="asked-question__text">Добрый день! Да, на данную модель распростроняется гарантия на
+                                                                    12
+                                                                    месяцев
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="asked-question__rating">
+                                                            <button type='button' class="asked-question__respond">Ответить</button>
+                                                            <div class="asked-question__like asked-question__reaction">
+                                                                <button type='button' class='_icon-like'></button>
+                                                                <span class='asked-question__like-amount'>12</span>
+                                                            </div>
+                                                            <div class="asked-question__dislike asked-question__reaction">
+                                                                <button type='button' class='_icon-dislike'></button>
+                                                                <span class='asked-question__dislike-amount'>0</span>
+                                                            </div>
+
+                                                            <button type='button' class="asked-question__show-answer">
+                                                                Посмотреть ответы
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <button type='button' class="asked-question__all-answers">Посмотреть все ответы
+                                                    </button>
+                                                    <button type='button' class="asked-question__less-answers">Показать меньше
+                                                    </button>
+                                                    <button type='button' class="asked-question__all-questions">Посмотреть все вопросы
+                                                    </button>
+
+                                                    <div class="asked-question__input-area">
+                                                        <div class="asked-question__wrapper">
+                                                            <img src="./img/icons/respond.svg" alt="icon" class="asked-question__icon">
+                                                            <div class="asked-question__text">Добрый день! Да, на данную модель распростроняется гарантия на
+                                                                12
+                                                                месяцев
+                                                            </div>
+                                                        </div>
+                                                        <form class="asked-question__form">
+                                                            <textarea placeholder='Напишите Ваш комментарий' class="asked-question__input"></textarea>
+                                                            <button type='submit' class="asked-question__submit">
+                                                                <span class='_icon-telegram'></span>
+                                                            </button>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- На открытом табе добавляется класс _open -->
+                                    <div id='tab-4' class="body-tabs__tab _open  body-tabs__comments">
+                                        <div class="body-tabs__block comments">
+                                            <div class="comments__body">
+                                                <div class="comments__header">
+                                                    <div class="comments__user">John Bright</div>
+                                                    <div class="comments__date">29/05/2023</div>
+                                                </div>
+                                                <div class="comments__rating">
+                                                    <div class="comments__rating-number">4.95</div>
+                                                    <div class="comments__stars">
+                                                        <div class="comments__star _active">
+                                                            <span class='_icon-star-red'></span>
+                                                            <span class='_icon-star'></span>
+                                                        </div>
+                                                        <div class="comments__star _active">
+                                                            <span class='_icon-star-red'></span>
+                                                            <span class='_icon-star'></span>
+                                                        </div>
+                                                        <div class="comments__star _active">
+                                                            <span class='_icon-star-red'></span>
+                                                            <span class='_icon-star'></span>
+                                                        </div>
+                                                        <div class="comments__star _active">
+                                                            <span class='_icon-star-red'></span>
+                                                            <span class='_icon-star'></span>
+                                                        </div>
+                                                        <div class="comments__star">
+                                                            <span class='_icon-star-red'></span>
+                                                            <span class='_icon-star'></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comments__text">
+
+                                                    Чудовий годинник, дуже функціональний та стильний. Тільки приємні емоції від користування. Однозначно
+                                                    вартує своїх коштів. Окремо дякую цитрусу за чудовий
+                                                    сервіс та миттєву доставку. Покупкою повністю задоволена.
+
+                                                </div>
+
+                                                <div class="comments__answer answer-comments">
+                                                    <img src="./img/icons/respond.svg" alt="icon" class="asked-question__icon">
+                                                    <div class="answer-comments__body">
+                                                        <div class="answer-comments__name">First mobile</div>
+                                                        <div class="answer-comments__text">Добрий день! Дуже раді, що вам сподобалось. Чекаємо на вас ще!</div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </section>
+
+                    <div class="tabs-product product-sticky">
+                        <div class="container">
+                            <div class="product-sticky__row">
+                                <div class="product-sticky__content">
+                                    <div class="product-sticky__img">
+                                        <img src="./img/product-page/img1.png" alt="product">
+                                    </div>
+                                    <div class="product-sticky__info">
+                                        <div class="product-sticky__title">iPhone 13 Pro Silicone Case with MagSafe (Blue Jay) MM2G3ZE/A</div>
+                                        <div class="product-sticky__article">Артикул: 132940</div>
+                                    </div>
+
 
                                 </div>
 
+                                <div class="product-sticky__purchase">
+                                    <div class="product-sticky__price price-card">
+                                        <div class="price-card__old"></div>
+                                        <div class="price-card__new">900$</div>
+                                    </div>
+                                    <div class="product-sticky__status">
+                                        <div class="lable-status lable-status_available">В наличии</div>
+                                    </div>
+                                    <button class="product-sticky__btn btn btn_red">Купить</button>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="tabs-product__head">
+                                <a href='#tab-1' type='button' class="tabs-product__title ">Описание</a>
+                                <a href='#tab-2' type='button' class="tabs-product__title _active">Характеристика</a>
+                                <a href='#tab-2' type='button' class="tabs-product__title">Вопросы и ответы</a>
+                                <a href='#tab-4' type='button' class="tabs-product__title">Отзывы</a>
                             </div>
                         </div>
-                    </section>
+
+                    </div>
 
                     <section class="same page-section block-section">
                         <div class="container">
                             <div class="same__container block-section__container">
                                 <div class="block-section__title">
                                     <h3 class="same__title block-section__heading heading-3">
-                                        Товары из этой категории
+                                        Похожие товары
                                     </h3>
                                     <div class="block-section__bg">
                                         <img src="./img/bg/section-bg.png" alt="bg" />

@@ -68,6 +68,9 @@
     &:last-child {
       color: var(--grey);
       padding-right: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     &:not(:last-child) {
