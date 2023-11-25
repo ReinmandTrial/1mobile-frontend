@@ -3,6 +3,11 @@
   box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.07);
   position: relative;
   z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white-1);
 
   @media (max-width: 992px) {
     background-color: var(--black-2, #373737);
@@ -437,10 +442,8 @@
 
   &__tab {
     display: none;
-    column-count: 3;
     width: 615px;
-    column-width: auto;
-    column-gap: 115px;
+
     @media (max-width: 1200px) {
       width: 510px;
       column-gap: 85px;
@@ -455,6 +458,12 @@
 
   &__list {
     text-align: left;
+    column-count: 3;
+    column-width: auto;
+    column-gap: 115px;
+    @media (max-width: 1200px) {
+      column-gap: 85px;
+    }
   }
 
   // .tabs-catalogue__item

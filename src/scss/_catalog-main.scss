@@ -48,44 +48,22 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: var(--blue);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
   margin-bottom: 35px;
+  color: var(--grey);
 
   &__item {
-    padding: 0 18px;
-    position: relative;
-
-    &:first-child {
-      padding-left: 0px;
-
-      .breadcrumps__link {
-        padding: 0;
-      }
+    &:not(:last-child) {
+      margin-right: 6px;
     }
+
     &:last-child {
-      color: var(--grey);
       padding-right: 0;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-    }
-
-    &:not(:last-child) {
-      &::after {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        content: url(../img/svg/arrow-right.svg);
-        color: grey;
-        width: 24px;
-        height: 24px;
-        right: -12px;
-        bottom: 0;
-      }
     }
   }
 
@@ -94,6 +72,7 @@
     align-items: center;
     justify-content: center;
     padding: 3.5px 0;
+    color: var(--blue);
   }
 
   &__icon {
@@ -120,7 +99,8 @@
 
   &__title {
     font-weight: 700;
-    margin-right: 8px;
+    margin-right: 16px;
+    flex: 0 1 auto;
 
     @media (max-width: 992px) {
       font-size: 24px;
@@ -142,18 +122,13 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  flex: 1 0 auto;
 
   @media (max-width: 992px) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-  }
-
-  @media (max-width: 420px) {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
   }
 
   &__select {
@@ -163,9 +138,6 @@
     margin-bottom: 12px;
 
     @media (max-width: 1200px) {
-      flex-direction: column-reverse;
-      align-items: flex-end;
-      justify-content: flex-start;
     }
 
     @media (max-width: 992px) {
@@ -188,12 +160,15 @@
     }
   }
 
+  .select-elem__text {
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
   &__amount {
     margin-left: 24px;
-
-    @media (max-width: 1200px) {
-      margin-bottom: 12px;
-    }
+    flex: 1 0 auto;
 
     @media (max-width: 992px) {
       display: none;
