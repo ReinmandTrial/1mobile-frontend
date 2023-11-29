@@ -517,6 +517,9 @@
 
   // .tabs-product__head
 
+  &__row {
+  }
+
   &__head {
     display: flex;
     align-items: center;
@@ -526,6 +529,23 @@
     box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.23);
     padding: 0 48px;
     margin-bottom: 16px;
+
+    position: sticky;
+    z-index: 555;
+    top: 111px;
+    left: 0;
+    width: 100%;
+
+    &._sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 992px) {
+      top: 0;
+    }
 
     @media (max-width: 767px) {
       overflow-x: scroll;
@@ -1532,24 +1552,19 @@
 }
 
 .product-sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1111;
+  background-color: var(--white-3);
+  padding: 24px 48px;
+  align-items: center;
+  justify-content: space-between;
   display: none;
-  // .product-sticky__row
 
   &._sticky {
-    display: block;
-  }
-
-  &__row {
-    background-color: var(--white-3);
-    padding: 24px 48px;
+    position: sticky;
+    z-index: 555;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     @media (max-width: 992px) {
       display: none;
