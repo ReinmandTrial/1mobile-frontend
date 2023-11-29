@@ -7,16 +7,19 @@
     color: var(--grey);
     font-size: 14px;
     letter-spacing: 0.14px;
+    padding-right: 24px;
 
     .bars-head__item {
       &:nth-child(1) {
-        flex: 0 0 12%;
+        width: 91px;
+        flex: 0 0 auto;
       }
       &:nth-child(2) {
-        flex: 0 0 49%;
+        flex: 0 0 45%;
       }
       &:nth-child(3) {
-        flex: 0 0 13%;
+        flex: 0 0 12%;
+        margin-left: 8px;
       }
       &:nth-child(4) {
         flex: 0 0 14%;
@@ -41,36 +44,5 @@
     &:not(:last-child) {
       margin-bottom: 24px;
     }
-
-    .bars-card__image {
-      flex: 0 0 auto;
-    }
-
-    .price-card {
-      @media (max-width: 1200px) {
-        flex: 0 0 50%;
-      }
-    }
-
-    .price-card__new {
-      @media (max-width: 1200px) {
-        font-size: 18px;
-      }
-    }
-
-    .bars-card__count {
-      @media (max-width: 1200px) {
-        flex: 0 0 43%;
-      }
-    }
-
-    .bars-card__description {
-      @media (max-width: 1200px) {
-        flex: 0 0 59%;
-      }
-    }
   }
-}
-
-@media (max-width: 1200px) {
 }

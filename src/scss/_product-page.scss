@@ -1636,6 +1636,15 @@
 
 .same,
 .also {
+  .block-section__items_collapse {
+    max-height: max-content;
+    overflow: visible;
+
+    @media (max-width: 992px) {
+      max-height: 750px;
+      overflow: hidden;
+    }
+  }
   .block-section__items_collapse::after {
     display: none;
     @media (max-width: 992px) {

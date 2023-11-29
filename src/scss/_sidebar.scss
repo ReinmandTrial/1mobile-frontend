@@ -1,6 +1,6 @@
 body {
   &._block {
-    @media (max-width: 1080px) {
+    @media (max-width: 992px) {
       overflow-y: hidden;
     }
   }
@@ -20,7 +20,7 @@ body {
     flex: 0 0 253px;
     margin-right: 24px;
 
-    @media (max-width: 1080px) {
+    @media (max-width: 992px) {
       display: none;
       margin-right: 0;
       padding-top: 88px;
@@ -38,14 +38,14 @@ body {
     right: 20px;
     display: none;
 
-    @media (max-width: 1080px) {
+    @media (max-width: 992px) {
       display: flex;
     }
   }
 
   &._open {
     .sidebar-catalog__bg {
-      @media (max-width: 1080px) {
+      @media (max-width: 992px) {
         position: fixed;
         top: 0;
         left: 0;
@@ -58,7 +58,7 @@ body {
     }
 
     .sidebar-catalog__form {
-      @media (max-width: 1080px) {
+      @media (max-width: 992px) {
         position: fixed;
         display: block;
         top: 0;
@@ -89,7 +89,7 @@ body {
       margin-bottom: 24px;
       position: relative;
 
-      @media (max-width: 1080px) {
+      @media (max-width: 992px) {
         margin-bottom: 0;
         padding-bottom: 0;
 
@@ -108,14 +108,14 @@ body {
       }
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 992px) {
       box-shadow: none;
       padding-right: 40px;
     }
   }
 
   &__title {
-    @media (max-width: 1080px) {
+    @media (max-width: 992px) {
       display: none;
     }
   }
@@ -224,7 +224,7 @@ body {
     font-size: 24px;
     font-weight: 500;
 
-    @media (max-width: 1080px) {
+    @media (max-width: 992px) {
       position: absolute;
       top: 48px;
       left: 20px;
@@ -239,7 +239,7 @@ body {
     ._icon-filter {
       display: none;
 
-      @media (max-width: 1080px) {
+      @media (max-width: 992px) {
         display: block;
         margin-right: 8px;
         font-size: 24px;
@@ -311,14 +311,14 @@ body {
     }
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 992px) {
     padding-top: 16px;
   }
 
   &:not(:nth-child(2)) {
     margin-top: 36px;
 
-    @media (max-width: 1080px) {
+    @media (max-width: 992px) {
       margin-top: 16px;
     }
 
@@ -336,7 +336,7 @@ body {
   }
 
   &:nth-child(2) {
-    @media (max-width: 1080px) {
+    @media (max-width: 992px) {
       &::after {
         position: absolute;
         display: block;
