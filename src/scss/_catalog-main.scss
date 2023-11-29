@@ -127,7 +127,7 @@
 
   @media (max-width: 992px) {
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     width: 100%;
   }
@@ -150,6 +150,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media (max-width: 992px) {
+      align-items: stretch;
+    }
   }
   &__sorted {
     .select-elem__head {
@@ -199,6 +203,10 @@
   justify-content: space-between;
   margin-left: 12px;
 
+  @media (max-width: 992px) {
+    align-items: stretch;
+  }
+
   @media (max-width: 420px) {
     margin-left: 0;
   }
@@ -213,7 +221,8 @@
     @media (max-width: 992px) {
       border-radius: 5px;
       border: 1px solid var(--Grey, #9f9a9a);
-      padding: 4px;
+      padding: 2px 4px;
+      width: 36px;
     }
 
     @media (max-width: 420px) {
@@ -257,7 +266,8 @@
       display: flex;
       border-radius: 5px;
       border: 1px solid var(--Grey, #9f9a9a);
-      padding: 4px;
+      padding: 2px 4px;
+      width: 36px;
     }
 
     @media (max-width: 420px) {
