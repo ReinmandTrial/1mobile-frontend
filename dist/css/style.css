@@ -4218,11 +4218,6 @@ body.burger-open {
   align-items: center;
   justify-content: flex-end;
 }
-@media (max-width: 420px) {
-  .setting-catalog__display {
-    margin-top: 8px;
-  }
-}
 .setting-catalog__sorted .select-elem__head {
   min-width: 200px;
 }
