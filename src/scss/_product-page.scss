@@ -1623,3 +1623,20 @@
     margin-left: 24px;
   }
 }
+
+.same,
+.also {
+  .block-section__items_collapse::after {
+    display: none;
+    @media (max-width: 992px) {
+      display: block;
+    }
+  }
+
+  .expand-btn_collapse {
+    display: none;
+    @media (max-width: 992px) {
+      display: block;
+    }
+  }
+}
