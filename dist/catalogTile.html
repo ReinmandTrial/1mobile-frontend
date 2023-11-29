@@ -20,7 +20,7 @@
                 </a>
                 <div class="header__links">
                     <a class="header__logo-text" href="#">
-                        <img src="./img/logo/logo-text.png" alt="Первый мобильный">
+                        <img src="./img/logo/logo-text.svg" alt="Первый мобильный">
                     </a>
                     <div class="header__catalogue catalogue-header">
                         <button class="catalogue-header__btn" type="button">
@@ -522,7 +522,7 @@
 
         <div class="header__mobile mobile-header">
             <a href="#" class="mobile-header__logo">
-                <img src="./img/logo/logo-text-mobile.png" alt="logo">
+                <img src="./img/logo/logo-text-mobile.svg" alt="logo">
             </a>
             <div class="mobile-header__menu">
                 <div class="mobile-header__burger burger">
@@ -626,18 +626,18 @@
                             </div>
                             <div class="setting-catalog__display">
                                 <div class="setting-catalog__view view-catalog">
-                                    <a href='#' class="view-catalog__filter">
+                                    <button type='button' class="view-catalog__filter">
                                         <span class='_icon-filter'></span>
-                                    </a>
-                                    <a href='#' class="view-catalog__switch _tile _active">
+                                    </button>
+                                    <button type='button' class="view-catalog__switch _tile _active">
                                         <span class='_icon-tile'></span>
-                                    </a>
-                                    <a href='#' class="view-catalog__switch _list">
+                                    </button>
+                                    <button type='button' class="view-catalog__switch _list">
                                         <span class='_icon-list'></span>
-                                    </a>
-                                    <a href='#' class="view-catalog__switch _bars">
+                                    </button>
+                                    <button type='button' class="view-catalog__switch _bars">
                                         <span class='_icon-bars'></span>
-                                    </a>
+                                    </button>
                                 </div>
                                 <div class="setting-catalog__showed">
                                     Показано <span class="setting-catalog__current">&nbsp; 24 &nbsp;</span> товара из <span class="setting-catalog__total">
@@ -651,241 +651,250 @@
                     </div>
 
                     <div class="catalog__main">
-                        <div class="sidebar-bg"></div>
-                        <form class="catalog__sidebar sidebar-catalog">
-                            <div class="sidebar-catalog__block sidebar-catalog__chosen chosen">
-                                <h5 class="chosen__title">Выбранные фильтры</h5>
-                                <div class="chosen__lables">
-                                    <div class="chosen__lable">
-                                        <span class='chosen__property'>Производитель:</span>
-                                        <span class='chosen__value'>Apple</span>
-                                        <button class='chosen__icon '>
-                                            <span class='_icon-close'></span>
-                                        </button>
-                                    </div>
-                                    <div class="chosen__lable">
-                                        <span class='chosen__property'>Тип</span>
-                                        <span class='chosen__value'>Чехол-книжка</span>
-                                        <button class='chosen__icon '>
-                                            <span class='_icon-close'></span>
-                                        </button>
-                                    </div>
-                                    <div class="chosen__lable">
-                                        <span class='chosen__property'>Цена</span>
-                                        <span class='chosen__value'>200-800 UAH</span>
-                                        <button class='chosen__icon '>
-                                            <span class='_icon-close'></span>
-                                        </button>
-                                    </div>
-                                    <div class="chosen__lable">
-                                        <span class='chosen__property'>Производитель:</span>
-                                        <span class='chosen__value'>Apple</span>
-                                        <button class='chosen__icon '>
-                                            <span class='_icon-close'></span>
-                                        </button>
-                                    </div>
-                                    <div class="chosen__lable">
-                                        <span class='chosen__property'>Тип</span>
-                                        <span class='chosen__value'>Чехол-книжка</span>
-                                        <button class='chosen__icon '>
-                                            <span class='_icon-close'></span>
-                                        </button>
-                                    </div>
-                                    <div class="chosen__lable">
-                                        <span class='chosen__property'>Цена</span>
-                                        <span class='chosen__value'>200-800 UAH</span>
-                                        <button class='chosen__icon '>
-                                            <span class='_icon-close'></span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="chosen__total">Выбрано 283 товаров</div>
-                                <button type='reset' class='sidebar-catalog__btn chosen__clear'>Очистить фильтр</button>
-                            </div>
-                            <div class="sidebar-catalog__block sidebar-catalog__filters filters">
-                                <div class="filters__title">Фильтры</div>
-                                <!-- При раскрытии списка удаляется ._hide -->
-                                <div class="filters__block block-filter _hide filters__brand">
-                                    <div class="block-filter__header">
-                                        <span class="block-filter__name">Бренд</span>
-                                        <span class="block-filter__arrow _icon-arrow-down"></span>
-                                    </div>
-                                    <div class="block-filter__search">
-                                        <div class="search-block__wrapper search-wrapper">
-                                            <input class="search-wrapper__input" type="search" placeholder="Поиск...">
-                                            <button type='button' class="_icon-close"></button>
-                                            <button class="search-wrapper__btn" type="submit">
-                                                <span class="_icon-search"></span>
+                        <aside class="catalog__sidebar sidebar-catalog _open">
+                            <div class="sidebar-catalog__bg"></div>
+
+                            <form class="sidebar-catalog__form">
+                                <button type='button' class='sidebar-catalog__close'>
+                                    <span class='_icon-close'></span>
+                                </button>
+                                <div class="sidebar-catalog__block sidebar-catalog__chosen chosen">
+                                    <h5 class="chosen__title">Выбранные фильтры</h5>
+                                    <div class="chosen__lables">
+                                        <div class="chosen__lable">
+                                            <span class='chosen__property'>Производитель:</span>
+                                            <span class='chosen__value'>Apple</span>
+                                            <button class='chosen__icon '>
+                                                <span class='_icon-close'></span>
+                                            </button>
+                                        </div>
+                                        <div class="chosen__lable">
+                                            <span class='chosen__property'>Тип</span>
+                                            <span class='chosen__value'>Чехол-книжка</span>
+                                            <button class='chosen__icon '>
+                                                <span class='_icon-close'></span>
+                                            </button>
+                                        </div>
+                                        <div class="chosen__lable">
+                                            <span class='chosen__property'>Цена</span>
+                                            <span class='chosen__value'>200-800 UAH</span>
+                                            <button class='chosen__icon '>
+                                                <span class='_icon-close'></span>
+                                            </button>
+                                        </div>
+                                        <div class="chosen__lable">
+                                            <span class='chosen__property'>Производитель:</span>
+                                            <span class='chosen__value'>Apple</span>
+                                            <button class='chosen__icon '>
+                                                <span class='_icon-close'></span>
+                                            </button>
+                                        </div>
+                                        <div class="chosen__lable">
+                                            <span class='chosen__property'>Тип</span>
+                                            <span class='chosen__value'>Чехол-книжка</span>
+                                            <button class='chosen__icon '>
+                                                <span class='_icon-close'></span>
+                                            </button>
+                                        </div>
+                                        <div class="chosen__lable">
+                                            <span class='chosen__property'>Цена</span>
+                                            <span class='chosen__value'>200-800 UAH</span>
+                                            <button class='chosen__icon '>
+                                                <span class='_icon-close'></span>
                                             </button>
                                         </div>
                                     </div>
-
-                                    <ul class="block-filter__check-list _hide">
-                                        <li class="block-filter__checkbox">
-                                            <input checked class='block-filter__custom-checkbox' type="checkbox" name="apple" id="apple">
-                                            <label class='block-filter__label' for="apple">
-                                                <span class='block-filter__item'>Apple</span>
-                                                <span class='block-filter__amount'>(34)</span>
-                                            </label>
-                                        </li>
-                                        <li class="block-filter__checkbox">
-                                            <input disabled class='block-filter__custom-checkbox' type="checkbox" name="Samsung" id="Samsung">
-                                            <label class='block-filter__label' for="Samsung">
-                                                <span class='block-filter__item'>Samsung</span>
-                                                <span class='block-filter__amount'>(76)</span>
-                                            </label>
-                                        </li>
-                                        <li class="block-filter__checkbox">
-                                            <input class='block-filter__custom-checkbox' type="checkbox" name="Xiaomi" id="Xiaomi">
-                                            <label class='block-filter__label' for="Xiaomi">
-                                                <span class='block-filter__item'>Xiaomi</span>
-                                                <span class='block-filter__amount'>(34)</span>
-                                            </label>
-                                        </li>
-                                        <li class="block-filter__checkbox">
-                                            <input class='block-filter__custom-checkbox' type="checkbox" name="LG" id="LG">
-                                            <label class='block-filter__label' for="LG">
-                                                <span class='block-filter__item'>LG</span>
-                                                <span class='block-filter__amount'>(34)</span>
-                                            </label>
-                                        </li>
-                                        <li class="block-filter__checkbox">
-                                            <input class='block-filter__custom-checkbox' type="checkbox" name="Sony" id="Sony">
-                                            <label class='block-filter__label' for="Sony">
-                                                <span class='block-filter__item'>Sony</span>
-                                                <span class='block-filter__amount'>(34)</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-
-                                    <button type='button' class="block-filter__expand">
-                                        <span>Показать все</span>
-                                        <span class='_icon-arrow-down'></span>
-                                    </button>
-                                    <button type='button' class="block-filter__hide">
-                                        <span>Свернуть</span>
-                                        <span class='_icon-arrow-down'></span>
-                                    </button>
+                                    <div class="chosen__total">Выбрано 283 товаров</div>
+                                    <button type='reset' class='sidebar-catalog__btn chosen__clear'>Очистить фильтр</button>
                                 </div>
+                                <div class="sidebar-catalog__block sidebar-catalog__filters filters">
+                                    <div class="filters__title">
+                                        <span class='_icon-filter'></span>
+                                        <span>Фильтры</span>
+                                    </div>
+                                    <!-- При раскрытии списка удаляется ._hide -->
+                                    <div class="filters__block block-filter _hide filters__brand">
+                                        <div class="block-filter__header">
+                                            <span class="block-filter__name">Бренд</span>
+                                            <span class="block-filter__arrow _icon-arrow-down"></span>
+                                        </div>
+                                        <div class="block-filter__search">
+                                            <div class="search-block__wrapper search-wrapper">
+                                                <input class="search-wrapper__input" type="search" placeholder="Поиск...">
+                                                <button type='button' class="_icon-close"></button>
+                                                <button class="search-wrapper__btn" type="submit">
+                                                    <span class="_icon-search"></span>
+                                                </button>
+                                            </div>
+                                        </div>
 
+                                        <ul class="block-filter__check-list _hide">
+                                            <li class="block-filter__checkbox">
+                                                <input checked class='block-filter__custom-checkbox' type="checkbox" name="apple" id="apple">
+                                                <label class='block-filter__label' for="apple">
+                                                    <span class='block-filter__item'>Apple</span>
+                                                    <span class='block-filter__amount'>(34)</span>
+                                                </label>
+                                            </li>
+                                            <li class="block-filter__checkbox">
+                                                <input disabled class='block-filter__custom-checkbox' type="checkbox" name="Samsung" id="Samsung">
+                                                <label class='block-filter__label' for="Samsung">
+                                                    <span class='block-filter__item'>Samsung</span>
+                                                    <span class='block-filter__amount'>(76)</span>
+                                                </label>
+                                            </li>
+                                            <li class="block-filter__checkbox">
+                                                <input class='block-filter__custom-checkbox' type="checkbox" name="Xiaomi" id="Xiaomi">
+                                                <label class='block-filter__label' for="Xiaomi">
+                                                    <span class='block-filter__item'>Xiaomi</span>
+                                                    <span class='block-filter__amount'>(34)</span>
+                                                </label>
+                                            </li>
+                                            <li class="block-filter__checkbox">
+                                                <input class='block-filter__custom-checkbox' type="checkbox" name="LG" id="LG">
+                                                <label class='block-filter__label' for="LG">
+                                                    <span class='block-filter__item'>LG</span>
+                                                    <span class='block-filter__amount'>(34)</span>
+                                                </label>
+                                            </li>
+                                            <li class="block-filter__checkbox">
+                                                <input class='block-filter__custom-checkbox' type="checkbox" name="Sony" id="Sony">
+                                                <label class='block-filter__label' for="Sony">
+                                                    <span class='block-filter__item'>Sony</span>
+                                                    <span class='block-filter__amount'>(34)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
 
-                                <div class="filters__block block-filter filters__price">
-                                    <div class="block-filter__header">
-                                        <span class="block-filter__name">Цена</span>
-                                        <span class="block-filter__arrow _icon-arrow-down"></span>
+                                        <button type='button' class="block-filter__expand">
+                                            <span>Показать все</span>
+                                            <span class='_icon-arrow-down'></span>
+                                        </button>
+                                        <button type='button' class="block-filter__hide">
+                                            <span>Свернуть</span>
+                                            <span class='_icon-arrow-down'></span>
+                                        </button>
                                     </div>
 
-                                    <div class="block-filter__range">
-                                        <input type='number' placeholder='112 ₴' class="block-filter__input"></input>
-                                        <span class="block-filter__divider _icon-minus"></span>
-                                        <input type='number' placeholder='1499 ₴' class="block-filter__input"></input>
-                                    </div>
-                                    <div class="block-filter__scroll scroll-elem">
-                                        <span class="scroll-elem__track"></span>
-                                        <span class="scroll-elem__active-track"></span>
-                                        <span class="scroll-elem__thumb scroll-elem__decrease"></span>
-                                        <span class="scroll-elem__thumb scroll-elem__increase"></span>
-                                    </div>
-                                </div>
 
-                                <!-- При раскрытии списка удаляется ._hide -->
-                                <div class="filters__block block-filter  filters__view">
-                                    <div class="block-filter__header">
-                                        <span class="block-filter__name">Вид</span>
-                                        <span class="block-filter__arrow _icon-arrow-down"></span>
-                                    </div>
-                                    <div class="block-filter__search">
-                                        <div class="search-block__wrapper search-wrapper">
-                                            <input class="search-wrapper__input" type="search" placeholder="Поиск...">
-                                            <button type='button' class="_icon-close"></button>
-                                            <button class="search-wrapper__btn" type="submit">
-                                                <span class="_icon-search"></span>
-                                            </button>
+                                    <div class="filters__block block-filter filters__price">
+                                        <div class="block-filter__header">
+                                            <span class="block-filter__name">Цена</span>
+                                            <span class="block-filter__arrow _icon-arrow-down"></span>
+                                        </div>
+
+                                        <div class="block-filter__range">
+                                            <input type='number' placeholder='112 ₴' class="block-filter__input"></input>
+                                            <span class="block-filter__divider _icon-minus"></span>
+                                            <input type='number' placeholder='1499 ₴' class="block-filter__input"></input>
+                                        </div>
+                                        <div class="block-filter__scroll scroll-elem">
+                                            <span class="scroll-elem__track"></span>
+                                            <span class="scroll-elem__active-track"></span>
+                                            <span class="scroll-elem__thumb scroll-elem__decrease"></span>
+                                            <span class="scroll-elem__thumb scroll-elem__increase"></span>
                                         </div>
                                     </div>
 
-                                    <ul class="block-filter__check-list">
-                                        <li class="block-filter__checkbox">
-                                            <input checked class='block-filter__custom-checkbox' type="checkbox" name="case" id="case">
-                                            <label class='block-filter__label' for="case">
-                                                <span class='block-filter__item'>Накладка</span>
-                                                <span class='block-filter__amount'>(34)</span>
-                                            </label>
-                                        </li>
-                                        <li class="block-filter__checkbox">
-                                            <input disabled class='block-filter__custom-checkbox' type="checkbox" name="case1" id="case1">
-                                            <label class='block-filter__label' for="case1">
-                                                <span class='block-filter__item'>Чехол-подставка</span>
-                                                <span class='block-filter__amount'>(76)</span>
-                                            </label>
-                                        </li>
-                                        <li class="block-filter__checkbox">
-                                            <input class='block-filter__custom-checkbox' type="checkbox" name="case2" id="case2">
-                                            <label class='block-filter__label' for="case2">
-                                                <span class='block-filter__item'>Чехол-книжка</span>
-                                                <span class='block-filter__amount'>(34)</span>
-                                            </label>
-                                        </li>
-                                        <li class="block-filter__checkbox">
-                                            <input class='block-filter__custom-checkbox' type="checkbox" name="case3" id="case3">
-                                            <label class='block-filter__label' for="case3">
-                                                <span class='block-filter__item'>Чехол-сумка</span>
-                                                <span class='block-filter__amount'>(34)</span>
-                                            </label>
-                                        </li>
-                                    </ul>
+                                    <!-- При раскрытии списка удаляется ._hide -->
+                                    <div class="filters__block block-filter  filters__view">
+                                        <div class="block-filter__header">
+                                            <span class="block-filter__name">Вид</span>
+                                            <span class="block-filter__arrow _icon-arrow-down"></span>
+                                        </div>
+                                        <div class="block-filter__search">
+                                            <div class="search-block__wrapper search-wrapper">
+                                                <input class="search-wrapper__input" type="search" placeholder="Поиск...">
+                                                <button type='button' class="_icon-close"></button>
+                                                <button class="search-wrapper__btn" type="submit">
+                                                    <span class="_icon-search"></span>
+                                                </button>
+                                            </div>
+                                        </div>
 
-                                    <button type='button' class="block-filter__expand">
-                                        <span>Показать все</span>
-                                        <span class='_icon-arrow-down'></span>
-                                    </button>
-                                    <button type='button' class="block-filter__hide">
-                                        <span>Свернуть</span>
-                                        <span class='_icon-arrow-down'></span>
-                                    </button>
+                                        <ul class="block-filter__check-list">
+                                            <li class="block-filter__checkbox">
+                                                <input checked class='block-filter__custom-checkbox' type="checkbox" name="case" id="case">
+                                                <label class='block-filter__label' for="case">
+                                                    <span class='block-filter__item'>Накладка</span>
+                                                    <span class='block-filter__amount'>(34)</span>
+                                                </label>
+                                            </li>
+                                            <li class="block-filter__checkbox">
+                                                <input disabled class='block-filter__custom-checkbox' type="checkbox" name="case1" id="case1">
+                                                <label class='block-filter__label' for="case1">
+                                                    <span class='block-filter__item'>Чехол-подставка</span>
+                                                    <span class='block-filter__amount'>(76)</span>
+                                                </label>
+                                            </li>
+                                            <li class="block-filter__checkbox">
+                                                <input class='block-filter__custom-checkbox' type="checkbox" name="case2" id="case2">
+                                                <label class='block-filter__label' for="case2">
+                                                    <span class='block-filter__item'>Чехол-книжка</span>
+                                                    <span class='block-filter__amount'>(34)</span>
+                                                </label>
+                                            </li>
+                                            <li class="block-filter__checkbox">
+                                                <input class='block-filter__custom-checkbox' type="checkbox" name="case3" id="case3">
+                                                <label class='block-filter__label' for="case3">
+                                                    <span class='block-filter__item'>Чехол-сумка</span>
+                                                    <span class='block-filter__amount'>(34)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+
+                                        <button type='button' class="block-filter__expand">
+                                            <span>Показать все</span>
+                                            <span class='_icon-arrow-down'></span>
+                                        </button>
+                                        <button type='button' class="block-filter__hide">
+                                            <span>Свернуть</span>
+                                            <span class='_icon-arrow-down'></span>
+                                        </button>
+                                    </div>
+
+
+                                    <div class="filters__block block-filter filters__weight">
+                                        <div class="block-filter__header">
+                                            <span class="block-filter__name">Вес товара</span>
+                                            <span class="block-filter__arrow _icon-arrow-down"></span>
+                                        </div>
+
+                                        <div class="block-filter__range">
+                                            <input type='number' placeholder='112 грамм' class="block-filter__input"></input>
+                                            <span class="block-filter__divider _icon-minus"></span>
+                                            <input type='number' placeholder='1499 грамм' class="block-filter__input"></input>
+                                        </div>
+                                        <div class="block-filter__scroll scroll-elem">
+                                            <span class="scroll-elem__track"></span>
+                                            <span class="scroll-elem__active-track"></span>
+                                            <span class="scroll-elem__thumb scroll-elem__decrease"></span>
+                                            <span class="scroll-elem__thumb scroll-elem__increase"></span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="filters__block block-filter filters__depth">
+                                        <div class="block-filter__header">
+                                            <span class="block-filter__name">Глубина</span>
+                                            <span class="block-filter__arrow _icon-arrow-down"></span>
+                                        </div>
+
+                                        <div class="block-filter__range">
+                                            <input type='number' placeholder='1 см' class="block-filter__input"></input>
+                                            <span class="block-filter__divider _icon-minus"></span>
+                                            <input type='number' placeholder='12 см' class="block-filter__input"></input>
+                                        </div>
+                                        <div class="block-filter__scroll scroll-elem">
+                                            <span class="scroll-elem__track"></span>
+                                            <span class="scroll-elem__active-track"></span>
+                                            <span class="scroll-elem__thumb scroll-elem__decrease"></span>
+                                            <span class="scroll-elem__thumb scroll-elem__increase"></span>
+                                        </div>
+                                    </div>
                                 </div>
-
-
-                                <div class="filters__block block-filter filters__weight">
-                                    <div class="block-filter__header">
-                                        <span class="block-filter__name">Вес товара</span>
-                                        <span class="block-filter__arrow _icon-arrow-down"></span>
-                                    </div>
-
-                                    <div class="block-filter__range">
-                                        <input type='number' placeholder='112 грамм' class="block-filter__input"></input>
-                                        <span class="block-filter__divider _icon-minus"></span>
-                                        <input type='number' placeholder='1499 грамм' class="block-filter__input"></input>
-                                    </div>
-                                    <div class="block-filter__scroll scroll-elem">
-                                        <span class="scroll-elem__track"></span>
-                                        <span class="scroll-elem__active-track"></span>
-                                        <span class="scroll-elem__thumb scroll-elem__decrease"></span>
-                                        <span class="scroll-elem__thumb scroll-elem__increase"></span>
-                                    </div>
-                                </div>
-
-
-                                <div class="filters__block block-filter filters__depth">
-                                    <div class="block-filter__header">
-                                        <span class="block-filter__name">Глубина</span>
-                                        <span class="block-filter__arrow _icon-arrow-down"></span>
-                                    </div>
-
-                                    <div class="block-filter__range">
-                                        <input type='number' placeholder='1 см' class="block-filter__input"></input>
-                                        <span class="block-filter__divider _icon-minus"></span>
-                                        <input type='number' placeholder='12 см' class="block-filter__input"></input>
-                                    </div>
-                                    <div class="block-filter__scroll scroll-elem">
-                                        <span class="scroll-elem__track"></span>
-                                        <span class="scroll-elem__active-track"></span>
-                                        <span class="scroll-elem__thumb scroll-elem__decrease"></span>
-                                        <span class="scroll-elem__thumb scroll-elem__increase"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </aside>
 
                         <div class="catalog__section">
                             <ul class="catalog__content catalog__type-tile">
@@ -902,9 +911,9 @@
                                         </div>
 
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -929,7 +938,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -990,9 +999,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -1017,7 +1026,7 @@
 
                                                 <div class="product-card__counter">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -1078,9 +1087,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -1105,7 +1114,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -1166,9 +1175,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -1193,7 +1202,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -1254,9 +1263,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -1281,7 +1290,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -1342,10 +1351,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
-
+                                        </a>
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
                                                     class="product-card__name_color">(Green)</span>
@@ -1369,7 +1377,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -1430,9 +1438,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -1457,7 +1465,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -1518,9 +1526,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -1545,7 +1553,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -1606,9 +1614,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -1633,7 +1641,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -1694,9 +1702,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -1721,7 +1729,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -1782,9 +1790,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -1809,7 +1817,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -1870,9 +1878,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -1897,7 +1905,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -1958,9 +1966,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -1985,7 +1993,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -2046,9 +2054,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -2073,7 +2081,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -2134,9 +2142,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -2161,7 +2169,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 
@@ -2222,9 +2230,9 @@
                                             <div class="lable-status lable-status_available">В наличии</div>
                                         </div>
 
-                                        <div class="product-card__image">
+                                        <a href='#' class="product-card__image">
                                             <img src="./img/popular/image1.png" alt="img">
-                                        </div>
+                                        </a>
 
                                         <div class="product-card__about">
                                             <a href="#" class="product-card__name">Iphone X 64 gb best of the best crazy vibe check <span
@@ -2249,7 +2257,7 @@
 
                                                 <div class="product-card__counter _hidden">
                                                     <div class="counter">
-                                                        <button type="button" class="counter__icon counter__icon_disabled" disabled>
+                                                        <button type="button" class="counter__icon  " disabled>
                                                             <span class='_icon-minus'></span>
                                                         </button>
 

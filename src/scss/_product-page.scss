@@ -206,13 +206,20 @@
 
   &__icon {
     position: absolute;
-    top: 25px;
-    right: 98px;
+    top: 23px;
+    right: 96px;
     display: none;
     align-items: center;
     justify-content: center;
     font-size: 20px;
     color: var(--grey);
+    width: 24px;
+    height: 24px;
+
+    @media (max-width: 1200px) {
+      top: 18px;
+      right: 37px;
+    }
     // .product-page__icon_active
 
     &._active {

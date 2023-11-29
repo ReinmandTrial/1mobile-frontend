@@ -1,54 +1,75 @@
 body {
   &._block {
     @media (max-width: 1080px) {
-      overflow: hidden;
-    }
-  }
-}
-
-.sidebar-bg {
-  display: none;
-
-  &._open {
-    @media (max-width: 1080px) {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
-      display: block;
-      z-index: 1000;
+      overflow-y: hidden;
     }
   }
 }
 
 //--------------------------------SIDEBAR========================//
 .sidebar-catalog {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex: 0 0 253px;
-  margin-right: 24px;
-
-  @media (max-width: 1080px) {
+  &__bg {
     display: none;
-    margin-right: 0;
-    padding-top: 88px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 0 0 253px;
+    margin-right: 24px;
+
+    @media (max-width: 1080px) {
+      display: none;
+      margin-right: 0;
+      padding-top: 88px;
+    }
+  }
+
+  &__close {
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 2px;
+    color: var(--grey);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+
+    @media (max-width: 1080px) {
+      display: flex;
+    }
   }
 
   &._open {
-    @media (max-width: 1080px) {
-      position: fixed;
-      display: block;
-      top: 0;
-      left: 0;
-      z-index: 111111;
-      width: max-content;
-      height: 100%;
-      background: #f5f5f5;
-      overflow: scroll;
+    .sidebar-catalog__bg {
+      @media (max-width: 1080px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: block;
+        z-index: 1000;
+      }
+    }
+
+    .sidebar-catalog__form {
+      @media (max-width: 1080px) {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 111111;
+        width: max-content;
+        height: 100%;
+        background: #f5f5f5;
+        overflow: scroll;
+        max-width: 100%;
+      }
     }
   }
   // .sidebar-catalog__block
@@ -89,6 +110,7 @@ body {
 
     @media (max-width: 1080px) {
       box-shadow: none;
+      padding-right: 40px;
     }
   }
 
@@ -176,6 +198,8 @@ body {
     justify-content: center;
     position: absolute;
     right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
     color: var(--grey);
   }
 
@@ -199,6 +223,7 @@ body {
     color: var(--black-2);
     font-size: 24px;
     font-weight: 500;
+
     @media (max-width: 1080px) {
       position: absolute;
       top: 48px;
@@ -206,6 +231,9 @@ body {
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      font-size: 16px;
+      line-height: 1.37;
+      letter-spacing: 0.16px;
     }
 
     ._icon-filter {
@@ -260,6 +288,29 @@ body {
   letter-spacing: 0.15px;
   padding-top: 36px;
 
+  &._close {
+    .block-filter__search,
+    .block-filter__check-list,
+    .block-filter__expand,
+    .block-filter__range,
+    .block-filter__hide,
+    .scroll-elem {
+      overflow: hidden;
+      height: 0;
+      visibility: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .block-filter__arrow {
+      transform: rotate(0deg);
+    }
+
+    .block-filter__arrow {
+      margin-bottom: 0;
+    }
+  }
+
   @media (max-width: 1080px) {
     padding-top: 16px;
   }
@@ -307,12 +358,13 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   // .block-filter__name
 
   &__name {
+    padding: 3px 0;
   }
 
   // .block-filter__arrow
@@ -327,12 +379,18 @@ body {
 
   &__search {
     margin-bottom: 12px;
+    width: 282px;
+
+    .search-wrapper__input:hover,
+    .search-wrapper__input:focus {
+      border: 1px solid var(--grey);
+    }
   }
 
   // .block-filter__check-list
 
   &__check-list {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
     transition: all 0.3s ease 0s;
   }
 
@@ -432,6 +490,7 @@ body {
     color: var(--black-2);
     position: relative;
     transition: all 0.3s ease 0s;
+    font-size: 12px;
 
     &::after {
       position: absolute;

@@ -138,7 +138,7 @@
 
   &__section {
     width: 100%;
-    padding-top: 12px;
+    padding-top: 6px;
     position: relative;
 
     &::before {
@@ -199,7 +199,7 @@
   &__item {
     width: 100%;
     &:not(:last-child) {
-      margin-bottom: 8px;
+      margin-bottom: 2px;
 
       @media (max-width: 992px) {
         margin-bottom: 0;
@@ -214,10 +214,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 12px 6px 12px;
+    padding: 6px 12px;
 
     @media (max-width: 992px) {
       padding: 8px 12px;
+      color: var(--blue);
     }
 
     ._icon-arrow-right {
@@ -443,7 +444,7 @@
 // ---------------------------Card Row --------------------------- //
 .card-row {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
   border-radius: 15px;
   background: var(--white-3);
@@ -452,25 +453,30 @@
 
   &__icon {
     position: absolute;
-    top: 16.5px;
-    right: 24px;
+    top: 14.5px;
+    right: 22px;
     font-size: 20px;
     color: var(--grey);
     display: none;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
 
     &_red {
       color: var(--red);
     }
 
     &_active {
-      display: block;
+      display: flex;
     }
   }
 
   &__description {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
   }
 
   // .card-row__image
@@ -480,6 +486,8 @@
     height: 253px;
     position: relative;
     margin-right: 24px;
+    flex: none;
+    display: block;
 
     img {
       width: 100%;
@@ -494,19 +502,29 @@
   // .card-row__info
 
   &__info {
-    padding: 58px 0 28px 0;
+    padding: 59px 24px 27px 0;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   // .card-row__name
 
   &__name {
-    display: block;
-    color: var(-black-2);
+    width: 100%;
+    color: var(--black-2);
     font-size: 16px;
     letter-spacing: 0.16px;
     font-weight: 500;
-    height: 44px;
     margin-bottom: 6px;
+    text-align: left;
+    height: 38px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
     &_color {
       color: var(--grey);
@@ -522,18 +540,19 @@
 
   &__trade {
     align-self: flex-end;
-    padding-right: 24px;
-    padding-bottom: 27.5px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
+    padding-left: 16px;
+    flex: none;
   }
 
   // .card-row__availability
 
   &__availability {
     margin-bottom: 14px;
+    align-self: flex-start;
   }
 
   // .card-row__purchase
@@ -552,7 +571,19 @@
   // .card-row__button
 
   &__button {
-    margin-left: 5px;
+    margin-left: 36px;
+
+    @media (max-width: 1200px) {
+      margin-left: 24px;
+    }
+    @media (max-width: 992px) {
+      margin-left: 16px;
+    }
+
+    .btn {
+      padding: 12px 16px;
+      min-width: auto;
+    }
 
     &._hidden {
       display: none;
@@ -562,7 +593,14 @@
   // .card-row__count
 
   &__count {
-    margin-left: 5px;
+    margin-left: 36px;
+
+    @media (max-width: 1200px) {
+      margin-left: 24px;
+    }
+    @media (max-width: 992px) {
+      margin-left: 16px;
+    }
     &._hidden {
       display: none;
     }
@@ -657,15 +695,19 @@
 
   &__icon {
     position: absolute;
-    top: 25px;
-    left: 140px;
+    top: 23px;
+    left: 138px;
     color: var(--grey);
     font-size: 20px;
     display: none;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
 
     @media (max-width: 479px) {
-      top: 17px;
-      left: 82px;
+      top: 13px;
+      left: 78px;
     }
 
     &_red {
@@ -673,7 +715,7 @@
     }
 
     &._active {
-      display: block;
+      display: flex;
     }
   }
   // .card-mobile__image
@@ -711,6 +753,7 @@
     color: var(--black-2);
     font-size: 18px;
     letter-spacing: 0.15px;
+
     @media (max-width: 479px) {
       font-size: 15px;
     }
@@ -719,12 +762,20 @@
   // .card-mobile__name
 
   &__name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   // .card-mobile__description
 
   &__description {
     color: var(--grey);
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   // .card-mobile__trade
@@ -734,6 +785,8 @@
     align-items: flex-end;
     justify-content: flex-end;
     padding-top: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
 
     @media (max-width: 350px) {
     }
@@ -823,6 +876,19 @@
   width: max-content;
   position: relative;
 
+  &:hover {
+    box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.23);
+    transition: all 0.2s ease 0s;
+    border-radius: 5px 5px 0 0;
+
+    .hidden-card {
+      visibility: visible;
+      pointer-events: all;
+      transition: all 0.2s ease 0s;
+      opacity: 1;
+    }
+  }
+
   @media (max-width: 992px) {
     width: 100%;
     flex-direction: row;
@@ -841,13 +907,15 @@
 
   &__icon {
     position: absolute;
-    top: 16px;
-    right: 14px;
+    top: 14px;
+    right: 12px;
     font-size: 20px;
     color: var(--grey);
     align-items: center;
     justify-content: center;
     display: none;
+    width: 24px;
+    height: 24px;
 
     @media (max-width: 1200px) {
       font-size: 16px;
@@ -856,14 +924,14 @@
     @media (max-width: 767px) {
       position: absolute;
       width: max-content;
-      left: 100px;
-      top: 14px;
+      left: 96px;
+      top: 10px;
     }
 
     @media (max-width: 479px) {
       font-size: 12px;
-      left: 82px;
-      top: 10px;
+      left: 78px;
+      top: 6px;
     }
 
     &_red {
@@ -882,6 +950,7 @@
   // .product-card__image
 
   &__image {
+    display: block;
     @media (max-width: 992px) {
       flex: 0 0 150px;
     }
@@ -982,10 +1051,7 @@
 
   &__availability {
     .lable-status {
-      @media (max-width: 479px) {
-        padding: 0;
-        font-size: 14px;
-      }
+      font-size: 12px;
     }
   }
 
@@ -1011,6 +1077,17 @@
   }
 
   &__counter {
+    @media (max-width: 340px) {
+      .counter__icon {
+        font-size: 20px;
+        padding: 7px;
+      }
+      .counter__value {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+      }
+    }
     &._hidden {
       display: none;
     }
@@ -1054,7 +1131,6 @@
 
 .hidden-card {
   padding-top: 8px;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1068,7 +1144,9 @@
   padding: 0 10px 8px 10px;
   border-radius: 0 0 5px 5px;
   box-shadow: 0px 16px 21px -3px rgba(0, 0, 0, 0.23);
-  display: none;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
 
   &__row {
     display: flex;
@@ -1106,11 +1184,13 @@
 
   &__icon {
     position: absolute;
-    top: 16.5px;
-    right: 24px;
+    top: 12.5px;
+    right: 22px;
     font-size: 20px;
     color: var(--grey);
     display: none;
+    width: 24px;
+    height: 24px;
 
     &_red {
       color: var(--red);
@@ -1134,6 +1214,7 @@
     height: 91px;
     position: relative;
     margin-right: 24px;
+    display: block;
 
     img {
       width: 100%;
@@ -1173,6 +1254,10 @@
 
   &__availability {
     flex: 0 0 24%;
+
+    .lable-status {
+      font-size: 12px;
+    }
   }
 
   &__purchase {
@@ -1189,7 +1274,7 @@
 
     &.price-card {
       position: relative;
-      flex: 0 0 44%;
+      flex: 0 0 50%;
 
       .price-card__old {
         position: absolute;
@@ -1201,10 +1286,15 @@
 
   &__button {
     margin-left: 8px;
-    flex: 0 0 40%;
+    flex: 0 0 34%;
 
     &._hidden {
       display: none;
+    }
+
+    .btn {
+      padding: 12px 16px;
+      min-width: auto;
     }
   }
 
@@ -1229,7 +1319,6 @@
   justify-content: center;
   text-align: center;
   min-width: 78px;
-  width: 100%;
   background-color: var(--white-1);
 
   &_available {
@@ -1271,7 +1360,7 @@
       color: var(--red);
     }
 
-    &_disabled {
+    &:disabled {
       color: var(--grey);
 
       &:hover {
@@ -1392,9 +1481,13 @@
   }
 
   &__arrow {
+    &:disabled {
+      &:hover {
+        color: var(--black-2);
+      }
+    }
     &:hover {
       background-color: transparent;
-
       color: var(--red);
     }
   }

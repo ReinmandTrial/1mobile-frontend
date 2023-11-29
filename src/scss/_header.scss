@@ -111,6 +111,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease 0s;
+
+    &:hover {
+      color: var(--black-2);
+    }
 
     ._icon-phone {
       font-size: 14px;
@@ -154,7 +159,7 @@
 
   &__client-list {
     position: absolute;
-    top: 100%;
+    top: 10px;
     transform: translateY(27px);
     right: 0;
     border-radius: 5px;
@@ -215,6 +220,7 @@
   &__client-link {
     display: block;
     height: 100%;
+    transition: all 0.2s ease 0s;
 
     &._active {
       .header__client-icon {
@@ -230,6 +236,11 @@
     @media (max-width: 1200px) {
       font-size: 28px;
     }
+  }
+
+  &__client-link:hover .header__client-icon {
+    color: var(--red);
+    transition: all 0.2s ease 0s;
   }
   // .header__client-basket
 
@@ -290,6 +301,11 @@
   // .lang__item
 
   &__item {
+    transition: all 0.2s ease 0s;
+
+    &:hover {
+      color: var(--black-2);
+    }
     &:not(:last-child) {
       margin-right: 8px;
     }
