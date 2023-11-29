@@ -2,11 +2,7 @@
   border-radius: 10px;
   box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.07);
   position: relative;
-  z-index: 999;
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
+
   background-color: var(--white-1);
 
   @media (max-width: 992px) {
@@ -251,6 +247,23 @@
   // .header__client-wish
 
   &__client-wish {
+  }
+}
+
+.header-sticky {
+  padding: 15px 0;
+
+  .header__logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .header__search {
+    margin: 0 111px;
+  }
+
+  .header__actions {
+    justify-content: center;
   }
 }
 
