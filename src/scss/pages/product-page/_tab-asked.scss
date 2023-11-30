@@ -1,0 +1,261 @@
+.asked-question {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  .body-tabs__title {
+    padding-bottom: 12px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: '';
+      background-color: var(--white-2);
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+    }
+  }
+
+  &__content {
+    font-size: 12px;
+    letter-spacing: 0.24px;
+    line-height: 1.5;
+    color: var(--grey);
+  }
+  &__question,
+  &__content,
+  &__body,
+  &__answer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  &__question,
+  &__answer {
+    margin-bottom: 24px;
+  }
+
+  &__sub-answer {
+    margin: 0 24px;
+    display: none;
+
+    &.open {
+      display: flex;
+    }
+    @media (max-width: 767px) {
+      margin: 0 16px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 24px;
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__details,
+  &__color {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    span {
+      display: block;
+    }
+
+    .color-item {
+      width: 16px;
+      height: 16px;
+      border-radius: 1px;
+      background: var(--blue);
+      margin-left: 8px;
+    }
+  }
+
+  &__user {
+    font-weight: 600;
+    margin-right: 16px;
+    color: var(--black-2);
+  }
+
+  &__text {
+    color: var(--black-2);
+    margin-bottom: 12px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media (max-width: 479px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__respond {
+    color: var(--blue);
+    padding: 0 24px;
+    line-height: 1.2;
+    text-decoration: underline;
+    margin-right: 24px;
+
+    @media (max-width: 390px) {
+      padding: 0;
+      margin-right: 8px;
+    }
+  }
+
+  &__reaction {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+      display: block;
+    }
+
+    ._icon-like,
+    ._icon-dislike {
+      margin-right: 8px;
+      font-size: 16px;
+      color: var(--black);
+    }
+
+    ._icon-like {
+      &._active {
+        color: var(--red);
+      }
+    }
+  }
+
+  &__like,
+  &__dislike {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__like {
+    margin-right: 12px;
+    @media (max-width: 390px) {
+      margin-right: 8px;
+    }
+  }
+
+  &__show-answer {
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    text-decoration-line: underline;
+    margin-left: 24px;
+    color: var(--grey);
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+    @media (max-width: 390px) {
+      margin-left: 12px;
+    }
+  }
+
+  &__button {
+    color: var(--grey);
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    text-decoration-line: underline;
+    align-self: flex-start;
+    margin-bottom: 24px;
+
+    &.hidden {
+      display: none;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+
+  &__input-area {
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 0 24px 0 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    .asked-question__icon {
+      transform: scale(1, -1);
+    }
+
+    .asked-question__text {
+      margin-bottom: 4px;
+      padding-bottom: 8px;
+      margin-top: 4px;
+      border-bottom: 1px solid var(--grey-1);
+      width: 100%;
+    }
+  }
+
+  &__form {
+    position: relative;
+
+    @media (max-width: 992px) {
+      border-radius: 5px;
+      border: 1px solid var(--Grey, #9f9a9a);
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 16px 36px 16px 12px;
+    min-height: 94px;
+    font-size: 14px;
+    resize: none;
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder {
+      color: var(--grey);
+      font-size: 14px;
+    }
+
+    @media (max-width: 479px) {
+      padding: 16px 12px;
+    }
+  }
+
+  &__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    z-index: 100;
+    color: var(--red);
+  }
+}

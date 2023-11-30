@@ -1,0 +1,128 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  &__header,
+  &__rating,
+  &__stars {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__header {
+    margin-bottom: 8px;
+
+    @media (max-width: 992px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__user {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.18px;
+    margin-right: 32px;
+  }
+
+  &__date {
+    color: var(--grey);
+    font-size: 14px;
+    letter-spacing: 0.14px;
+  }
+
+  &__rating {
+    color: var(--grey);
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    margin-bottom: 24px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__rating-number {
+    margin-right: 8px;
+  }
+
+  &__stars {
+    font-size: 20px;
+    color: var(--black);
+  }
+
+  &__star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    ._icon-star-red {
+      color: var(--red);
+      display: none;
+    }
+
+    &._active {
+      ._icon-star-red {
+        display: block;
+      }
+
+      ._icon-star {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    color: var(--black);
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    margin-bottom: 24px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.answer-comments {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 8px 24px;
+
+  @media (max-width: 767px) {
+    margin: 8px 0;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.16px;
+  }
+
+  &__text {
+    font-size: 14px;
+    letter-spacing: 0.14px;
+  }
+}

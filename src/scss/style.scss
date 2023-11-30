@@ -1,17 +1,11 @@
-@import '_null';
-@import '_fonts';
-@import '_icon-fonts';
-@import '_colors';
-@import '_config';
-@import '_global';
-@import '_components';
-@import '_header';
-@import '_burger';
-@import '_footer';
-@import '_mainPage';
-@import '_catalog-main';
-@import '_catalog-type-tile';
-@import '_catalog-type-list';
-@import '_catalog-type-bars';
-@import '_sidebar';
-@import '_product-page';
+@import './global/global.scss';
+@import './global-components/global-components.scss';
+@import './components/style.scss';
+@import './pages/main-page/style.scss';
+
+@import './pages/catalog/catalog-main/style.scss';
+@import './pages/catalog/catalog-bars/style.scss';
+@import './pages/catalog/catalog-list/style.scss';
+@import './pages/catalog/catalog-tile/style.scss';
+
+@import './pages/product-page/style.scss';

@@ -11,8 +11,12 @@
 
     .bars-head__item {
       &:nth-child(1) {
-        width: 91px;
+        width: 115px;
         flex: 0 0 auto;
+
+        @media (max-width: 1080px) {
+          width: 91px;
+        }
       }
       &:nth-child(2) {
         flex: 0 0 45%;

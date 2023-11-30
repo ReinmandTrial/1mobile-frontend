@@ -1,0 +1,155 @@
+// ---------------------------Bars card--------------------------- //
+
+.bars-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 18px;
+  background: var(--white-3);
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.07);
+  position: relative;
+  padding-right: 24px;
+
+  &__icon {
+    position: absolute;
+    top: 12.5px;
+    right: 22px;
+    font-size: 20px;
+    color: var(--grey);
+    display: none;
+    width: 24px;
+    height: 24px;
+
+    &_red {
+      color: var(--red);
+    }
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 16px;
+    flex: 0 0 61%;
+  }
+
+  &__image {
+    width: 91px;
+    height: 91px;
+    position: relative;
+    margin-right: 24px;
+    display: block;
+    flex: 0 0 auto;
+
+    @media (max-width: 1080px) {
+      margin-right: 8px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+    }
+  }
+
+  &__info {
+    padding: 20px 0 10px 0;
+    flex: 0 0 45%;
+  }
+
+  &__name {
+    display: block;
+    color: var(-black-2);
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__characteristics {
+  }
+
+  &__trade {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    justify-content: space-between;
+    flex: 0 0 39%;
+  }
+
+  &__availability {
+    flex: 0 0 12%;
+    margin-left: 8px;
+
+    @media (max-width: 1080px) {
+      margin-left: 0;
+    }
+
+    .lable-status {
+      font-size: 12px;
+      width: fit-content;
+    }
+  }
+
+  &__purchase {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.price-card {
+      position: relative;
+      flex: 0 0 14%;
+
+      .price-card__old {
+        position: absolute;
+        top: -50%;
+        left: 0;
+      }
+
+      .price-card__new {
+        @media (max-width: 1200px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    flex: 0 0 auto;
+
+    &._hidden {
+      display: none;
+    }
+
+    .btn {
+      padding: 12px 16px;
+      min-width: auto;
+    }
+  }
+
+  &__count {
+    flex: 0 0 auto;
+    &._hidden {
+      display: none;
+    }
+  }
+}

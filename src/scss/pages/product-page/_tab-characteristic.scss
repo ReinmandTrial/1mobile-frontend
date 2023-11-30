@@ -1,0 +1,45 @@
+.characteristic-product {
+  margin-bottom: 24px;
+  flex: 0 0 49%;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__name {
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    .dots {
+      border-bottom: 1px dotted var(--grey);
+      align-self: center;
+      margin: 0 12px;
+      flex: 1 1 auto;
+
+      @media (max-width: 479px) {
+        flex: 1 0 15%;
+      }
+    }
+  }
+  &__value {
+    font-weight: 600;
+    text-align: right;
+  }
+}
