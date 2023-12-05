@@ -1,12 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html', { "title": "Product Page" })
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Product Page</title>
+</head>
+
 
 <!-- При открытии попапа галлереи добавляется ._block -->
 
 <body>
     <div class="wrapper">
-        @@include('html/header.html', {})
+        <header class="header">
+
+    <div class="container">
+
+        <div class="header__content">
+            <div class="header__menu menu-header">
+                <a href="#" class="header__logo">
+                    <img src="./img/logo/logo-big.svg" alt="logo">
+                </a>
+                <div class="header__links">
+                    <a class="header__logo-text" href="#">
+                        <img src="./img/logo/logo-text.svg" alt="Первый мобильный">
+                    </a>
+                    <div class="header__catalogue catalogue-header">
+                        <button class="catalogue-header__btn" type="button">
+                            <span class="_icon-burger"> </span>
+                            <span>Каталог товаров</span>
+                        </button>
+                        <!-- При открытии каталога добавляется .show -->
+                        <div class="catalogue-header__menu">
+                            <div class="catalogue-header__categories">
+                                <ul class="catalogue-header__list">
+                                    <li class="catalogue-header__item">
+                                        <a class="catalogue-header__link" href="#">
+                                            <span>Phones</span>
+                                            <span class="_icon-arrow-open"></span>
+                                        </a>
+                                    </li>
+                                    <li class="catalogue-header__item">
+                                        <a class="catalogue-header__link" href="#">
+                                            <span>Accesories</span>
+                                            <span class="_icon-arrow-open"></span>
+                                        </a>
+                                    </li>
+                                    <li class="catalogue-header__item">
+                                        <a class="catalogue-header__link" href="#">
+                                            <span>Computers</span>
+                                            <span class="_icon-arrow-open"></span>
+                                        </a>
+                                    </li>
+                                    <li class="catalogue-header__item">
+                                        <a class="catalogue-header__link" href="#">
+                                            <span>Auto</span>
+                                            <span class="_icon-arrow-open"></span>
+                                        </a>
+                                    </li>
+                                    <li class="catalogue-header__item">
+                                        <a class="catalogue-header__link" href="#">
+                                            <span>Other</span>
+                                            <span class="_icon-arrow-open"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="catalogue-header__tabs tabs-catalogue">
+
+                                <!-- На открытой вкладке добавляется .open -->
+                                <div class="tabs-catalogue__tab open">
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tabs-catalogue__tab">
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tabs-catalogue__tab">
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tabs-catalogue__tab">
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tabs-catalogue__tab">
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="tabs-catalogue__list">
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Case</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Charger</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Protective glass</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Pop socket</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Futleir</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Holder</a>
+                                        </li>
+                                        <li class="tabs-catalogue__item">
+                                            <a class="tabs-catalogue__link" href="#">Book case</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="header__search">
+                <div class="search-block">
+                    <form class="search-block__form" action="">
+                        <div class="search-block__wrapper search-wrapper">
+                            <input class="search-wrapper__input" type="search" placeholder="Поиск...">
+                            <button type='button' class="_icon-close"></butt>
+                                <button class="search-wrapper__btn" type="submit">
+                                    <span class="_icon-search"></span>
+                                </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="header__actions">
+                <div class="header__info">
+                    <a href="tel:+0682211911" class="header__phone">
+                        <span class="_icon-phone"></span>
+                        <span>068-22-11-911</span>
+                    </a>
+                    <ul class="header__lang lang">
+                        <li class="lang__item">
+                            <a class="lang_active">En</a>
+                        </li>
+                        <li class="lang__item">
+                            <a href="#">Ru</a>
+                        </li>
+                        <li class="lang__item">
+                            <a href="#">Ua</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="header__client">
+                    <li class="header__client-item">
+                        <a href="#" class="header__client-account header__client-link">
+                            <span class="header__client-icon _icon-person"></span>
+                        </a>
+                        <ul class="header__client-list">
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-wish"></span>
+                                    <span>Избранное</span>
+                                </a>
+                            </li>
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-order"></span>
+                                    <span>История заказов</span>
+                                </a>
+                            </li>
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-person"></span>
+                                    <span>Личные данные</span>
+                                </a>
+                            </li>
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-star"></span>
+                                    <span>Мои отзывы</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="header__client-item  client-basket">
+                        <a href="#" class="header__client-link header__client-basket">
+                            <span class="header__client-icon _icon-basket"></span>
+                            <span class="client-basket__count _empty"></span>
+                        </a>
+                    </li>
+                    <li class="header__client-item">
+                        <a href="#" class="header__client-link header__client-wish">
+                            <span class="header__client-icon _icon-wish"></span>
+                        </a>
+                    </li>
+                    <ul />
+            </div>
+        </div>
+
+        <div class="header__mobile mobile-header">
+            <a href="#" class="mobile-header__logo">
+                <img src="./img/logo/logo-text-mobile.svg" alt="logo">
+            </a>
+            <div class="mobile-header__menu">
+                <div class="mobile-header__burger burger">
+                    <button type="button" class="burger__btn">
+                        <span class="_icon-burger"></span>
+                    </button>
+                </div>
+
+                <div class="mobile-header__search">
+                    <div class="search-block">
+                        <form class="search-block__form" action="">
+                            <div class="search-block__wrapper search-wrapper">
+                                <input class="search-wrapper__input" type="search" placeholder="Поиск...">
+                                <button type='button' class="_icon-close"></button>
+                                <button class="search-wrapper__btn" type="submit">
+                                    <span class="_icon-search"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="mobile-header__basket client-basket">
+                    <a href="#" class="header__client-link header__client-basket">
+                        <span class="header__client-icon _icon-basket"></span>
+                        <span class="client-basket__count _empty">999</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</header>
 
         <main class="main">
             <aside class="sidebar">
@@ -106,61 +660,8 @@
                                             <span class='_icon-arrow-right'></span>
                                         </button>
                                     </div>
-                                    <!-- При открытии попапа галлереи добавляется ._open -->
-                                    <div class="product-page__gallery-popup gallery-popup">
-                                        <button type='button' class="gallery-popup__close">
-                                            <span class='_icon-close'></span>
-                                        </button>
-                                        <div class="product-page__slider">
-                                            <div class="product-page__main-img">
-                                                <img src="./img/product-page/img1.png" alt="product">
-                                            </div>
-                                            <div class="product-page__list-img">
-                                                <button type='button' class="product-page__small-img ">
-                                                    <img src="./img/product-page/img1.png" alt="product">
-                                                </button>
-                                                <button type='button' class="product-page__small-img _active">
-                                                    <img src="./img/product-page/img1.png" alt="product">
-                                                </button>
-                                                <button type='button' class="product-page__small-img">
-                                                    <img src="./img/product-page/img1.png" alt="product">
-                                                </button>
-                                                <button type='button' class="product-page__small-img">
-                                                    <img src="./img/product-page/img1.png" alt="product">
-                                                </button>
-                                                <button type='button' class="product-page__small-img">
-                                                    <img src="./img/product-page/img1.png" alt="product">
-                                                </button>
-                                                <button type='button' class="product-page__small-img">
-                                                    <img src="./img/product-page/img1.png" alt="product">
-                                                </button>
-                                                <button type='button' class="product-page__small-img">
-                                                    <img src="./img/product-page/img1.png" alt="product">
-                                                </button>
-                                                <button type='button' class="product-page__small-img">
-                                                    <img src="./img/product-page/img1.png" alt="product">
-                                                </button>
-                                                <button type='button' class="product-page__small-img">
-                                                    <img src="./img/product-page/img1.png" alt="product">
-                                                </button>
-                                            </div>
-                                            <div class="product-page__pagination">
-                                                <button type='button' class="product-page__arrow product-page__arrow-prev">
-                                                    <span class='_icon-arrow-left'></span>
-                                                </button>
-                                                <button type='button' class="product-page__arrow product-page__arrow-next">
-                                                    <span class='_icon-arrow-right'></span>
-                                                </button>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="gallery-popup__info">
-                                            <div class="gallery-popup__title">iPhone 13 Pro Silicone Case with MagSafe (Blue Jay) MM2G3ZE/A</div>
-                                            <button type='button' class="gallery-popup__btn btn btn_red">Купить</button>
-                                        </div>
-                                    </div>
                                 </div>
+
 
                                 <div class="product-page__info">
                                     <button class="product-page__icon _active">
@@ -261,6 +762,8 @@
                                     </div>
                                 </div>
 
+
+
                                 <div class="product-page__data">
                                     <div class="product-page__article">
                                         <span>Артикул: 132940</span>
@@ -293,7 +796,60 @@
 
                             </div>
 
+                            <!-- При открытии попапа галлереи добавляется ._open -->
+                            <div class="product-page__gallery-popup gallery-popup _open">
+                                <button type='button' class="gallery-popup__close">
+                                    <span class='_icon-close'></span>
+                                </button>
+                                <div class="product-page__slider">
+                                    <div class="product-page__main-img">
+                                        <img src="./img/product-page/img1.png" alt="product">
+                                    </div>
+                                    <div class="product-page__list-img">
+                                        <button type='button' class="product-page__small-img ">
+                                            <img src="./img/product-page/img1.png" alt="product">
+                                        </button>
+                                        <button type='button' class="product-page__small-img _active">
+                                            <img src="./img/product-page/img1.png" alt="product">
+                                        </button>
+                                        <button type='button' class="product-page__small-img">
+                                            <img src="./img/product-page/img1.png" alt="product">
+                                        </button>
+                                        <button type='button' class="product-page__small-img">
+                                            <img src="./img/product-page/img1.png" alt="product">
+                                        </button>
+                                        <button type='button' class="product-page__small-img">
+                                            <img src="./img/product-page/img1.png" alt="product">
+                                        </button>
+                                        <button type='button' class="product-page__small-img">
+                                            <img src="./img/product-page/img1.png" alt="product">
+                                        </button>
+                                        <button type='button' class="product-page__small-img">
+                                            <img src="./img/product-page/img1.png" alt="product">
+                                        </button>
+                                        <button type='button' class="product-page__small-img">
+                                            <img src="./img/product-page/img1.png" alt="product">
+                                        </button>
+                                        <button type='button' class="product-page__small-img">
+                                            <img src="./img/product-page/img1.png" alt="product">
+                                        </button>
+                                    </div>
+                                    <div class="product-page__pagination">
+                                        <button type='button' class="product-page__arrow product-page__arrow-prev">
+                                            <span class='_icon-arrow-left'></span>
+                                        </button>
+                                        <button type='button' class="product-page__arrow product-page__arrow-next">
+                                            <span class='_icon-arrow-right'></span>
+                                        </button>
+                                    </div>
+                                </div>
 
+
+                                <div class="gallery-popup__info">
+                                    <div class="gallery-popup__title">iPhone 13 Pro Silicone Case with MagSafe (Blue Jay) MM2G3ZE/A</div>
+                                    <button type='button' class="gallery-popup__btn btn btn_red">Купить</button>
+                                </div>
+                            </div>
 
                             <div class="product-page__tabs tabs-product">
                                 <!-- При скролле добавляется класс ._sticky -->
@@ -486,20 +1042,6 @@
 
                                             </div>
 
-                                            <!-- При открытии попапа добавляется класс _open -->
-                                            <div class="questions-product__popup">
-                                                <div class="popup-question">
-                                                    <button type='button' class="popup-question__btn _icon-close">
-                                                    </button>
-                                                    <div class="popup-question__check">
-                                                        <span class='_icon-check'></span>
-                                                        <span>Вопрос задан</span>
-                                                    </div>
-                                                    <div class="popup-question__text">Спасибо, Ваш вопрос был отправлен и будет обработан в течении суток.</div>
-                                                </div>
-
-                                            </div>
-
                                             <div class="questions-product__asked asked-question open">
                                                 <div class="body-tabs__title">Вопросы (1)</div>
                                                 <div class="asked-question__content">
@@ -568,19 +1110,7 @@
                                                 </div>
 
                                             </div>
-                                            <!-- При открытии попапа добавляется класс _open -->
-                                            <div class="questions-product__popup">
-                                                <div class="popup-question">
-                                                    <button type='button' class="popup-question__btn _icon-close">
-                                                    </button>
-                                                    <div class="popup-question__check">
-                                                        <span class='_icon-check'></span>
-                                                        <span>Ответ отправлен</span>
-                                                    </div>
-                                                    <div class="popup-question__text">Спасибо, Ваш ответ был отправлен и будет обработан в течении суток.</div>
-                                                </div>
 
-                                            </div>
                                         </div>
 
                                     </div>
@@ -1975,7 +2505,155 @@
             </div>
         </div>
 
-        @@include('html/footer.html', {})
+        <div class="modal pre-order">
+            <div class="modal__body">
+                <div class="modal__content pre-order__complete">
+
+                    <div class="pre-order__title">Предзаказ</div>
+                    <div class="pre-order__text _black">
+                        Благодарим Вас за выбор на Первом мобильном
+                    </div>
+                    <div class="pre-order__text">За несколько дней до поступления товара наш менеджер свяжется с Вами.</div>
+                    <div class="pre-order__text">
+                        <span>Номер вашей заявки:</span>
+                        <span class='pre-order__number'>17364023</span>
+                    </div>
+                    <div class="pre-order__text">
+                        <span class='_red'>Важно!</span>
+                        <span>Цена товара на момент отгрузки может отличаться от цены, указанной на данный момент.</span>
+
+                    </div>
+
+
+                    <button type="button" class="modal__close">
+                        <img src="../img/svg/сlose.svg" alt="button">
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal popup-question">
+            <div class="modal__body">
+                <div class=" modal__content popup-question__content">
+                    <div class="popup-question__check">
+                        <span class='_icon-check'></span>
+                        <span>Вопрос задан</span>
+                    </div>
+                    <div class="popup-question__text">Спасибо, Ваш вопрос был отправлен и будет обработан в течении суток.
+                    </div>
+                    <button type="button" class="modal__close">
+                        <img src="../img/svg/сlose.svg" alt="button">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+  <div class="container">
+    <ul class="footer__content">
+      <li class="footer__block footer__block_social">
+        <div class="footer__social social-footer social-block">
+          <div class="social-footer__item social-block__item"></div>
+          <div class="social-footer__item social-block__item"></div>
+          <a href="#" class="social-footer__item social-block__item social-block__link">
+            <span class="_icon-viber social-block__icon"></span>
+          </a>
+          <a href="#" class="social-footer__item social-block__item social-block__link">
+            <span class="_icon-telegram social-block__icon"></span>
+          </a>
+          <div class="social-footer__item social-block__item"></div>
+          <a href="#" class="social-footer__item social-block__item social-block__link">
+            <span class="_icon-whatsapp social-block__icon"></span>
+          </a>
+          <div class="social-footer__item social-block__item"></div>
+          <div class="social-footer__item social-block__item"></div>
+          <div class="social-footer__item social-block__item"></div>
+        </div>
+      </li>
+
+      <li class="footer__block footer__block_information block-footer">
+        <div class="footer__information">
+          <h3 class="block-footer__title heading-4">Информация</h3>
+          <ul class="block-footer__list">
+            <li class="block-footer__item">
+              <a href="#">О магазине</a>
+            </li>
+            <li class="block-footer__item">
+              <a href="#">Вопросы и ответы</a>
+            </li>
+            <li class="block-footer__item">
+              <a href="#">Дропшиппинг</a>
+            </li>
+            <li class="block-footer__item">
+              <a href="#">Поставщикам</a>
+            </li>
+            <li class="block-footer__item">
+              <a href="#">Оплата</a>
+            </li>
+            <li class="block-footer__item">
+              <a href="#">Доставка</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="footer__block footer__block_service block-footer">
+        <div class="footer__service">
+          <h3 class="block-footer__title heading-4">Обслуживание Клиентов</h3>
+          <ul class="block-footer__list">
+            <li class="block-footer__item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="block-footer__item">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="block-footer__item">
+              <a href="#">Возврат/Обмен</a>
+            </li>
+            <li class="block-footer__item">
+              <a href="#">Вакансии</a>
+            </li>
+            <li class="block-footer__item">
+              <a href="#">Прайс-лист</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="footer__block footer__block_connect">
+        <div class="footer__connect connect-footer">
+          <ul class="connect-footer__list">
+            <li class="connect-footer__item">
+              <a class="connect-footer__link" href="#">
+                <span class="_icon-geo connect-footer__icon"></span>
+                <span
+                  >Мелитополь <br />
+                  Запорожская обл, Украина.</span
+                >
+              </a>
+            </li>
+            <li class="connect-footer__item">
+              <a class="connect-footer__link" href="mailto: example@example.com">
+                <span class="_icon-mail connect-footer__icon"></span>
+                <span>Pishisudqa@gmail.com</span>
+              </a>
+            </li>
+            <li class="connect-footer__item">
+              <a class="connect-footer__link" href="tel:+38099649390">
+                <span class="_icon-phone connect-footer__icon"></span>
+                <span>+380 99 649390</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</footer>
+
     </div>
 </body>
 

@@ -293,8 +293,6 @@
 
                             </div>
 
-
-
                             <div class="product-page__tabs tabs-product">
                                 <!-- При скролле добавляется класс ._sticky -->
                                 <div class="tabs-product__row product-sticky">
@@ -482,20 +480,6 @@
                                                 <div class="questions-product__form">
                                                     <input class="questions-product__input" type='text' placeholder='Напишите Ваш вопрос'></input>
                                                     <button type='submit' class="questions-product__btn btn btn_red">Задать вопрос</button>
-                                                </div>
-
-                                            </div>
-
-                                            <!-- При открытии попапа добавляется класс _open -->
-                                            <div class="questions-product__popup">
-                                                <div class="popup-question">
-                                                    <button type='button' class="popup-question__btn _icon-close">
-                                                    </button>
-                                                    <div class="popup-question__check">
-                                                        <span class='_icon-check'></span>
-                                                        <span>Вопрос задан</span>
-                                                    </div>
-                                                    <div class="popup-question__text">Спасибо, Ваш вопрос был отправлен и будет обработан в течении суток.</div>
                                                 </div>
 
                                             </div>
@@ -1974,6 +1958,52 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal pre-order">
+            <div class="modal__body">
+                <div class="modal__content pre-order__complete">
+
+                    <div class="pre-order__title">Предзаказ</div>
+                    <div class="pre-order__text _black">
+                        Благодарим Вас за выбор на Первом мобильном
+                    </div>
+                    <div class="pre-order__text">За несколько дней до поступления товара наш менеджер свяжется с Вами.</div>
+                    <div class="pre-order__text">
+                        <span>Номер вашей заявки:</span>
+                        <span class='pre-order__number'>17364023</span>
+                    </div>
+                    <div class="pre-order__text">
+                        <span class='_red'>Важно!</span>
+                        <span>Цена товара на момент отгрузки может отличаться от цены, указанной на данный момент.</span>
+
+                    </div>
+
+
+                    <button type="button" class="modal__close">
+                        <img src="../img/svg/сlose.svg" alt="button">
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal popup-question _open">
+            <div class="modal__body">
+                <div class=" modal__content popup-question__content">
+                    <div class="popup-question__check">
+                        <span class='_icon-check'></span>
+                        <span>Вопрос задан</span>
+                    </div>
+                    <div class="popup-question__text">Спасибо, Ваш вопрос был отправлен и будет обработан в течении суток.
+                    </div>
+                    <button type="button" class="modal__close">
+                        <img src="../img/svg/сlose.svg" alt="button">
+                    </button>
+                </div>
+            </div>
+        </div>
+
 
         @@include('html/footer.html', {})
     </div>

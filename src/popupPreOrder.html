@@ -4,7 +4,7 @@
 
 <!-- При открытии попапа галлереи добавляется ._block -->
 
-<body>
+<body class='_block'>
     <div class="wrapper">
         @@include('html/header.html', {})
 
@@ -292,8 +292,6 @@
 
 
                             </div>
-
-
 
                             <div class="product-page__tabs tabs-product">
                                 <!-- При скролле добавляется класс ._sticky -->
@@ -1925,7 +1923,7 @@
         </main>
 
         <!-- При открытии попапа добавляется ._open -->
-        <div class="modal pre-order">
+        <div class="modal _open pre-order _open">
             <div class="modal__body">
                 <div class="modal__content pre-order__content">
                     <div class="pre-order__title">Предзаказ</div>
@@ -1968,6 +1966,50 @@
                             Подтвердить
                         </button>
                     </form>
+                    <button type="button" class="modal__close">
+                        <img src="../img/svg/сlose.svg" alt="button">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal pre-order">
+            <div class="modal__body">
+                <div class="modal__content pre-order__complete">
+
+                    <div class="pre-order__title">Предзаказ</div>
+                    <div class="pre-order__text _black">
+                        Благодарим Вас за выбор на Первом мобильном
+                    </div>
+                    <div class="pre-order__text">За несколько дней до поступления товара наш менеджер свяжется с Вами.</div>
+                    <div class="pre-order__text">
+                        <span>Номер вашей заявки:</span>
+                        <span class='pre-order__number'>17364023</span>
+                    </div>
+                    <div class="pre-order__text">
+                        <span class='_red'>Важно!</span>
+                        <span>Цена товара на момент отгрузки может отличаться от цены, указанной на данный момент.</span>
+
+                    </div>
+
+                    <button type="button" class="modal__close">
+                        <img src="../img/svg/сlose.svg" alt="button">
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal popup-question">
+            <div class="modal__body">
+                <div class=" modal__content popup-question__content">
+                    <div class="popup-question__check">
+                        <span class='_icon-check'></span>
+                        <span>Вопрос задан</span>
+                    </div>
+                    <div class="popup-question__text">Спасибо, Ваш вопрос был отправлен и будет обработан в течении суток.
+                    </div>
                     <button type="button" class="modal__close">
                         <img src="../img/svg/сlose.svg" alt="button">
                     </button>

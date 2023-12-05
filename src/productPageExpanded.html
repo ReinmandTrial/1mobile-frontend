@@ -23,7 +23,7 @@
                                 <img src="./img/icons/viber.svg" alt="icon" />
                             </a>
                         </div>
-            
+
                         <a href="#" class="sidebar__icon sidebar__chat">
                             <span class="_icon-chat"></span>
                         </a>
@@ -293,70 +293,7 @@
 
                             </div>
 
-                            <!-- При открытии попапа добавляется ._open -->
-                            <div class="product-page__pre-order pre-order">
-                                <!-- При открытии попапа галлереи добавляется ._open -->
-                                <div class="pre-order__popup-form ">
-                                    <button type='button' class="pre-order__close">
-                                        <span class='_icon-close'></span>
-                                    </button>
-                                    <div class="pre-order__title">Предзаказ</div>
-                                    <form class="pre-order__form">
-                                        <div class="pre-order__counter">
-                                            <label for="" class='pre-order__label'>
-                                                Количество желаемого товара
-                                            </label>
 
-                                            <div class="counter">
-                                                <button type="button" class="counter__icon  " disabled>
-                                                    <span class='_icon-minus'></span>
-                                                </button>
-
-
-                                                <div class="counter__value">
-
-                                                    <input type="number" value="1" placeholder='1'>
-
-                                                </div>
-
-
-                                                <button type="button" class="counter__icon">
-                                                    <span class='_icon-plus'></span>
-                                                </button>
-                                            </div>
-
-                                        </div>
-
-
-                                        <div class="pre-order__inputs-area">
-                                            <input type="text" placeholder='Ваше имя' class="pre-order__input">
-                                            <input type="tel" placeholder='Номер телефона' class="pre-order__input">
-                                            <input type='email' placeholder='Email' class="pre-order__input">
-                                            <input type='text' placeholder='Комментарий' class="pre-order__input">
-                                        </div>
-
-
-                                        <button type='submit' class="pre-order__btn btn btn_red">
-                                            Подтвердить
-                                        </button>
-                                    </form>
-                                </div>
-                                <!-- При открытии попапа галлереи добавляется ._open -->
-                                <div class="pre-order__popup-complete">
-                                    <button type='button' class="pre-order__close">
-                                        <span class='_icon-close'></span>
-                                    </button>
-                                    <div class="pre-order__title">Предзаказ</div>
-                                    <div class="pre-order__text _black">
-                                        Благодарим Вас за выбор на Первом мобильном
-                                    </div>
-                                    <div class="pre-order__text">За несколько дней до поступления товара наш менеджер свяжется с Вами.</div>
-                                    <div class="pre-order__text">Номер вашей заявки: <span class='pre-order__number'>17364023</span></div>
-                                    <div class="pre-order__text"><span class='_red'>Важно! </span>Цена товара на момент отгрузки может отличаться от
-                                        цены, указанной на данный момент.</div>
-                                </div>
-
-                            </div>
 
                             <div class="product-page__tabs tabs-product">
                                 <!-- При скролле добавляется класс ._sticky -->
@@ -2203,6 +2140,57 @@
 
             </div>
         </main>
+
+        <!-- При открытии попапа добавляется ._open -->
+        <div class="modal pre-order">
+            <div class="modal__body">
+                <div class="modal__content pre-order__content">
+                    <div class="pre-order__title">Предзаказ</div>
+                    <form class="pre-order__form">
+                        <div class="pre-order__counter">
+                            <label for="" class='pre-order__label'>
+                                Количество желаемого товара
+                            </label>
+
+                            <div class="counter">
+                                <button type="button" class="counter__icon  " disabled>
+                                    <span class='_icon-minus'></span>
+                                </button>
+
+
+                                <div class="counter__value">
+
+                                    <input type="number" value="1" placeholder='1'>
+
+                                </div>
+
+
+                                <button type="button" class="counter__icon">
+                                    <span class='_icon-plus'></span>
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="pre-order__inputs-area">
+                            <input type="text" placeholder='Ваше имя' class="pre-order__input">
+                            <input type="tel" placeholder='Номер телефона' class="pre-order__input">
+                            <input type='email' placeholder='Email' class="pre-order__input">
+                            <input type='text' placeholder='Комментарий' class="pre-order__input">
+                        </div>
+
+
+                        <button type='submit' class="pre-order__btn btn btn_red">
+                            Подтвердить
+                        </button>
+                    </form>
+                    <button type="button" class="modal__close">
+                        <img src="../img/svg/сlose.svg" alt="button">
+                    </button>
+                </div>
+            </div>
+        </div>
 
         @@include('html/footer.html', {})
     </div>
