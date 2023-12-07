@@ -4,15 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.min.css" />
-  <title>Open Burger</title>
+  <title>Basket</title>
 </head>
 
 
-<body class="burger-open">
-  <div class="wrapper">
-    <header class="header">
+<body>
+    <div class="wrapper">
+        <header class="header">
 
     <div class="container">
+
         <div class="header__content">
             <div class="header__menu menu-header">
                 <a href="#" class="header__logo">
@@ -27,7 +28,7 @@
                             <span class="_icon-burger"> </span>
                             <span>Каталог товаров</span>
                         </button>
-                        <!-- При открытии каталога добавляется модификатор .catalogue-header__menu_show -->
+                        <!-- При открытии каталога добавляется .show -->
                         <div class="catalogue-header__menu">
                             <div class="catalogue-header__categories">
                                 <ul class="catalogue-header__list">
@@ -67,8 +68,8 @@
 
                             <div class="catalogue-header__tabs tabs-catalogue">
 
-                                <!-- На открытой вкладке модификатор .tabs-catalogue__tab-open -->
-                                <div class="tabs-catalogue__tab tabs-catalogue__tab-open">
+                                <!-- На открытой вкладке добавляется .open -->
+                                <div class="tabs-catalogue__tab open">
                                     <ul class="tabs-catalogue__list">
                                         <li class="tabs-catalogue__item">
                                             <a class="tabs-catalogue__link" href="#">Case</a>
@@ -474,14 +475,41 @@
                 </div>
                 <ul class="header__client">
                     <li class="header__client-item">
-                        <a href="#" class="header__client-account header__client-link _active">
+                        <a href="#" class="header__client-account header__client-link">
                             <span class="header__client-icon _icon-person"></span>
                         </a>
+                        <ul class="header__client-list">
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-wish"></span>
+                                    <span>Избранное</span>
+                                </a>
+                            </li>
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-order"></span>
+                                    <span>История заказов</span>
+                                </a>
+                            </li>
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-person"></span>
+                                    <span>Личные данные</span>
+                                </a>
+                            </li>
+                            <li class="client-list__item">
+                                <a href="#" class="client-list__link">
+                                    <span class="client-list__icon _icon-star"></span>
+                                    <span>Мои отзывы</span>
+                                </a>
+                            </li>
+
+                        </ul>
                     </li>
                     <li class="header__client-item  client-basket">
                         <a href="#" class="header__client-link header__client-basket">
                             <span class="header__client-icon _icon-basket"></span>
-                            <span class="client-basket__count">111</span>
+                            <span class="client-basket__count _empty"></span>
                         </a>
                     </li>
                     <li class="header__client-item">
@@ -494,221 +522,15 @@
         </div>
 
         <div class="header__mobile mobile-header">
-            <div class="mobile-header__logo">
+            <a href="#" class="mobile-header__logo">
                 <img src="./img/logo/logo-text-mobile.svg" alt="logo">
-            </div>
+            </a>
             <div class="mobile-header__menu">
                 <div class="mobile-header__burger burger">
                     <button type="button" class="burger__btn">
                         <span class="_icon-burger"></span>
                     </button>
-
-                    <div class="burger__menu burger-open">
-  <div class="burger__bg"></div>
-  <div class="burger__body">
-    <button type="button" class="burger__close">
-      <span class="_icon-close"></span>
-    </button>
-
-    <div class="burger__card">
-      <a href="#" class="burger__logo">
-        <img src="./img/logo/logo-big.svg" alt="logo" />
-      </a>
-      <div class="burger__lang">
-        <ul class="lang">
-          <li class="lang__item">
-            <a class="lang_active">En</a>
-          </li>
-          <li class="lang__item">
-            <a href="#">Ru</a>
-          </li>
-          <li class="lang__item">
-            <a href="#">Ua</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- При входе в аккаунт добавляется класс .registred -->
-    <div class="burger__login login-burger">
-      <div class="login-burger__account">
-        <span class="login-burger__icon _icon-person"></span>
-        <a href="#" class="login-burger__entrance">Вход</a>
-        <span class="">|</span>
-        <a href="#" class="login-burger__registration">Регистрация</a>
-      </div>
-    </div>
-
-    <!-- При входе в аккаунт добавляется класс .registred -->
-    <div class="burger__profile profile-burger registred">
-      <nav class="profile-burger__nav">
-        <ul class="profile-burger__list">
-          <li class="profile-burger__item">
-            <img class="profile-burger__photo" src="./img/icons/profile.png" alt="icon" />
-            <span>Добро пожаловать,</span>
-            <span class="profile-burger__name">Катерина</span>
-          </li>
-          <li class="profile-burger__item">
-            <a href="#" class="profile-burger__link">
-              <span class="profile-burger__icon _icon-wish"></span>
-              <span>Избранное</span>
-            </a>
-          </li>
-          <li class="profile-burger__item">
-            <a href="#" class="profile-burger__link">
-              <span class="profile-burger__icon _icon-order"></span>
-              <span>История заказов</span>
-            </a>
-          </li>
-          <li class="profile-burger__item">
-            <a href="#" class="profile-burger__link">
-              <span class="profile-burger__icon _icon-person"></span>
-              <span>Личные данные</span>
-            </a>
-          </li>
-          <li class="profile-burger__item">
-            <a href="#" class="profile-burger__link">
-              <span class="profile-burger__icon _icon-star"></span>
-              <span>Мои отзывы</span>
-            </a>
-          </li>
-          <li class="profile-burger__item">
-            <a href="#" class="profile-burger__link profile-burger__link_gray">
-              <span class="profile-burger__icon _icon-exit"></span>
-              <span>Выйти</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="burger__categories categories-burger">
-      <h4 class="categories-burger__title">Все категории</h4>
-
-      <div class="categories-burger__nav">
-        <ul class="categories-burger__list">
-          <!-- При открытии таба добавляется модификатор .tab-categories__body_open -->
-          <div class="categories-burger__tab tab-categories">
-            <h5 class="tab-categories__title">
-              <span class="tab-categories__icon _icon-telephone"></span>
-              <span class="tab-categories__name">Телефоны</span>
-              <button type="button" class="tab-categories__arrow tab-categories__arrow_show _icon-arrow-down"></button>
-            </h5>
-            <div class="tab-categories__body tab-categories__body_open">
-              <a href="#" class="tab-categories__type">Cases</a>
-              <a href="#" class="tab-categories__type">Chargers</a>
-              <a href="#" class="tab-categories__type">Chargers</a>
-              <a href="#" class="tab-categories__type">Protection</a>
-            </div>
-          </div>
-
-          <div class="categories-burger__tab tab-categories">
-            <h5 class="tab-categories__title">
-              <span class="tab-categories__icon _icon-usb"></span>
-              <span class="tab-categories__name">Аксессуары</span>
-              <button type="button" class="tab-categories__arrow _icon-arrow-down"></button>
-            </h5>
-            <div class="tab-categories__body">
-              <a href="#" class="tab-categories__type">Cases</a>
-              <a href="#" class="tab-categories__type">Chargers</a>
-              <a href="#" class="tab-categories__type">Chargers</a>
-              <a href="#" class="tab-categories__type">Protection</a>
-            </div>
-          </div>
-
-          <div class="categories-burger__tab tab-categories">
-            <h5 class="tab-categories__title">
-              <span class="tab-categories__icon _icon-pc"></span>
-              <span class="tab-categories__name">Компьютеры</span>
-              <button type="button" class="tab-categories__arrow _icon-arrow-down"></button>
-            </h5>
-            <div class="tab-categories__body">
-              <a href="#" class="tab-categories__type">Cases</a>
-              <a href="#" class="tab-categories__type">Chargers</a>
-              <a href="#" class="tab-categories__type">Chargers</a>
-              <a href="#" class="tab-categories__type">Protection</a>
-            </div>
-          </div>
-
-          <div class="categories-burger__tab tab-categories">
-            <h5 class="tab-categories__title">
-              <span class="tab-categories__icon _icon-auto"></span>
-              <span class="tab-categories__name">Авто</span>
-              <button type="button" class="tab-categories__arrow _icon-arrow-down"></button>
-            </h5>
-            <div class="tab-categories__body">
-              <a href="#" class="tab-categories__type">Cases</a>
-              <a href="#" class="tab-categories__type">Chargers</a>
-              <a href="#" class="tab-categories__type">Chargers</a>
-              <a href="#" class="tab-categories__type">Protection</a>
-            </div>
-          </div>
-
-          <div class="categories-burger__tab tab-categories">
-            <h5 class="tab-categories__title">
-              <span class="tab-categories__icon _icon-other"></span>
-              <span class="tab-categories__name">Другое</span>
-              <button type="button" class="tab-categories__arrow tab-categories__arrow_show _icon-arrow-down"></button>
-            </h5>
-            <div class="tab-categories__body tab-categories__body_other tab-categories__body_open">
-              <a href="#" class="tab-categories__type">Limidet edition</a>
-              <a href="#" class="tab-categories__type">Different </a>
-              <a href="#" class="tab-categories__type">SubCategory</a>
-              <a href="#" class="tab-categories__type">Buttons</a>
-              <a href="#" class="tab-categories__type">Connectors</a>
-            </div>
-          </div>
-        </ul>
-      </div>
-    </div>
-
-    <div class="burger__social">
-      <div class="social-block">
-        <div class="social-block__item"></div>
-        <div class="social-block__item"></div>
-        <a href="#" class="social-block__item social-block__link">
-          <span class="_icon-viber social-block__icon"></span>
-        </a>
-        <a href="#" class="social-block__item social-block__link">
-          <span class="_icon-telegram social-block__icon"></span>
-        </a>
-        <div class="social-block__item"></div>
-        <a href="#" class="social-block__item social-block__link">
-          <span class="_icon-whatsapp social-block__icon"></span>
-        </a>
-        <div class="social-block__item"></div>
-        <div class="social-block__item"></div>
-        <div class="social-block__item"></div>
-      </div>
-    </div>
-
-    <div class="burger__connect connect-burger">
-      <ul class="connect-burger__list">
-        <li class="connect-burger__item">
-          <a class="connect-burger__link" href="#">
-            <span class="_icon-geo connect-burger__icon"></span>
-            <span>Мелитополь</span>
-          </a>
-        </li>
-        <li class="connect-burger__item">
-          <a class="connect-burger__link" href="mailto: example@example.com">
-            <span class="_icon-mail connect-burger__icon"></span>
-            <span>Pishisudqa@gmail.com</span>
-          </a>
-        </li>
-        <li class="connect-burger__item">
-          <a class="connect-burger__link" href="tel:+38099649390">
-            <span class="_icon-phone connect-burger__icon"></span>
-            <span>+380 99 649390</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
                 </div>
-
-
 
                 <div class="mobile-header__search">
                     <div class="search-block">
@@ -727,9 +549,10 @@
                 <div class="mobile-header__basket client-basket">
                     <a href="#" class="header__client-link header__client-basket">
                         <span class="header__client-icon _icon-basket"></span>
-                        <span class="client-basket__count">999</span>
+                        <span class="client-basket__count _empty">999</span>
                     </a>
                 </div>
+
             </div>
 
         </div>
@@ -737,87 +560,124 @@
 
 </header>
 
-    <main class="main">
-      <aside class="sidebar">
-        <div class="container">
-          <div class="sidebar__body">
-            <div class="sidebar__social">
-              <a href="#" class="sidebar__item">
-                <img src="./img/icons/whatsapp.svg" alt="icon" />
-              </a>
-              <a href="#" class="sidebar__item">
-                <img src="./img/icons/telegram.svg" alt="icon" />
-              </a>
-              <a href="#" class="sidebar__item">
-                <img src="./img/icons/viber.svg" alt="icon" />
-              </a>
-            </div>
+        <main class="main">
 
-            <a href="#" class="sidebar__icon sidebar__chat">
-              <span class="_icon-chat"></span>
-            </a>
-            <button type="button" class="sidebar__icon sidebar__up">
-              <span class="_icon-arrow-up"></span>
-            </button>
-          </div>
-        </div>
-      </aside>
-      <section class="banner">
-        <div class="container">
-          <div class="banner__container">
-            <div class="banner__items">
-              <a href="#" class="banner__item item-banner">
-                <img class="item-banner__image" src="./img/banner/img1.png" alt="image" />
-                <div class="item-banner__heading">
-                  <span>Discounts for</span>
-                  <span>computers</span>
-                </div>
-              </a>
-              <a href="#" class="banner__item banner__item_big item-banner">
-                <img class="item-banner__image" src="./img/banner/img2.png" alt="image" />
-                <div class="item-banner__heading">
-                  <span>Chargers</span>
-                </div>
-              </a>
 
-              <a href="#" class="banner__item item-banner">
-                <img class="item-banner__image" src="./img/banner/img3.png" alt="image" />
-                <div class="item-banner__heading">
-                  <span>Phones</span>
-                </div>
-              </a>
-              <a href="#" class="banner__item item-banner">
-                <img class="item-banner__image" src="./img/banner/img3.png" alt="image" />
-                <div class="item-banner__heading">
-                  <span>Phones</span>
-                </div>
-              </a>
-              <a href="#" class="banner__item item-banner">
-                <img class="item-banner__image" class="item-banner__image" src="./img/banner/img1.png" alt="image" />
-                <div class="item-banner__heading">
-                  <span>Discounts for</span>
-                  <span>computers</span>
-                </div>
-              </a>
-              <a href="#" class="banner__item item-banner">
-                <img class="item-banner__image" src="./img/banner/img4.png" alt="image" />
-                <div class="item-banner__heading">
-                  <span>Cases Iphone</span>
-                </div>
-              </a>
-              <a href="#" class="banner__item item-banner">
-                <img class="item-banner__image" src="./img/banner/img4.png" alt="image" />
-                <div class="item-banner__heading">
-                  <span>Cases Iphone</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+            <section class="basket">
+                <div class="container">
+                    <div class="basket__container">
+                        <ul class="breadcrumps">
+                            <li class="breadcrumps__item">
+                                <button href="#" class="breadcrumps__link">
+                                    <span class="breadcrumps__icon _icon-home"></span>
+                                </button>
+                            </li>
+                            <li class="breadcrumps__item">
+                                <span class='breadcrumps__icon _icon-arrow-open'></span>
+                            </li>
+                            <li class="breadcrumps__item">
+                                Корзина
+                            </li>
+                        </ul>
 
-    <footer class="footer">
+                        <h2 class="basket__title heading-2">
+                            Корзина
+                        </h2>
+
+                        <div class="basket__table table-basket">
+                            <div class="table-basket__head">
+                                <div class="table-basket__title">Фото</div>
+                                <div class="table-basket__title">Название</div>
+                                <div class="table-basket__title">Цена</div>
+                                <div class="table-basket__title">Счетчик</div>
+                                <div class="table-basket__title">Сумма</div>
+                                <div class="table-basket__title">Удалить</div>
+                            </div>
+
+                            <ul class="table-basket__body">
+                                <li class="table-basket__item">
+                                    <div class="table-basket__card basket-card">
+                                        <a class="basket-card__image">
+                                            <img src="" alt="">
+                                        </a>
+                                        <div class="basket-card__info">
+                                            <div class="basket-card__name">Чехол накладка Deen CrystalRing for Magnet для Apple iPhone 13 Pro (6.1") <span
+                                                    class="basket-card__name-color">(Бесцветный /
+                                                    Темно-синий)</span></div>
+                                            <div class="basket-card__article">Артикул: 132940</div>
+                                        </div>
+
+                                        <div class="basket-card__price">900 $</div>
+                                        <div class="basket-card__counter">
+                                            <div class="counter">
+                                                <button type="button" class="counter__icon  " disabled>
+                                                    <span class='_icon-minus'></span>
+                                                </button>
+
+
+                                                <div class="counter__value">
+                                                    <form action="">
+                                                        <input type="number" value="1" placeholder='1'>
+                                                    </form>
+                                                </div>
+
+
+                                                <button type="button" class="counter__icon">
+                                                    <span class='_icon-plus'></span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-card__total">
+                                            <span>Всего</span>
+                                            <span class="basket-card__total-price">900$</span>
+                                        </div>
+
+                                        <button class="basket-card__delete">
+                                            <img src="./img/svg/bucket.svg" alt="delete">
+                                        </button>
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="basket__info info-basket">
+                    <div class="info-basket__col info-basket__col_left">
+                        <div class="info-basket__title heading-4">Информация о заказе</div>
+                        <div class="info-basket__number">Номер заказа: 534917</div>
+                        <div class="info-basket__date">Дата заказа: 12.07.2023</div>
+
+
+                    </div>
+                    <div class="info-basket__col info-basket__col_right">
+                        <div class="info-basket__total">
+                            <span>Всего</span>
+                            <span class="info-basket__total-price">
+                                900$
+                            </span>
+                        </div>
+                        <div class="info-basket__btn btn btn_red">
+                            Купить
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer class="footer">
   <div class="container">
     <ul class="footer__content">
       <li class="footer__block footer__block_social">
@@ -920,7 +780,7 @@
   </div>
 </footer>
 
-  </div>
+    </div>
 </body>
 
 </html>

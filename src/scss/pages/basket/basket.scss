@@ -1,0 +1,192 @@
+.basket {
+  padding-bottom: 150px;
+  // .basket__title
+
+  &__container {
+    padding-top: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 70vh;
+  }
+  &__title {
+    font-weight: 700;
+    letter-spacing: -0.32px;
+    margin-bottom: 24px;
+  }
+
+  // .basket__table
+
+  &__table {
+  }
+
+  // .basket__info
+
+  &__info {
+  }
+}
+.breadcrumps {
+  // .breadcrumps__item
+
+  &__item {
+  }
+
+  // .breadcrumps__link
+
+  &__link {
+  }
+
+  // .breadcrumps__icon
+
+  &__icon {
+  }
+}
+
+.table-basket {
+  // .table-basket__head
+
+  &__head {
+  }
+
+  // .table-basket__title
+
+  &__title {
+  }
+
+  // .table-basket__body
+
+  &__body {
+  }
+
+  // .table-basket__item
+
+  &__item {
+  }
+
+  // .table-basket__card
+
+  &__card {
+  }
+}
+.basket-card {
+  // .basket-card__image
+
+  &__image {
+  }
+
+  // .basket-card__info
+
+  &__info {
+  }
+
+  // .basket-card__name
+
+  &__name {
+  }
+
+  // .basket-card__name-color
+
+  &__name-color {
+  }
+
+  // .basket-card__article
+
+  &__article {
+  }
+
+  // .basket-card__price
+
+  &__price {
+  }
+
+  // .basket-card__counter
+
+  &__counter {
+  }
+
+  // .basket-card__total
+
+  &__total {
+  }
+
+  // .basket-card__total-price
+
+  &__total-price {
+  }
+
+  // .basket-card__delete
+
+  &__delete {
+  }
+}
+
+.info-basket {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  background: var(--white-3);
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.23);
+  padding: 24px 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  // .info-basket__col
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &_right {
+      align-items: flex-end;
+    }
+  }
+
+  // .info-basket__title
+
+  &__title {
+    color: var(--black-2);
+    line-height: 1.2; /* 122.222% */
+    margin-bottom: 24px;
+  }
+
+  // .info-basket__number
+
+  &__number {
+    margin-bottom: 12px;
+  }
+
+  &__number,
+  &__date {
+    color: var(--grey);
+    font-size: 14px;
+    letter-spacing: 0.14px;
+  }
+
+  // .info-basket__date
+
+  &__date {
+    color: var(--grey-3);
+  }
+
+  // .info-basket__total
+
+  &__total {
+  }
+
+  // .info-basket__total-price
+
+  &__total-price {
+  }
+
+  // .info-basket__btn
+
+  &__btn {
+  }
+}

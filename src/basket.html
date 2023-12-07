@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { "title": "Basket" })
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+
+        <main class="main">
+
+
+            <section class="basket">
+                <div class="container">
+                    <div class="basket__container">
+                        <ul class="breadcrumps">
+                            <li class="breadcrumps__item">
+                                <button href="#" class="breadcrumps__link">
+                                    <span class="breadcrumps__icon _icon-home"></span>
+                                </button>
+                            </li>
+                            <li class="breadcrumps__item">
+                                <span class='breadcrumps__icon _icon-arrow-open'></span>
+                            </li>
+                            <li class="breadcrumps__item">
+                                Корзина
+                            </li>
+                        </ul>
+
+                        <h2 class="basket__title heading-2">
+                            Корзина
+                        </h2>
+
+                        <div class="basket__table table-basket">
+                            <div class="table-basket__head">
+                                <div class="table-basket__title">Фото</div>
+                                <div class="table-basket__title">Название</div>
+                                <div class="table-basket__title">Цена</div>
+                                <div class="table-basket__title">Счетчик</div>
+                                <div class="table-basket__title">Сумма</div>
+                                <div class="table-basket__title">Удалить</div>
+                            </div>
+
+                            <ul class="table-basket__body">
+                                <li class="table-basket__item">
+                                    <div class="table-basket__card basket-card">
+                                        <a class="basket-card__image">
+                                            <img src="" alt="">
+                                        </a>
+                                        <div class="basket-card__info">
+                                            <div class="basket-card__name">Чехол накладка Deen CrystalRing for Magnet для Apple iPhone 13 Pro (6.1") <span
+                                                    class="basket-card__name-color">(Бесцветный /
+                                                    Темно-синий)</span></div>
+                                            <div class="basket-card__article">Артикул: 132940</div>
+                                        </div>
+
+                                        <div class="basket-card__price">900 $</div>
+                                        <div class="basket-card__counter">
+                                            <div class="counter">
+                                                <button type="button" class="counter__icon  " disabled>
+                                                    <span class='_icon-minus'></span>
+                                                </button>
+
+
+                                                <div class="counter__value">
+                                                    <form action="">
+                                                        <input type="number" value="1" placeholder='1'>
+                                                    </form>
+                                                </div>
+
+
+                                                <button type="button" class="counter__icon">
+                                                    <span class='_icon-plus'></span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-card__total">
+                                            <span>Всего</span>
+                                            <span class="basket-card__total-price">900$</span>
+                                        </div>
+
+                                        <button class="basket-card__delete">
+                                            <img src="./img/svg/bucket.svg" alt="delete">
+                                        </button>
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="basket__info info-basket">
+                    <div class="info-basket__col info-basket__col_left">
+                        <div class="info-basket__title heading-4">Информация о заказе</div>
+                        <div class="info-basket__number">Номер заказа: 534917</div>
+                        <div class="info-basket__date">Дата заказа: 12.07.2023</div>
+
+
+                    </div>
+                    <div class="info-basket__col info-basket__col_right">
+                        <div class="info-basket__total">
+                            <span>Всего</span>
+                            <span class="info-basket__total-price">
+                                900$
+                            </span>
+                        </div>
+                        <div class="info-basket__btn btn btn_red">
+                            Купить
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+        </main>
+
+        @@include('html/footer.html', {})
+    </div>
+</body>
+
+</html>
