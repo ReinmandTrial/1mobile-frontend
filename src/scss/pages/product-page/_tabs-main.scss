@@ -28,6 +28,14 @@
     left: 0;
     width: 100%;
 
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+      width: 0;
+      display: none;
+    }
+
     &._sticky {
       position: fixed;
       top: 0;
@@ -93,57 +101,51 @@
   // .body-tabs__tab
 
   border-radius: 5px;
-  background: var(--white-3);
-  padding: 24px 48px;
-
-  @media (max-width: 1200px) {
-    padding: 24px 36px;
-  }
-
-  @media (max-width: 992px) {
-    padding: 0;
-    background-color: transparent;
-  }
-
-  @media (max-width: 767px) {
-  }
-
-  @media (max-width: 479px) {
-  }
+  background-color: transparent;
 
   &__tab {
     display: flex;
 
+    border-radius: 5px;
+    background-color: var(--white-3);
+    padding: 24px 48px;
+    width: 100%;
+
     &:not(:last-child) {
-      padding-bottom: 24px;
+      margin-bottom: 24px;
     }
 
     @media (max-width: 992px) {
-      background-color: var(--white);
-      margin-bottom: 12px;
-      border-radius: 5px;
       padding: 24px;
+      background-color: var(--white);
     }
 
     @media (max-width: 767px) {
       padding: 16px;
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
     }
   }
 
   // .body-tabs__description
 
   &__description {
-    width: 35%;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    padding-right: 63%;
 
     @media (max-width: 1200px) {
-      width: 50%;
+      padding-right: 50%;
     }
 
     @media (max-width: 992px) {
-      width: 100%;
+      padding-right: 24px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 16px;
     }
   }
 
@@ -152,6 +154,7 @@
   &__title {
     color: var(--red);
     margin-bottom: 12px;
+    width: 100%;
   }
 
   // .body-tabs__text
@@ -181,15 +184,18 @@
   }
 
   &__questions {
-    width: 50%;
     position: relative;
+    padding-right: 50%;
 
     @media (max-width: 1200px) {
-      width: 50%;
     }
 
     @media (max-width: 992px) {
-      width: 100%;
+      padding-right: 24px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 16px;
     }
   }
 }

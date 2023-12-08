@@ -1,5 +1,8 @@
 .characteristic-product {
-  margin-bottom: 24px;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
   flex: 0 0 49%;
 
   &__list {
