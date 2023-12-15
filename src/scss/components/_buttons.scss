@@ -11,17 +11,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease-in 0s;
 
   &_red {
     background-color: var(--red);
     &:hover {
       background-color: var(--red-1);
+      transition: all 0.2s ease-in 0s;
     }
   }
 
   &_white {
     color: var(--red);
     background-color: var(--white-3);
+
+    &:hover {
+      background-color: var(--red-1);
+      color: var(--white-3);
+      transition: all 0.2s ease-in 0s;
+    }
   }
 
   &_disabled {

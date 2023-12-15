@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { "title": "Order Successful" })
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+
+        <main class="main">
+
+
+            <section class="order">
+                <div class="container">
+                    <div class="order__container">
+                        <ul class="breadcrumps">
+                            <li class="breadcrumps__item">
+                                <button href="#" class="breadcrumps__link">
+                                    <span class="breadcrumps__icon _icon-home"></span>
+                                </button>
+                            </li>
+                            <li class="breadcrumps__item">
+                                <span class='breadcrumps__icon _icon-arrow-open'></span>
+                            </li>
+                            <li class="breadcrumps__item">
+                                Оформление заказа
+                            </li>
+                        </ul>
+
+                        <div class="success-order">
+                            <img src="./img/icons/success.svg" alt="icon" class="success-order__icon">
+
+                            <div class="success-order__title">Спасибо за заказ</div>
+
+                            <div class="success-order__text">
+                                <div class="success-order__subtitle">Благодарим Вас за выбор на Первом мобильном</div>
+
+                                <div class="success-order__info">Детальная информация была отправлена на указанную вами почту, а также детали заказа вы можете
+                                    увидеть в на странице <a href="#" class='success-order__blue'>мои заказы</a>
+                                </div>
+
+                                <div class="success-order__info">Номер вашего заказа: <span class='success-order__blue'>17364023</span></div>
+
+                            </div>
+                            <button type='button' class="success-order__button btn btn_red">Вернуться к покупкам</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        @@include('html/footer.html', {})
+    </div>
+</body>
+
+</html>
