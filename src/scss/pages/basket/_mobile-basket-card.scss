@@ -1,0 +1,166 @@
+.basket-mobile {
+  border-radius: 5px;
+  background-color: var(--white);
+  padding: 8px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  gap: 20px;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+
+  @media (max-width: 992px) {
+    display: flex;
+  }
+
+  &__row {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+
+    @media (max-width: 380px) {
+      gap: 8px;
+    }
+  }
+
+  // .basket-mobile__image
+
+  &__image {
+    border-radius: 5px;
+    height: 106px;
+    position: relative;
+    flex: 0 0 106px;
+
+    @media (max-width: 380px) {
+      flex: 0 0 80px;
+      height: 80px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .basket-mobile__info
+
+  &__info {
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // .basket-mobile__name
+
+  &__name {
+    flex: 1 0 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 19px;
+
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
+
+    @media (max-width: 479px) {
+      -webkit-line-clamp: 4;
+      height: 72px;
+    }
+
+    @media (max-width: 380px) {
+      -webkit-line-clamp: 3;
+      height: 55px;
+    }
+  }
+
+  // .basket-mobile__name-color
+
+  &__name-color {
+    color: var(--grey);
+  }
+
+  // .basket-mobile__article
+
+  &__article {
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    color: var(--grey);
+    flex: 1 0 50%;
+    align-self: flex-end;
+  }
+
+  // .basket-mobile__delete
+
+  &__delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    align-self: flex-end;
+  }
+
+  // .basket-mobile__price
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--grey);
+    font-size: 14px;
+    flex: 0 0 25%;
+  }
+
+  // .basket-mobile__counter
+
+  &__counter {
+    flex: 0 0 25%;
+
+    @media (max-width: 380px) {
+      align-self: center;
+    }
+    .counter {
+      justify-content: center;
+
+      @media (max-width: 380px) {
+        .counter__icon {
+          font-size: 16px;
+        }
+
+        .counter__value {
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
+  }
+
+  &__total {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--grey);
+    font-size: 14px;
+    text-align: right;
+    flex: 0 0 25%;
+  }
+
+  &__total-price {
+    word-break: break-all;
+    color: var(--black-2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.18px;
+  }
+}

@@ -1,0 +1,107 @@
+.basket-card {
+  display: grid;
+  grid-template-columns: 114px 1fr 8% 15% 12% 8%;
+  gap: 24px;
+  border-radius: 10px;
+  background-color: var(--white);
+  padding: 19px 0;
+  letter-spacing: 0.16px;
+  align-items: center;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+
+  // .basket-card__image
+
+  &__image {
+    margin: -19px 0;
+    position: relative;
+    padding-bottom: 100%;
+    border-radius: 5px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .basket-card__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+  }
+
+  // .basket-card__name
+
+  &__name {
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  // .basket-card__name-color
+
+  &__name-color {
+    color: var(--grey);
+  }
+
+  // .basket-card__article
+
+  &__article {
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    color: var(--grey);
+  }
+
+  // .basket-card__price
+
+  &__price {
+    font-weight: 500;
+  }
+
+  // .basket-card__counter
+
+  &__counter {
+    .counter {
+      justify-content: flex-start;
+    }
+  }
+
+  // .basket-card__total
+
+  &__total {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    gap: 6px;
+  }
+
+  // .basket-card__total-price
+
+  &__total-price {
+    font-size: 24px;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  // .basket-card__delete
+
+  &__delete {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
