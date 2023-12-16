@@ -1,0 +1,43 @@
+.form-order {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: var(--white);
+  padding: 32px 24px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 992px) {
+    background-color: transparent;
+    padding: 0;
+    padding-top: 32px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.18px;
+  }
+
+  &__area {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__input {
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+    padding: 16px 12px;
+  }
+
+  &__button {
+    width: 100%;
+
+    @media (max-width: 992px) {
+      position: absolute;
+      bottom: 69px;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+.order-card {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 42px 1fr 10% 13% 14% 12%;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  align-items: center;
+
+  @media (max-width: 992px) {
+    background-color: var(--white-3);
+    padding: 10px 8px;
+    align-items: flex-start;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  // .order-card__image
+
+  &__image {
+    border-radius: 5px;
+    width: 42px;
+    height: 42px;
+    position: relative;
+
+    @media (max-width: 992px) {
+      width: 72px;
+      height: 72px;
+    }
+    @media (max-width: 479px) {
+      width: 42px;
+      height: 42px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .order-card__elem
+
+  &__elem {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 992px) {
+      &:nth-child(2) {
+        grid-column: span 3;
+      }
+    }
+  }
+
+  // .order-card__tag
+
+  &__tag {
+    display: none;
+
+    @media (max-width: 992px) {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--grey);
+
+      font-size: 14px;
+      letter-spacing: 0.14px;
+    }
+  }
+
+  // .order-card__name
+
+  &__name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    @media (max-width: 992px) {
+      -webkit-line-clamp: 4;
+      font-size: 16px;
+    }
+    @media (max-width: 479px) {
+      -webkit-line-clamp: 2;
+      font-size: 14px;
+    }
+  }
+
+  // .order-card__color
+
+  &__color {
+    color: var(--grey);
+  }
+
+  // .order-card__article
+
+  &__article {
+    color: var(--grey);
+    word-break: break-all;
+
+    @media (max-width: 992px) {
+      color: var(--black-2);
+    }
+  }
+
+  // .order-card__price
+
+  &__price {
+    @media (max-width: 992px) {
+    }
+  }
+
+  &__price,
+  &__total {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.18px;
+    word-break: break-all;
+
+    @media (max-width: 992px) {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  // .order-card__amount
+
+  &__amount {
+    color: var(--grey);
+    @media (max-width: 992px) {
+      color: var(--black-2);
+    }
+  }
+
+  // .order-card__total
+
+  &__total {
+    @media (max-width: 992px) {
+    }
+  }
+}

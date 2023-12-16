@@ -1,8 +1,7 @@
 .basket {
-  padding-bottom: 140px;
-  position: relative;
-  min-height: 90vh;
   &__container {
+    min-height: 70vh;
+    padding-bottom: 200px;
     padding-top: 15px;
     position: relative;
     display: flex;
@@ -22,6 +21,7 @@
   flex-direction: column;
   width: 100%;
   gap: 16px;
+
   // .table-basket__head
 
   &__head {
@@ -32,6 +32,9 @@
     color: var(--grey);
     font-size: 14px;
     letter-spacing: 0.14px;
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 
   // .table-basket__body
@@ -44,7 +47,7 @@
 }
 
 .info-basket {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 0;
   width: 100%;
