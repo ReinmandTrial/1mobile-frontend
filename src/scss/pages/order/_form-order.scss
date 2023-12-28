@@ -37,8 +37,17 @@
     width: 100%;
 
     @media (max-width: 992px) {
-      position: absolute;
-      bottom: 69px;
+      display: none;
+    }
+
+    &_mob {
+      display: none;
+      @media (max-width: 992px) {
+        display: block;
+        order: 3;
+        margin-top: 36px;
+        margin-bottom: 69px;
+      }
     }
   }
 }

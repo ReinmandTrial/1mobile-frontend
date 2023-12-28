@@ -4797,17 +4797,18 @@ body.burger-open {
 }
 
 .empty-page {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.empty-page__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .empty-page__icon {
   width: 64px;
@@ -5478,6 +5479,9 @@ body.burger-open {
   letter-spacing: 0.18px;
 }
 
+.order .breadcrumps {
+  margin-bottom: 0;
+}
 @media (max-width: 992px) {
   .order .breadcrumps {
     display: none;
@@ -5485,14 +5489,13 @@ body.burger-open {
 }
 .order__container {
   min-height: 80vh;
-  padding: 15px 0;
   display: flex;
+  padding-top: 15px;
   flex-direction: column;
   position: relative;
 }
 @media (max-width: 992px) {
   .order__container {
-    padding-bottom: 140px;
     padding-top: 0;
   }
 }
@@ -5500,6 +5503,7 @@ body.burger-open {
   font-weight: 700;
   margin-bottom: 6px;
   letter-spacing: -0.32px;
+  margin-top: 32px;
 }
 @media (max-width: 992px) {
   .order__title {
@@ -5563,6 +5567,7 @@ body.burger-open {
   font-size: 15px;
   letter-spacing: 0.15px;
   gap: 10px;
+  margin-bottom: 15px;
 }
 @media (max-width: 992px) {
   .order__info {
@@ -5614,10 +5619,13 @@ body.burger-open {
 }
 
 .success-order {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 30px 0;
+}
+.success-order__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -5627,12 +5635,12 @@ body.burger-open {
   width: 35%;
 }
 @media (max-width: 992px) {
-  .success-order {
+  .success-order__container {
     width: 50%;
   }
 }
 @media (max-width: 590px) {
-  .success-order {
+  .success-order__container {
     width: 100%;
   }
 }
@@ -5666,6 +5674,12 @@ body.burger-open {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.16px;
+  width: 70%;
+}
+@media (max-width: 767px) {
+  .success-order__subtitle {
+    width: 100%;
+  }
 }
 .success-order__blue {
   color: var(--blue);
@@ -5839,8 +5853,18 @@ body.burger-open {
 }
 @media (max-width: 992px) {
   .form-order__button {
-    position: absolute;
-    bottom: 69px;
+    display: none;
+  }
+}
+.form-order__button_mob {
+  display: none;
+}
+@media (max-width: 992px) {
+  .form-order__button_mob {
+    display: block;
+    order: 3;
+    margin-top: 36px;
+    margin-bottom: 69px;
   }
 }
 
