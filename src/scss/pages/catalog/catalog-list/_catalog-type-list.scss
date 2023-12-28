@@ -66,6 +66,13 @@
       align-items: flex-start;
       justify-content: flex-start;
     }
+
+    .btn-basket {
+      @media (max-width: 340px) {
+        font-size: 18px;
+        padding: 8px 11px;
+      }
+    }
   }
 
   &__item-mobile {

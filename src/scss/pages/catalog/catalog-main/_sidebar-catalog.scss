@@ -381,6 +381,10 @@ body {
     margin-bottom: 12px;
     width: 282px;
 
+    @media (max-width: 320px) {
+      width: 242px;
+    }
+
     .search-wrapper__input:hover,
     .search-wrapper__input:focus {
       border: 1px solid var(--grey);
@@ -557,6 +561,10 @@ body {
     letter-spacing: 0.24px;
     width: 120px;
     text-align: center;
+
+    @media (max-width: 320px) {
+      width: 100px;
+    }
   }
 
   &__divider {

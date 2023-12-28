@@ -15,6 +15,10 @@
   @media (max-width: 479px) {
     padding: 15px 0 40px 0;
   }
+
+  @media (max-width: 340px) {
+    padding-bottom: 0;
+  }
   &__container {
     margin-bottom: 56px;
   }
@@ -268,6 +272,8 @@
     font-size: 14px;
     letter-spacing: 0.14px;
     margin-bottom: 24px;
+    flex: auto;
+    word-break: break-all;
 
     @media (max-width: 1200px) {
       margin-bottom: 20px;
@@ -372,6 +378,7 @@
 
   &__status {
     margin-bottom: 7.5px;
+    min-width: 90px;
 
     .lable-status_available {
       background-color: var(--white-3);
@@ -494,6 +501,7 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 32px;
+      gap: 8px;
       @media (max-width: 767px) {
         margin-bottom: 24px;
       }

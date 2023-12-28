@@ -96,6 +96,7 @@
     color: var(--grey);
     flex: 1 0 50%;
     align-self: flex-end;
+    word-break: break-all;
   }
 
   // .basket-mobile__delete
@@ -118,6 +119,10 @@
     color: var(--grey);
     font-size: 14px;
     flex: 0 0 25%;
+
+    @media (max-width: 320px) {
+      flex: 0 0 23%;
+    }
   }
 
   // .basket-mobile__counter
@@ -152,6 +157,9 @@
     font-size: 14px;
     text-align: right;
     flex: 0 0 25%;
+    @media (max-width: 320px) {
+      flex: 0 0 23%;
+    }
   }
 
   &__total-price {

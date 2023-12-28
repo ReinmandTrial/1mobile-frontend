@@ -114,6 +114,10 @@
     @media (max-width: 479px) {
       justify-content: space-between;
     }
+
+    @media (max-width: 320px) {
+      font-size: 11px;
+    }
   }
 
   &__respond {
@@ -143,6 +147,10 @@
       margin-right: 8px;
       font-size: 16px;
       color: var(--black);
+
+      @media (max-width: 320px) {
+        margin-right: 4px;
+      }
     }
 
     ._icon-like {
@@ -164,6 +172,10 @@
     @media (max-width: 390px) {
       margin-right: 8px;
     }
+
+    @media (max-width: 320px) {
+      margin-right: 4px;
+    }
   }
 
   &__show-answer {
@@ -178,6 +190,10 @@
     }
     @media (max-width: 390px) {
       margin-left: 12px;
+    }
+
+    @media (max-width: 320px) {
+      margin-left: 4px;
     }
   }
 
@@ -206,6 +222,10 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
+
+    @media (max-width: 320px) {
+      padding: 0;
+    }
 
     .asked-question__icon {
       transform: scale(1, -1);

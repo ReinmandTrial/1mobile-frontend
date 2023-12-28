@@ -24,6 +24,12 @@
       height: 40px;
     }
 
+    @media (max-width: 340px) {
+      width: 32px;
+      height: 32px;
+      font-size: 12px;
+    }
+
     &:hover {
       background: var(--white-2);
     }
@@ -33,6 +39,10 @@
 
       @media (max-width: 479px) {
         margin-right: 8px;
+      }
+
+      @media (max-width: 340px) {
+        margin-right: 4px;
       }
     }
 
@@ -55,6 +65,10 @@
 
   &__icon {
     font-size: 16px;
+
+    @media (max-width: 340px) {
+      font-size: 12px;
+    }
   }
 
   &__dots {
