@@ -163,14 +163,7 @@
     text-align: center;
     justify-content: flex-start;
     gap: 24px;
-    width: 35%;
-
-    @media (max-width: 992px) {
-      width: 50%;
-    }
-    @media (max-width: 590px) {
-      width: 100%;
-    }
+    width: 100%;
   }
 
   // .success-order__icon
