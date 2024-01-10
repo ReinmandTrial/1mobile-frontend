@@ -3697,7 +3697,7 @@ body.burger-open {
 }
 @media (max-width: 430px) {
   .advantages__item {
-    flex: 0 1 47%;
+    flex: 0 1 45%;
   }
 }
 .advantages__item img {
