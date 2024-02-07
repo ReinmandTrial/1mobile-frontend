@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.min.css" />
-  <title>Page 404</title>
+  <title>Open Basket</title>
 </head>
 
 
@@ -480,6 +480,30 @@
                             <span class="header__client-icon _icon-basket"></span>
                             <span class="client-basket__count _empty"></span>
                         </a>
+
+                        <div class="basket-modal">
+                            <div class="basket-modal__body">
+                                <button type='button' class="basket-modal__close">
+                                    <span class='_icon-close'></span>
+                                </button>
+                                <div class="basket-modal__title">Корзина</div>
+                                <div class="basket-modal__list"></div>
+                                <div class="basket-modal__text"></div>
+                                <div class="basket-modal__list"></div>
+                                <div class="total-block">
+                                    <div class="total-block__sum">
+                                        <div class="total-block__text">Всего</div>
+                                        <div class="total-block__price">900$</div>
+
+                                    </div>
+                                    <button type='button' class="total-block__btn btn btn_red">Купить</button>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
                     </li>
                     <li class="header__client-item">
                         <a href="#" class="header__client-link header__client-wish">
@@ -562,44 +586,83 @@
 </header>
 
         <main class="main">
+            <aside class="sidebar">
+                <div class="container">
+                    <div class="sidebar__body">
+                        <div class="sidebar__social">
+                            <a href="#" class="sidebar__item">
+                                <img src="./img/icons/whatsapp.svg" alt="icon" />
+                            </a>
+                            <a href="#" class="sidebar__item">
+                                <img src="./img/icons/telegram.svg" alt="icon" />
+                            </a>
+                            <a href="#" class="sidebar__item">
+                                <img src="./img/icons/viber.svg" alt="icon" />
+                            </a>
+                        </div>
 
+                        <a href="#" class="sidebar__icon sidebar__chat">
+                            <span class="_icon-chat"></span>
+                        </a>
+                        <button type="button" class="sidebar__icon sidebar__up">
+                            <span class="_icon-arrow-up"></span>
+                        </button>
+                    </div>
+                </div>
+            </aside>
+            <section class="banner">
+                <div class="container">
+                    <div class="banner__container">
+                        <div class="banner__items">
+                            <a href="#" class="banner__item item-banner">
+                                <img class="item-banner__image" src="./img/banner/img1.png" alt="image" />
+                                <div class="item-banner__heading">
+                                    <span>Discounts for</span>
+                                    <span>computers</span>
+                                </div>
+                            </a>
+                            <a href="#" class="banner__item banner__item_big item-banner">
+                                <img class="item-banner__image" src="./img/banner/img2.png" alt="image" />
+                                <div class="item-banner__heading">
+                                    <span>Chargers</span>
+                                </div>
+                            </a>
 
-            <div class="container">
-                <div class="not-found">
-                    <ul class="breadcrumps">
-                        <li class="breadcrumps__item">
-                            <button href="#" class="breadcrumps__link">
-                                <span class="breadcrumps__icon _icon-home"></span>
-                            </button>
-                        </li>
-                        <li class="breadcrumps__item">
-                            <span class='breadcrumps__icon _icon-arrow-open'></span>
-                        </li>
-                        <li class="breadcrumps__item">
-                            Поиск
-                        </li>
-                    </ul>
-
-                    <div class="not-found__container">
-
-                        <div class="not-found__content">
-
-                            <div class="not-found__title">404</div>
-                            <div class="not-found__text">Данная страница не найдена</div>
-                            <button type='button' class="not-found__btn btn btn_red">Перейти на главную</button>
-
-
+                            <a href="#" class="banner__item item-banner">
+                                <img class="item-banner__image" src="./img/banner/img3.png" alt="image" />
+                                <div class="item-banner__heading">
+                                    <span>Phones</span>
+                                </div>
+                            </a>
+                            <a href="#" class="banner__item item-banner">
+                                <img class="item-banner__image" src="./img/banner/img3.png" alt="image" />
+                                <div class="item-banner__heading">
+                                    <span>Phones</span>
+                                </div>
+                            </a>
+                            <a href="#" class="banner__item item-banner">
+                                <img class="item-banner__image" class="item-banner__image" src="./img/banner/img1.png" alt="image" />
+                                <div class="item-banner__heading">
+                                    <span>Discounts for</span>
+                                    <span>computers</span>
+                                </div>
+                            </a>
+                            <a href="#" class="banner__item item-banner">
+                                <img class="item-banner__image" src="./img/banner/img4.png" alt="image" />
+                                <div class="item-banner__heading">
+                                    <span>Cases Iphone</span>
+                                </div>
+                            </a>
+                            <a href="#" class="banner__item item-banner">
+                                <img class="item-banner__image" src="./img/banner/img4.png" alt="image" />
+                                <div class="item-banner__heading">
+                                    <span>Cases Iphone</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-
-            </div>
-
-
-
-
-
+            </section>
         </main>
 
         <footer class="footer">

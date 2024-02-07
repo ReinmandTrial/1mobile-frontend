@@ -1,0 +1,85 @@
+.basket-modal {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 52px 24px 94px 24px;
+  background-color: var(--white-1);
+  border-radius: 10px;
+  z-index: 15;
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.07);
+  min-width: 718px;
+
+  // .basket-modal__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .basket-modal__close
+
+  &__close {
+    position: absolute;
+    top: 60px;
+    right: 44px;
+    font-size: 24px;
+    color: var(--grey);
+  }
+
+  // .basket-modal__title
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--black-2);
+    margin-bottom: 36px;
+  }
+
+  // .basket-modal__list
+
+  &__list {
+  }
+
+  // .basket-modal__text
+
+  &__text {
+  }
+}
+
+.total-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.13);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  // .total-block__sum
+
+  &__sum {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .total-block__text
+
+  &__text {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  // .total-block__price
+
+  &__price {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  // .total-block__btn
+
+  &__btn {
+  }
+}

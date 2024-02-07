@@ -19,6 +19,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    text-align: center;
   }
   // .not-found__title
 
@@ -26,13 +27,15 @@
     margin-bottom: 16px;
     font-size: 100px;
     font-weight: 700;
-    letter-spacing: -1%;
+    color: var(--black);
   }
 
   // .not-found__text
 
   &__text {
     margin-bottom: 40px;
+    font-size: 24px;
+    color: var(--grey);
   }
 
   // .not-found__btn
