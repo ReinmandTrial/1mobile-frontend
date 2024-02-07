@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { "title": "Page 404" })
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+
+        <main class="main">
+
+
+            <div class="container">
+                <div class="not-found">
+                    <ul class="breadcrumps">
+                        <li class="breadcrumps__item">
+                            <button href="#" class="breadcrumps__link">
+                                <span class="breadcrumps__icon _icon-home"></span>
+                            </button>
+                        </li>
+                        <li class="breadcrumps__item">
+                            <span class='breadcrumps__icon _icon-arrow-open'></span>
+                        </li>
+                        <li class="breadcrumps__item">
+                            Поиск
+                        </li>
+                    </ul>
+
+                    <div class="not-found__container">
+
+                        <div class="not-found__content">
+
+                            <div class="not-found__title">404</div>
+                            <div class="not-found__text">Данная страница не найдена</div>
+                            <div class="not-found__btn btn btn_red">Перейти на главную</div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </main>
+
+        @@include('html/footer.html', {})
+    </div>
+</body>
+
+</html>

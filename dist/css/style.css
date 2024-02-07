@@ -7579,3 +7579,36 @@ body.burger-open {
 .pre-order__number {
   color: var(--blue);
 }
+
+.not-found {
+  min-height: 80vh;
+  display: flex;
+  padding-top: 15px;
+  flex-direction: column;
+  position: relative;
+}
+.not-found__container {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.not-found__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.not-found__title {
+  margin-bottom: 16px;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -1%;
+}
+.not-found__text {
+  margin-bottom: 40px;
+}
+.not-found__btn {
+  min-width: 248px;
+}
