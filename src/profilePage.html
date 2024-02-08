@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { "title": "User Profile" })
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+
+        <main class="main">
+            <div class="container">
+                <div class="user-profile">
+                    <ul class="breadcrumps">
+                        <li class="breadcrumps__item">
+                            <button href="#" class="breadcrumps__link">
+                                <span class="breadcrumps__icon _icon-home"></span>
+                            </button>
+                        </li>
+                        <li class="breadcrumps__item">
+                            <span class='breadcrumps__icon _icon-arrow-open'></span>
+                        </li>
+                        <li class="breadcrumps__item">
+                            Профиль
+                        </li>
+                    </ul>
+
+                    <div class="user-profile__container">
+                        <div class="user-profile__title heading-3">
+                            <button type='button' class='user-profile__return'>
+                                <img src="./img/icons/icon-back.svg" alt="icon">
+                            </button>
+                            <span>Профиль</span>
+                        </div>
+                        <div class="user-profile__head">
+                            <button type='button' class="user-profile__head-item">История заказов</button>
+                            <button type='button' class="user-profile__head-item _active">Профиль</button>
+                            <button type='button' class="user-profile__head-item">Избранные товары</button>
+                            <button type='button' class="user-profile__head-item">Мои отзывы</button>
+                        </div>
+                        <div class="profile-page">
+                            <div class="profile-page__input-area">
+                                <input class='profile-page__input' type="text" value='Ваше имя'>
+                                <input class='profile-page__input' type="email" value='Email'>
+                                <input class='profile-page__input' type="tel" value='Номер телефона'>
+
+                            </div>
+
+                            <div class="profile-page__links-area">
+                                <a href='#' class="profile-page__link">Сменить пароль</a>
+                                <a href='#' class="profile-page__link">Сменить Email</a>
+                            </div>
+
+                            <button type='button' disabled class="profile-page__btn btn btn_disabled">Сохранить</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </main>
+
+        @@include('html/footer.html', {})
+    </div>
+</body>
+
+</html>
