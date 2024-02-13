@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.min.css" />
-  <title>User Profile</title>
+  <title>Profile Order History</title>
 </head>
 
 
@@ -563,7 +563,7 @@
 
         <main class="main">
             <div class="container">
-                <div class="profile-page">
+                <div class="user-profile">
                     <ul class="breadcrumps">
                         <li class="breadcrumps__item">
                             <button href="#" class="breadcrumps__link">
@@ -574,33 +574,287 @@
                             <span class='breadcrumps__icon _icon-arrow-open'></span>
                         </li>
                         <li class="breadcrumps__item">
-                            Профиль
+                            История заказов
                         </li>
                     </ul>
 
-                    <div class="profile-page__container">
-                        <div class="profile-page__title heading-3">Профиль</div>
-                        <div class="profile-page__head"></div>
-                        <div class="profile-page__form profile-form">
-                            <div class="profile-form__input-area">
-                                <input class='profile-page__input' type="text" value='Ваше имя'>
-                                <input class='profile-page__input' type="email" value='Email'>
-                                <input class='profile-page__input' type="tel" value='Номер телефона'>
+                    <div class="user-profile__container">
+                        <div class="user-profile__title heading-3">
+                            <button type='button' class='user-profile__return'>
+                                <img src="./img/icons/icon-back.svg" alt="icon">
+                            </button>
+                            <span>История заказов</span>
+                        </div>
+                        <div class="user-profile__head">
+                            <button type='button' class="user-profile__head-item _active">История заказов</button>
+                            <button type='button' class="user-profile__head-item">Профиль</button>
+                            <button type='button' class="user-profile__head-item">Избранные товары</button>
+                            <button type='button' class="user-profile__head-item">Мои отзывы</button>
+                        </div>
+                        <div class="order-history">
+                            <div class="order-history__list">
+                                <div class="history-item">
+                                    <div class="history-item__head">
+                                        <div class="history-item__number">Заказ № 956889567</div>
+                                        <div class="history-item__status">Выполнен</div>
+                                        <div class="history-item__date">
+                                            <img class='icon-date' src="./img/svg/calendar.svg" alt="calendar">
+                                            <span class='text-date'>12/08/2023</span>
+                                        </div>
+                                        <div class="history-item__total">
+                                            <span>Общая сумма заказа:</span>
+                                            <span class="history-item__total_black">900$</span>
+
+
+                                        </div>
+                                        <button type='button' class="history-item__arrow">
+                                            <span class='_icon-arrow-down'></span>
+                                            <span class='_icon-arrow-right'></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="history-item__body">
+                                        <div class="order-item">
+                                            <div class="order-item__head">
+                                                <div class="order-item__title">Фото</div>
+                                                <div class="order-item__title">Название</div>
+                                                <div class="order-item__title">Артикул</div>
+                                                <div class="order-item__title">Цена за единицу</div>
+                                                <div class="order-item__title">Количество</div>
+                                                <div class="order-item__title">Сумма</div>
+                                                <div class="order-item__title"></div>
+                                            </div>
+                                            <div class="order-item__body">
+                                                <a href='#' class="order-item__img">
+                                                    <img src="./img/productImg-l.png" alt="product">
+                                                </a>
+                                                <a href='#' class="order-item__name">Чехол накладка Deen CrystalRing for Magnet для Apple iPhone 13 Pro (6.1")
+                                                    <span class='order-item__name_color'>(Бесцветный / Темно-синий)</span>
+                                                </a>
+                                                <div class="order-item__article">132940</div>
+                                                <div class="order-item__price">80$</div>
+                                                <div class="order-item__amount">4шт</div>
+                                                <div class="order-item__sum">320$</div>
+                                                <div class="order-item__feedback order-feedback">
+                                                    <div class="order-feedback__status"></div>
+
+                                                    <a href='#' class="order-feedback__link _blue">Оставить отзыв</a>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-item__head">
+                                        <div class="history-item__number">Заказ № 956889567</div>
+                                        <div class="history-item__status">Выполнен</div>
+                                        <div class="history-item__date">
+                                            <img class='icon-date' src="./img/svg/calendar.svg" alt="calendar">
+                                            <span class='text-date'>12/08/2023</span>
+                                        </div>
+                                        <div class="history-item__total">
+                                            <span>Общая сумма заказа:</span>
+                                            <span class="history-item__total_black">900$</span>
+
+                                        </div>
+                                        <button type='button' class="history-item__arrow">
+                                            <span class='_icon-arrow-down'></span>
+                                            <span class='_icon-arrow-right'></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="history-item__body">
+                                        <div class="order-item">
+                                            <div class="order-item__head">
+                                                <div class="order-item__title">Фото</div>
+                                                <div class="order-item__title">Название</div>
+                                                <div class="order-item__title">Артикул</div>
+                                                <div class="order-item__title">Цена за единицу</div>
+                                                <div class="order-item__title">Количество</div>
+                                                <div class="order-item__title">Сумма</div>
+                                                <div class="order-item__title"></div>
+                                            </div>
+                                            <div class="order-item__body">
+                                                <a href='#' class="order-item__img">
+                                                    <img src="./img/productImg-l.png" alt="product">
+                                                </a>
+                                                <a href='#' class="order-item__name">Чехол накладка Deen CrystalRing for Magnet для Apple iPhone 13 Pro (6.1")
+                                                    <span class='order-item__name_color'>(Бесцветный / Темно-синий)</span>
+                                                </a>
+                                                <div class="order-item__article">132940</div>
+                                                <div class="order-item__price">80$</div>
+                                                <div class="order-item__amount">4шт</div>
+                                                <div class="order-item__sum">320$</div>
+                                                <div class="order-item__feedback order-feedback">
+                                                    <div class="order-feedback__status"></div>
+
+                                                    <a href='#' class="order-feedback__link _blue">Оставить отзыв</a>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-item__head">
+                                        <div class="history-item__number">Заказ № 956889567</div>
+                                        <div class="history-item__status">Выполнен</div>
+                                        <div class="history-item__date">
+                                            <img class='icon-date' src="./img/svg/calendar.svg" alt="calendar">
+                                            <span class='text-date'>12/08/2023</span>
+                                        </div>
+                                        <div class="history-item__total">
+                                            <span>Общая сумма заказа:</span>
+                                            <span class="history-item__total_black">900$</span>
+
+
+                                        </div>
+                                        <button type='button' class="history-item__arrow _open">
+                                            <span class='_icon-arrow-down'></span>
+                                            <span class='_icon-arrow-right'></span>
+                                        </button>
+
+
+                                    </div>
+                                    <div class="history-item__body _open">
+                                        <div class="order-item">
+                                            <div class="order-item__head">
+                                                <div class="order-item__title">Фото</div>
+                                                <div class="order-item__title">Название</div>
+                                                <div class="order-item__title">Артикул</div>
+                                                <div class="order-item__title">Цена за единицу</div>
+                                                <div class="order-item__title">Количество</div>
+                                                <div class="order-item__title">Сумма</div>
+                                                <div class="order-item__title"></div>
+                                            </div>
+                                            <div class="order-item__body">
+                                                <a href='#' class="order-item__img">
+                                                    <img src="./img/productImg-l.png" alt="product">
+                                                </a>
+                                                <a href='#' class="order-item__name">Чехол накладка Deen CrystalRing for Magnet для Apple iPhone 13 Pro (6.1")
+                                                    <span class='order-item__name_color'>(Бесцветный / Темно-синий)</span>
+                                                </a>
+                                                <div class="order-item__article">132940</div>
+                                                <div class="order-item__price">80$</div>
+                                                <div class="order-item__amount">4шт</div>
+                                                <div class="order-item__sum">320$</div>
+                                                <div class="order-item__feedback order-feedback">
+                                                    <div class="order-feedback__status"></div>
+
+                                                    <a href='#' class="order-feedback__link _blue">Оставить отзыв</a>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="order-item">
+                                            <div class="order-item__head">
+                                                <div class="order-item__title">Фото</div>
+                                                <div class="order-item__title">Название</div>
+                                                <div class="order-item__title">Артикул</div>
+                                                <div class="order-item__title">Цена за единицу</div>
+                                                <div class="order-item__title">Количество</div>
+                                                <div class="order-item__title">Сумма</div>
+                                                <div class="order-item__title"></div>
+                                            </div>
+                                            <div class="order-item__body">
+                                                <a href='#' class="order-item__img">
+                                                    <img src="./img/productImg-l.png" alt="product">
+                                                </a>
+                                                <a href='#' class="order-item__name">Чехол накладка Deen CrystalRing for Magnet для Apple iPhone 13 Pro (6.1")
+                                                    <span class='order-item__name_color'>(Бесцветный / Темно-синий)</span>
+                                                </a>
+                                                <div class="order-item__article">132940</div>
+                                                <div class="order-item__price">80$</div>
+                                                <div class="order-item__amount">4шт</div>
+                                                <div class="order-item__sum">320$</div>
+                                                <div class="order-item__feedback order-feedback">
+                                                    <div class="order-feedback__status">На рассмотрении</div>
+
+                                                    <a href='#' class="order-feedback__link _grey">Посмотреть отзыв</a>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="order-item">
+                                            <div class="order-item__head">
+                                                <div class="order-item__title">Фото</div>
+                                                <div class="order-item__title">Название</div>
+                                                <div class="order-item__title">Артикул</div>
+                                                <div class="order-item__title">Цена за единицу</div>
+                                                <div class="order-item__title">Количество</div>
+                                                <div class="order-item__title">Сумма</div>
+                                                <div class="order-item__title"></div>
+                                            </div>
+                                            <div class="order-item__body">
+                                                <a href='#' class="order-item__img">
+                                                    <img src="./img/productImg-l.png" alt="product">
+                                                </a>
+                                                <a href='#' class="order-item__name">Чехол накладка Deen CrystalRing for Magnet для Apple iPhone 13 Pro (6.1")
+                                                    <span class='order-item__name_color'>(Бесцветный / Темно-синий)</span>
+                                                </a>
+                                                <div class="order-item__article">132940</div>
+                                                <div class="order-item__price">80$</div>
+                                                <div class="order-item__amount">4шт</div>
+                                                <div class="order-item__sum">320$</div>
+                                                <div class="order-item__feedback order-feedback">
+                                                    <div class="order-feedback__status _red">Отклонен</div>
+
+                                                    <a href='#' class="order-feedback__link _grey">Посмотреть отзыв</a>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="order-item">
+                                            <div class="order-item__head">
+                                                <div class="order-item__title">Фото</div>
+                                                <div class="order-item__title">Название</div>
+                                                <div class="order-item__title">Артикул</div>
+                                                <div class="order-item__title">Цена за единицу</div>
+                                                <div class="order-item__title">Количество</div>
+                                                <div class="order-item__title">Сумма</div>
+                                                <div class="order-item__title"></div>
+                                            </div>
+                                            <div class="order-item__body">
+                                                <a href='#' class="order-item__img">
+                                                    <img src="./img/productImg-l.png" alt="product">
+                                                </a>
+                                                <a href='#' class="order-item__name">Чехол накладка Deen CrystalRing for Magnet для Apple iPhone 13 Pro (6.1")
+                                                    <span class='order-item__name_color'>(Бесцветный / Темно-синий)</span>
+                                                </a>
+                                                <div class="order-item__article">132940</div>
+                                                <div class="order-item__price">80$</div>
+                                                <div class="order-item__amount">4шт</div>
+                                                <div class="order-item__sum">320$</div>
+                                                <div class="order-item__feedback order-feedback">
+                                                    <div class="order-feedback__status _blue">Одобрен</div>
+
+                                                    <a href='#' class="order-feedback__link _grey">Посмотреть отзыв</a>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
 
                             </div>
 
-                            <div class="profile-form__links-area">
-                                <a href='#' class="profile-form__link">Сменить пароль</a>
-                                <a href='#' class="profile-form__link">Сменить Email</a>
-                            </div>
-
-                            <div class="profile-form__btn btn btn_disabled">Сохранить</div>
                         </div>
 
                     </div>
                 </div>
-
-
             </div>
 
 
