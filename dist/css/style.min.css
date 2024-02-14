@@ -2954,6 +2954,7 @@ body.burger-open {
   display: none;
   width: 24px;
   height: 24px;
+  z-index: 1;
 }
 @media (max-width: 1200px) {
   .product-card__icon {
@@ -8470,5 +8471,27 @@ body.burger-open {
 @media (max-width: 350px) {
   .order-number .order-feedback__link._grey {
     font-size: 11px;
+  }
+}
+
+.favorites {
+  padding-top: 23px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+.favorites__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+@media (max-width: 992px) {
+  .favorites__list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .favorites .product-card:hover .hidden-card {
+    visibility: hidden;
   }
 }

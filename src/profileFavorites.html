@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { "title": "Profile Favorites" })
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+
+        <main class="main">
+            <div class="container">
+                <div class="user-profile">
+                    <ul class="breadcrumps">
+                        <li class="breadcrumps__item">
+                            <button href="#" class="breadcrumps__link">
+                                <span class="breadcrumps__icon _icon-home"></span>
+                            </button>
+                        </li>
+                        <li class="breadcrumps__item">
+                            <span class='breadcrumps__icon _icon-arrow-open'></span>
+                        </li>
+                        <li class="breadcrumps__item">
+                            Избранные товары
+                        </li>
+                    </ul>
+
+                    <div class="user-profile__container">
+                        <div class="user-profile__title heading-3">
+                            <button type='button' class='user-profile__return'>
+                                <img src="./img/icons/icon-back.svg" alt="icon">
+                            </button>
+                            <span>Избранные товары</span>
+                        </div>
+                        <div class="user-profile__head">
+                            <button type='button' class="user-profile__head-item">История заказов</button>
+                            <button type='button' class="user-profile__head-item">Профиль</button>
+                            <button type='button' class="user-profile__head-item _active">Избранные товары</button>
+                            <button type='button' class="user-profile__head-item">Мои отзывы</button>
+                        </div>
+                        <div class="favorites">
+                            <div class="favorites__list">
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+
+                                    <a href='#' class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img" />
+                                    </a>
+
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.)
+                                            <span class="product-card__name_color"></span>
+                                        </a>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                                            <div class="product-card__counter _hidden">
+                                                <div class="counter">
+                                                    <button type="button" class="counter__icon  " disabled>
+                                                        <span class='_icon-minus'></span>
+                                                    </button>
+
+
+                                                    <div class="counter__value">
+                                                        <form action="">
+                                                            <input type="number" value="1" placeholder='1'>
+                                                        </form>
+                                                    </div>
+
+
+                                                    <button type="button" class="counter__icon">
+                                                        <span class='_icon-plus'></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__hidden hidden-card">
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Тип:</span>
+                                                <span class="hidden-card__value">накладка</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Материал:</span>
+                                                <span class="hidden-card__value">силикон</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Цвет:</span>
+                                                <span class="hidden-card__value">синий</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Прочее:</span>
+                                                <span class="hidden-card__value">встроенные магниты</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+
+                                    <a href='#' class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img" />
+                                    </a>
+
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.)
+                                            <span class="product-card__name_color"></span>
+                                        </a>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                                            <div class="product-card__counter _hidden">
+                                                <div class="counter">
+                                                    <button type="button" class="counter__icon  " disabled>
+                                                        <span class='_icon-minus'></span>
+                                                    </button>
+
+
+                                                    <div class="counter__value">
+                                                        <form action="">
+                                                            <input type="number" value="1" placeholder='1'>
+                                                        </form>
+                                                    </div>
+
+
+                                                    <button type="button" class="counter__icon">
+                                                        <span class='_icon-plus'></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__hidden hidden-card">
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Тип:</span>
+                                                <span class="hidden-card__value">накладка</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Материал:</span>
+                                                <span class="hidden-card__value">силикон</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Цвет:</span>
+                                                <span class="hidden-card__value">синий</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Прочее:</span>
+                                                <span class="hidden-card__value">встроенные магниты</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+
+                                    <a href='#' class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img" />
+                                    </a>
+
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.)
+                                            <span class="product-card__name_color"></span>
+                                        </a>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                                            <div class="product-card__counter _hidden">
+                                                <div class="counter">
+                                                    <button type="button" class="counter__icon  " disabled>
+                                                        <span class='_icon-minus'></span>
+                                                    </button>
+
+
+                                                    <div class="counter__value">
+                                                        <form action="">
+                                                            <input type="number" value="1" placeholder='1'>
+                                                        </form>
+                                                    </div>
+
+
+                                                    <button type="button" class="counter__icon">
+                                                        <span class='_icon-plus'></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__hidden hidden-card">
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Тип:</span>
+                                                <span class="hidden-card__value">накладка</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Материал:</span>
+                                                <span class="hidden-card__value">силикон</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Цвет:</span>
+                                                <span class="hidden-card__value">синий</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Прочее:</span>
+                                                <span class="hidden-card__value">встроенные магниты</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+
+                                    <a href='#' class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img" />
+                                    </a>
+
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.)
+                                            <span class="product-card__name_color"></span>
+                                        </a>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                                            <div class="product-card__counter _hidden">
+                                                <div class="counter">
+                                                    <button type="button" class="counter__icon  " disabled>
+                                                        <span class='_icon-minus'></span>
+                                                    </button>
+
+
+                                                    <div class="counter__value">
+                                                        <form action="">
+                                                            <input type="number" value="1" placeholder='1'>
+                                                        </form>
+                                                    </div>
+
+
+                                                    <button type="button" class="counter__icon">
+                                                        <span class='_icon-plus'></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__hidden hidden-card">
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Тип:</span>
+                                                <span class="hidden-card__value">накладка</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Материал:</span>
+                                                <span class="hidden-card__value">силикон</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Цвет:</span>
+                                                <span class="hidden-card__value">синий</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Прочее:</span>
+                                                <span class="hidden-card__value">встроенные магниты</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+
+                                    <a href='#' class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img" />
+                                    </a>
+
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.)
+                                            <span class="product-card__name_color"></span>
+                                        </a>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                                            <div class="product-card__counter _hidden">
+                                                <div class="counter">
+                                                    <button type="button" class="counter__icon  " disabled>
+                                                        <span class='_icon-minus'></span>
+                                                    </button>
+
+
+                                                    <div class="counter__value">
+                                                        <form action="">
+                                                            <input type="number" value="1" placeholder='1'>
+                                                        </form>
+                                                    </div>
+
+
+                                                    <button type="button" class="counter__icon">
+                                                        <span class='_icon-plus'></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__hidden hidden-card">
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Тип:</span>
+                                                <span class="hidden-card__value">накладка</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Материал:</span>
+                                                <span class="hidden-card__value">силикон</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Цвет:</span>
+                                                <span class="hidden-card__value">синий</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Прочее:</span>
+                                                <span class="hidden-card__value">встроенные магниты</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+
+                                    <a href='#' class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img" />
+                                    </a>
+
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.)
+                                            <span class="product-card__name_color"></span>
+                                        </a>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                                            <div class="product-card__counter _hidden">
+                                                <div class="counter">
+                                                    <button type="button" class="counter__icon  " disabled>
+                                                        <span class='_icon-minus'></span>
+                                                    </button>
+
+
+                                                    <div class="counter__value">
+                                                        <form action="">
+                                                            <input type="number" value="1" placeholder='1'>
+                                                        </form>
+                                                    </div>
+
+
+                                                    <button type="button" class="counter__icon">
+                                                        <span class='_icon-plus'></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__hidden hidden-card">
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Тип:</span>
+                                                <span class="hidden-card__value">накладка</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Материал:</span>
+                                                <span class="hidden-card__value">силикон</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Цвет:</span>
+                                                <span class="hidden-card__value">синий</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Прочее:</span>
+                                                <span class="hidden-card__value">встроенные магниты</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+
+                                    <a href='#' class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img" />
+                                    </a>
+
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.)
+                                            <span class="product-card__name_color"></span>
+                                        </a>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                                            <div class="product-card__counter _hidden">
+                                                <div class="counter">
+                                                    <button type="button" class="counter__icon  " disabled>
+                                                        <span class='_icon-minus'></span>
+                                                    </button>
+
+
+                                                    <div class="counter__value">
+                                                        <form action="">
+                                                            <input type="number" value="1" placeholder='1'>
+                                                        </form>
+                                                    </div>
+
+
+                                                    <button type="button" class="counter__icon">
+                                                        <span class='_icon-plus'></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__hidden hidden-card">
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Тип:</span>
+                                                <span class="hidden-card__value">накладка</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Материал:</span>
+                                                <span class="hidden-card__value">силикон</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Цвет:</span>
+                                                <span class="hidden-card__value">синий</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Прочее:</span>
+                                                <span class="hidden-card__value">встроенные магниты</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+
+                                    <a href='#' class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img" />
+                                    </a>
+
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.)
+                                            <span class="product-card__name_color"></span>
+                                        </a>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                                            <div class="product-card__counter _hidden">
+                                                <div class="counter">
+                                                    <button type="button" class="counter__icon  " disabled>
+                                                        <span class='_icon-minus'></span>
+                                                    </button>
+
+
+                                                    <div class="counter__value">
+                                                        <form action="">
+                                                            <input type="number" value="1" placeholder='1'>
+                                                        </form>
+                                                    </div>
+
+
+                                                    <button type="button" class="counter__icon">
+                                                        <span class='_icon-plus'></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__hidden hidden-card">
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Тип:</span>
+                                                <span class="hidden-card__value">накладка</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Материал:</span>
+                                                <span class="hidden-card__value">силикон</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Цвет:</span>
+                                                <span class="hidden-card__value">синий</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Прочее:</span>
+                                                <span class="hidden-card__value">встроенные магниты</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+
+                                    <a href='#' class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img" />
+                                    </a>
+
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.)
+                                            <span class="product-card__name_color"></span>
+                                        </a>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                                            <div class="product-card__counter _hidden">
+                                                <div class="counter">
+                                                    <button type="button" class="counter__icon  " disabled>
+                                                        <span class='_icon-minus'></span>
+                                                    </button>
+
+
+                                                    <div class="counter__value">
+                                                        <form action="">
+                                                            <input type="number" value="1" placeholder='1'>
+                                                        </form>
+                                                    </div>
+
+
+                                                    <button type="button" class="counter__icon">
+                                                        <span class='_icon-plus'></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__hidden hidden-card">
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Тип:</span>
+                                                <span class="hidden-card__value">накладка</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Материал:</span>
+                                                <span class="hidden-card__value">силикон</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Цвет:</span>
+                                                <span class="hidden-card__value">синий</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Прочее:</span>
+                                                <span class="hidden-card__value">встроенные магниты</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <button class="product-card__icon">
+                                        <span class="_icon-wish"></span>
+                                    </button>
+                                    <button class="product-card__icon product-card__icon_red product-card__icon_active">
+                                        <span class="_icon-wish-red"></span>
+                                    </button>
+
+                                    <a href='#' class="product-card__image">
+                                        <img src="./img/popular/image1.png" alt="img" />
+                                    </a>
+
+                                    <div class="product-card__about">
+                                        <a href="#" class="product-card__name">Portative accumulator “Duracel” (4st.)
+                                            <span class="product-card__name_color"></span>
+                                        </a>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__article">
+                                                <span>Артикул: </span>
+                                                <span>132940</span>
+                                            </div>
+
+                                            <div class="product-card__availability">
+                                                <div class="lable-status lable-status_available">В наличии</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__purchase">
+                                            <div class="product-card__price price-card">
+                                                <div class="price-card__old">1500$</div>
+                                                <div class="price-card__new">900$</div>
+                                            </div>
+                                            <div class="product-card__counter _hidden">
+                                                <div class="counter">
+                                                    <button type="button" class="counter__icon  " disabled>
+                                                        <span class='_icon-minus'></span>
+                                                    </button>
+
+
+                                                    <div class="counter__value">
+                                                        <form action="">
+                                                            <input type="number" value="1" placeholder='1'>
+                                                        </form>
+                                                    </div>
+
+
+                                                    <button type="button" class="counter__icon">
+                                                        <span class='_icon-plus'></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__button">
+                                                <button class="btn btn_red">
+                                                    <span class="btn-text">Купить</span>
+                                                    <span class="_icon-basket"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__hidden hidden-card">
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Тип:</span>
+                                                <span class="hidden-card__value">накладка</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Материал:</span>
+                                                <span class="hidden-card__value">силикон</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Цвет:</span>
+                                                <span class="hidden-card__value">синий</span>
+                                            </div>
+                                            <div class="hidden-card__row">
+                                                <span class="hidden-card__name">Прочее:</span>
+                                                <span class="hidden-card__value">встроенные магниты</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+        @@include('html/footer.html', {})
+    </div>
+</body>
+
+</html>
