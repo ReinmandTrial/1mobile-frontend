@@ -35,10 +35,10 @@
 
     &__body {
       align-items: flex-start;
-      grid-template-columns: 60px 2fr 1fr 2fr;
+      grid-template-columns: 60px 1fr 1fr 1fr;
       grid-template-rows: auto;
       row-gap: 20px;
-      justify-items: center;
+      justify-items: flex-start;
 
       @media (max-width: 350px) {
         grid-template-columns: repeat(4, 1fr);
@@ -50,13 +50,14 @@
     &__elem {
       color: var(--black-2);
       font-weight: 400;
+      height: 100%;
+      justify-content: space-between;
       &:nth-child(2) {
         grid-column: span 3;
       }
 
       &:last-child {
         grid-column: span 4;
-        justify-items: flex-start;
       }
     }
 
