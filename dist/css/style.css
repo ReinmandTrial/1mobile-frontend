@@ -8234,6 +8234,10 @@ body.burger-open {
   word-break: break-word;
 }
 
+body:has(.modal._open) {
+  overflow-y: hidden;
+}
+
 .order-feedback {
   display: flex;
   flex-direction: column;
@@ -8411,14 +8415,14 @@ body.burger-open {
 .order-number .order-item__body {
   align-items: flex-start;
   grid-template-columns: 60px 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(3, auto);
   row-gap: 20px;
   justify-items: flex-start;
 }
 @media (max-width: 350px) {
   .order-number .order-item__body {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr auto auto;
     justify-items: flex-start;
   }
 }
