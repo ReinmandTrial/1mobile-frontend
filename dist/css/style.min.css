@@ -8415,14 +8415,14 @@ body:has(.modal._open) {
 .order-number .order-item__body {
   align-items: flex-start;
   grid-template-columns: 60px 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: 76px minmax(44px, max-content) minmax(22px, max-content);
   row-gap: 20px;
   justify-items: flex-start;
 }
 @media (max-width: 350px) {
   .order-number .order-item__body {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: 64px minmax(36px, max-content) minmax(16px, max-content);
     justify-items: flex-start;
   }
 }
