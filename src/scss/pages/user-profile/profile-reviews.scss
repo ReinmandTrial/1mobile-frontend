@@ -1,0 +1,256 @@
+.reviews {
+  padding: 47px 0 94px 0;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    padding: 32px 0;
+  }
+  // .reviews__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.reviews-item {
+  border-radius: 10px;
+  background-color: var(--white-3);
+  padding: 16px 71px 32px 32px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+
+  @media (max-width: 992px) {
+    padding: 16px 32px 32px 32px;
+  }
+  @media (max-width: 767px) {
+    padding: 16px 24px;
+  }
+  @media (max-width: 479px) {
+    padding: 10px 8px;
+  }
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+  // .reviews-item__block
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    @media (max-width: 767px) {
+      gap: 8px;
+    }
+  }
+
+  // .reviews-item__sup
+
+  &__sup {
+    display: grid;
+    grid-template-columns: 35% 1fr 162px;
+    gap: 42px;
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  // .reviews-item__heading
+
+  &__heading {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 19px;
+      &_first {
+        display: none;
+      }
+    }
+  }
+
+  // .reviews-item__info
+
+  &__info {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 14px;
+  }
+
+  // .reviews-item__photo
+
+  &__photo {
+    border-radius: 5px;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // .reviews-item__name
+
+  &__name {
+    text-decoration: underline;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-decoration: underline;
+    color: var(--black-2);
+    height: 34px;
+
+    @media (max-width: 992px) {
+      -webkit-line-clamp: 3;
+      height: 51px;
+    }
+    @media (max-width: 320px) {
+      -webkit-line-clamp: 4;
+      height: 60px;
+    }
+
+    &_color {
+      color: var(--grey);
+    }
+  }
+
+  // .reviews-item__sub
+
+  &__sub {
+    display: grid;
+    grid-template-columns: 35% 1fr 162px;
+    gap: 42px;
+    text-align: right;
+
+    @media (max-width: 767px) {
+      grid-template-columns: auto 1fr auto;
+      gap: 32px;
+    }
+
+    &_link {
+      color: var(--blue);
+      text-decoration: underline;
+      @media (max-width: 767px) {
+        order: 1;
+      }
+    }
+
+    &_grey {
+      color: var(--grey);
+    }
+
+    &_red {
+      color: var(--red);
+    }
+
+    &_blue {
+      color: var(--blue);
+    }
+  }
+
+  // .reviews-item__text
+
+  &__text {
+  }
+
+  // .reviews-item__link
+
+  // .reviews-item__stars
+
+  &__stars {
+  }
+}
+
+.answer-popup {
+  padding: 28px 74px 24px 24px;
+  width: 75%;
+  color: var(--black-2);
+
+  @media (max-width: 992px) {
+    padding: 24px;
+  }
+  @media (max-width: 340px) {
+    padding: 16px;
+  }
+
+  &__close {
+    top: 31px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    color: var(--grey);
+    @media (max-width: 992px) {
+      top: 27px;
+    }
+    @media (max-width: 340px) {
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    @media (max-width: 992px) {
+      gap: 32px;
+    }
+    @media (max-width: 340px) {
+      gap: 28px;
+    }
+
+    .answer-comments {
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-right: 26px;
+
+    @media (max-width: 340px) {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 340px) {
+    .comments__user {
+      font-size: 16px;
+      margin-right: 20px;
+    }
+    .comments__date {
+      font-size: 12px;
+    }
+    .comments__text {
+      font-size: 12px;
+    }
+    .answer-comments__name {
+      font-size: 14px;
+    }
+    .answer-comments__text {
+      font-size: 12px;
+    }
+    .comments__stars {
+      font-size: 18px;
+    }
+    .comments__rating {
+      font-size: 12px;
+    }
+  }
+}

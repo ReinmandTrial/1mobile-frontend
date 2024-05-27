@@ -8512,3 +8512,248 @@ body:has(.modal._open) {
     visibility: hidden;
   }
 }
+
+.reviews {
+  padding: 47px 0 94px 0;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .reviews {
+    padding: 32px 0;
+  }
+}
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reviews-item {
+  border-radius: 10px;
+  background-color: var(--white-3);
+  padding: 16px 71px 32px 32px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+}
+@media (max-width: 992px) {
+  .reviews-item {
+    padding: 16px 32px 32px 32px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews-item {
+    padding: 16px 24px;
+  }
+}
+@media (max-width: 479px) {
+  .reviews-item {
+    padding: 10px 8px;
+  }
+}
+@media (max-width: 320px) {
+  .reviews-item {
+    font-size: 12px;
+  }
+}
+.reviews-item__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+@media (max-width: 767px) {
+  .reviews-item__block {
+    gap: 8px;
+  }
+}
+.reviews-item__sup {
+  display: grid;
+  grid-template-columns: 35% 1fr 162px;
+  gap: 42px;
+}
+@media (max-width: 767px) {
+  .reviews-item__sup {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.reviews-item__heading {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .reviews-item__heading {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .reviews-item__heading_first {
+    display: none;
+  }
+}
+.reviews-item__info {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 14px;
+}
+.reviews-item__photo {
+  border-radius: 5px;
+  width: 42px;
+  height: 42px;
+  position: relative;
+}
+.reviews-item__photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.reviews-item__name {
+  text-decoration: underline;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-decoration: underline;
+  color: var(--black-2);
+  height: 34px;
+}
+@media (max-width: 992px) {
+  .reviews-item__name {
+    -webkit-line-clamp: 3;
+    height: 51px;
+  }
+}
+@media (max-width: 320px) {
+  .reviews-item__name {
+    -webkit-line-clamp: 4;
+    height: 60px;
+  }
+}
+.reviews-item__name_color {
+  color: var(--grey);
+}
+.reviews-item__sub {
+  display: grid;
+  grid-template-columns: 35% 1fr 162px;
+  gap: 42px;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .reviews-item__sub {
+    grid-template-columns: auto 1fr auto;
+    gap: 32px;
+  }
+}
+.reviews-item__sub_link {
+  color: var(--blue);
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  .reviews-item__sub_link {
+    order: 1;
+  }
+}
+.reviews-item__sub_grey {
+  color: var(--grey);
+}
+.reviews-item__sub_red {
+  color: var(--red);
+}
+.reviews-item__sub_blue {
+  color: var(--blue);
+}
+.answer-popup {
+  padding: 28px 74px 24px 24px;
+  width: 75%;
+  color: var(--black-2);
+}
+@media (max-width: 992px) {
+  .answer-popup {
+    padding: 24px;
+  }
+}
+@media (max-width: 340px) {
+  .answer-popup {
+    padding: 16px;
+  }
+}
+.answer-popup__close {
+  top: 31px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: var(--grey);
+}
+@media (max-width: 992px) {
+  .answer-popup__close {
+    top: 27px;
+  }
+}
+@media (max-width: 340px) {
+  .answer-popup__close {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+  }
+}
+.answer-popup__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+}
+@media (max-width: 992px) {
+  .answer-popup__content {
+    gap: 32px;
+  }
+}
+@media (max-width: 340px) {
+  .answer-popup__content {
+    gap: 28px;
+  }
+}
+.answer-popup__content .answer-comments {
+  align-items: flex-start;
+}
+.answer-popup__title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-right: 26px;
+}
+@media (max-width: 340px) {
+  .answer-popup__title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 340px) {
+  .answer-popup .comments__user {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .answer-popup .comments__date {
+    font-size: 12px;
+  }
+  .answer-popup .comments__text {
+    font-size: 12px;
+  }
+  .answer-popup .answer-comments__name {
+    font-size: 14px;
+  }
+  .answer-popup .answer-comments__text {
+    font-size: 12px;
+  }
+  .answer-popup .comments__stars {
+    font-size: 18px;
+  }
+  .answer-popup .comments__rating {
+    font-size: 12px;
+  }
+}
