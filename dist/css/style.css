@@ -8758,6 +8758,9 @@ body:has(.modal._open) {
     order: 1;
   }
 }
+.reviews-item__sub_color {
+  word-break: break-all;
+}
 .reviews-item__sub_grey {
   color: var(--grey);
 }

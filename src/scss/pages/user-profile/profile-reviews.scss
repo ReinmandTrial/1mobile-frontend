@@ -147,6 +147,10 @@
       }
     }
 
+    &_color {
+      word-break: break-all;
+    }
+
     &_grey {
       color: var(--grey);
     }
