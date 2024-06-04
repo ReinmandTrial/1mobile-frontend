@@ -4117,14 +4117,13 @@ body.burger-open {
   height: 102px;
   bottom: 0;
   left: 0;
-  border-radius: 0 0 10px 10px;
+  border-radius: 5px;
   z-index: 1;
   box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.13);
 }
 .form-popup__close {
   width: 24px;
   height: 24px;
-  font-size: 24px;
   color: var(--grey);
   top: 5px;
   right: 0;
@@ -4137,9 +4136,12 @@ body.burger-open {
 .form-popup__title {
   font-size: 24px;
   font-weight: 500;
-  margin-right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
 }
-@media (max-width: 400px) {
+@media (max-width: 460px) {
   .form-popup__title {
     font-size: 20px;
   }
@@ -4196,6 +4198,7 @@ body.burger-open {
   max-width: 162px;
   align-self: center;
   margin-top: 24px;
+  min-height: 54px;
 }
 
 .breadcrumps {
@@ -8739,7 +8742,7 @@ body:has(.modal._open) {
 }
 .reviews-item__sub {
   display: grid;
-  grid-template-columns: 35% 1fr 162px;
+  grid-template-columns: 1fr auto 162px;
   gap: 42px;
   text-align: right;
 }

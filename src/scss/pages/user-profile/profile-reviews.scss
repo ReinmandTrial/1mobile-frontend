@@ -130,7 +130,7 @@
 
   &__sub {
     display: grid;
-    grid-template-columns: 35% 1fr 162px;
+    grid-template-columns: 1fr auto 162px;
     gap: 42px;
     text-align: right;
 
