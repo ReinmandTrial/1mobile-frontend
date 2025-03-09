@@ -8976,3 +8976,125 @@ body:has(.modal._open) {
     font-size: 12px;
   }
 }
+
+.reasons__container {
+  padding: 76px 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 72px;
+}
+@media (max-width: 992px) {
+  .reasons__container {
+    padding: 76px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .reasons__container {
+    padding: 40px 0 56px;
+    gap: 48px;
+  }
+}
+.reasons__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+@media (max-width: 992px) {
+  .reasons__item {
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .reasons__item {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 42px;
+    align-items: flex-start;
+  }
+}
+.reasons__item.reverse img {
+  order: 1;
+}
+@media (max-width: 767px) {
+  .reasons__item.reverse img {
+    order: 0;
+  }
+}
+.reasons__image {
+  border-radius: 8px;
+  width: 100%;
+  height: 298px;
+  object-fit: cover;
+}
+.reasons__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 16px;
+}
+@media (max-width: 992px) {
+  .reasons__text {
+    padding-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .reasons__text {
+    gap: 16px;
+  }
+}
+.reasons__title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.reasons-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  list-style-position: inside;
+}
+.reasons-list__bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.about-head {
+  position: relative;
+  width: 100%;
+  height: 352px;
+}
+.about-head__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-head__text {
+  position: absolute;
+  bottom: 32px;
+  left: 102px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--white-1);
+  max-width: 530px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .about-head__text {
+    max-width: none;
+    width: auto;
+    left: 16px;
+    right: 16px;
+  }
+}
+.about-head__title {
+  font-weight: 700;
+  font-size: 32px;
+}
+.about-head__description {
+  font-weight: 500;
+}

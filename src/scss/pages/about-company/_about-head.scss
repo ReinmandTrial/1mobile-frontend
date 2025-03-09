@@ -1,0 +1,62 @@
+.about-head {
+    position: relative;
+    width: 100%;
+    height: 352px;
+
+
+		// .about-head__image
+
+		&__image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+           object-fit: cover;
+		}
+
+		// .about-head__text
+
+		&__text {
+            position: absolute;
+            bottom: 32px;
+            left: 102px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            color: var(--white-1);
+            max-width: 530px;
+            width: 100%;
+
+            @media (max-width: 767px) {
+                max-width: none;
+                width: auto;
+                left: 16px;
+                right: 16px;
+}
+		}
+
+		// .about-head__title
+
+		&__title {
+            font-weight: 700;
+            font-size: 32px;
+		}
+
+		// .about-head__description
+
+		&__description {
+            font-weight: 500;
+		}
+}
+
+
+@media (max-width: 992px) {
+    
+}
+@media (max-width: 767px) {
+    
+}
+@media (max-width: 479px) {
+    
+}
