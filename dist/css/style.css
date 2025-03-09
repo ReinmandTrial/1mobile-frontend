@@ -9390,48 +9390,83 @@ body:has(.modal._open) {
   }
 }
 
-.privacy {
+.policy {
   padding: 45px 140px;
   display: flex;
   flex-direction: column;
 }
 @media (max-width: 992px) {
-  .privacy {
+  .policy {
     padding: 32px 0 48px;
   }
 }
-.privacy__title {
+.policy__title {
   font-weight: 700;
   font-size: 32px;
   flex: 1 0 auto;
   margin-right: 32px;
 }
 @media (max-width: 767px) {
-  .privacy__title {
+  .policy__title {
     flex: 0;
   }
 }
 @media (max-width: 380px) {
-  .privacy__title {
+  .policy__title {
     font-size: 20px;
   }
 }
-.privacy__content {
+.policy__content {
   font-size: 16px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-size: 15px;
 }
-.privacy__ordered-list {
+.policy__ordered-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
   list-style-position: inside;
+  font-weight: 500;
+}
+.policy__subordered-list {
+  font-weight: 400;
 }
 
-ul.privacy__unordered-list {
+ul.policy__unordered-list {
   list-style: disc;
   list-style-position: inside;
   padding-left: 8px;
+}
+
+.policy__ordered-list,
+.policy__subordered-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.policy__ordered-list {
+  counter-reset: main-counter;
+}
+
+.policy__ordered-list > li {
+  counter-increment: main-counter;
+}
+
+.policy__ordered-list > li::before {
+  content: counter(main-counter) ". ";
+}
+
+/* Вложенный уровень (1.1, 1.2) */
+.policy__subordered-list {
+  counter-reset: sub-counter;
+}
+
+.policy__subordered-list > li {
+  counter-increment: sub-counter;
+}
+
+.policy__subordered-list > li::before {
+  content: counter(main-counter) "." counter(sub-counter) " ";
 }
