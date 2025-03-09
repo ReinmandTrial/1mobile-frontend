@@ -2347,17 +2347,8 @@ body.burger-open {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 37px;
-}
-@media (max-width: 1200px) {
-  .block-section__title {
-    margin-bottom: 32px;
-  }
-}
-@media (max-width: 992px) {
-  .block-section__title {
-    margin-bottom: 24px;
-  }
+  margin-bottom: 24px;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .block-section__title {
@@ -2368,11 +2359,16 @@ body.burger-open {
   width: fit-content;
   margin-right: 24px;
   padding: 8px 0;
+  flex: 1 0 auto;
 }
 @media (max-width: 1200px) {
   .block-section__heading {
     margin-right: 16px;
-    flex: 1 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .block-section__heading {
+    flex: none;
   }
 }
 .block-section__link {
@@ -2393,15 +2389,18 @@ body.burger-open {
   left: 0;
   bottom: -4px;
 }
+.block-section__bg {
+  background-image: url("../../img/bg/section-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60px;
+}
 @media (max-width: 767px) {
   .block-section__bg {
-    display: none;
+    background: none;
   }
-}
-.block-section__bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .block-section__items {
   display: grid;
@@ -9389,4 +9388,50 @@ body:has(.modal._open) {
     width: 40px;
     height: 40px;
   }
+}
+
+.privacy {
+  padding: 45px 140px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 992px) {
+  .privacy {
+    padding: 32px 0 48px;
+  }
+}
+.privacy__title {
+  font-weight: 700;
+  font-size: 32px;
+  flex: 1 0 auto;
+  margin-right: 32px;
+}
+@media (max-width: 767px) {
+  .privacy__title {
+    flex: 0;
+  }
+}
+@media (max-width: 380px) {
+  .privacy__title {
+    font-size: 20px;
+  }
+}
+.privacy__content {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 15px;
+}
+.privacy__ordered-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-position: inside;
+}
+
+ul.privacy__unordered-list {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 8px;
 }
