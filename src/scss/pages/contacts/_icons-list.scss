@@ -1,0 +1,32 @@
+.icons-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+
+        &.lightblue {
+        background-color: var(--lightblue);
+        color: var(--medium-blue);
+        &:hover {
+            color: var( --black-1);
+        }
+}
+        &.lightgreen {
+        background-color: var(--lightgreen);
+        color: var(--medium-green);
+
+        &:hover {
+            color: var( --black-1);
+        }
+}
+    }
+}
+
