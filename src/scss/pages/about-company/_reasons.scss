@@ -1,5 +1,4 @@
 .reasons {
-
 		// .reasons__container
 
 		&__container {
@@ -8,8 +7,8 @@
             flex-direction: column;
             align-items: stretch;
             gap: 72px;
-@media (max-width: 992px) {
-      padding: 76px 0px;
+            @media (max-width: 992px) {
+            padding: 76px 0px;
 }
             @media (max-width: 767px) {
                 padding: 40px 0 56px;
@@ -28,10 +27,10 @@
                 align-items: center;
             }
             @media (max-width: 767px) {
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    gap: 42px;
-    align-items: flex-start;
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+            gap: 42px;
+            align-items: flex-start;
 }
 
             &.reverse {
@@ -80,7 +79,7 @@
 		}
 
             &__button {
-max-width: 222px;
-padding: 16px;
+            max-width: 222px;
+            padding: 16px;
             }
 }

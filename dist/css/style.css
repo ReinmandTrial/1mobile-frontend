@@ -8106,6 +8106,9 @@ body.burger-open {
   padding: 4px;
   background-color: var(--white-3);
   border-radius: 10px;
+  width: 100%;
+  max-width: max-content;
+  overflow-x: auto;
 }
 @media (max-width: 767px) {
   .user-profile__head {
@@ -8118,6 +8121,7 @@ body.burger-open {
   transition: all 0.2s ease-in 0s;
   border-radius: 5px;
   padding: 8px 16px;
+  white-space: nowrap;
 }
 .user-profile__head-item:hover {
   color: var(--black-2);
