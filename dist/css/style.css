@@ -9027,8 +9027,13 @@ body:has(.modal._open) {
 .reasons__image {
   border-radius: 8px;
   width: 100%;
-  height: 298px;
+  height: 100%;
   object-fit: cover;
+}
+@media (max-width: 767px) {
+  .reasons__image {
+    height: 250px;
+  }
 }
 .reasons__text {
   display: flex;
