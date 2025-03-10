@@ -2526,12 +2526,16 @@ body.burger-open {
   justify-content: center;
   border-radius: 5px;
   border: 1px solid var(--red, #db322b);
-  background-color: var(--white-2, #e5e0e0);
+  background-color: var(--white-1, #e5e0e0);
   padding: 24px 16px;
   color: var(--red, #db322b);
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.15px;
+  transition: all 0.2s ease 0s;
+}
+.info__item:hover {
+  background-color: var(--white-2);
 }
 @media (max-width: 1200px) {
   .info__item {
@@ -9055,12 +9059,19 @@ body:has(.modal._open) {
   font-weight: 700;
   font-size: 32px;
 }
+.reasons__button {
+  max-width: 222px;
+  padding: 16px;
+}
 
 .reasons-list {
   display: flex;
   flex-direction: column;
   font-size: 15px;
   list-style-position: inside;
+}
+.reasons-list.gap {
+  gap: 16px;
 }
 .reasons-list__bold {
   font-weight: 500;
@@ -9474,4 +9485,67 @@ ul.policy__unordered-list {
 
 .policy__subordered-list > li::before {
   content: counter(main-counter) "." counter(sub-counter) " ";
+}
+
+.connect-section {
+  padding: 76px 15px 130px;
+}
+@media (max-width: 992px) {
+  .connect-section {
+    padding: 30px 0 90px;
+  }
+}
+.connect-section__title {
+  font-weight: 700;
+  font-size: 32px;
+  flex: 1 0 auto;
+  margin-right: 32px;
+}
+@media (max-width: 320px) {
+  .connect-section__title {
+    font-size: 24px;
+  }
+}
+.connect-section__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .connect-section__content {
+    grid-template-columns: 1fr;
+  }
+}
+.connect-section__content .info__container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: max-content;
+}
+@media (max-width: 992px) {
+  .connect-section__content .info__container {
+    width: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .connect-section__content .info__container {
+    grid-template-columns: 1fr;
+  }
+}
+.connect-section__content .info__item {
+  white-space: nowrap;
+  width: auto;
+}
+@media (max-width: 767px) {
+  .connect-section__content .info__item {
+    white-space: normal;
+  }
+}
+.connect-section__content .connect-footer__link,
+.connect-section__content .connect-footer__icon {
+  color: var(--black-1);
+  transition: all 0.2s ease 0s;
+}
+.connect-section__content .connect-footer__link:hover,
+.connect-section__content .connect-footer__icon:hover {
+  font-weight: 700;
 }
