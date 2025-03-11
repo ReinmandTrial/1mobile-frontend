@@ -3342,6 +3342,59 @@ body.burger-open {
   display: none;
 }
 
+.review-popup {
+  padding: 80px 48px;
+  margin: 0 15px;
+}
+@media (max-width: 767px) {
+  .review-popup {
+    padding: 80px 32px;
+  }
+}
+@media (max-width: 380px) {
+  .review-popup {
+    padding: 80px 24px;
+  }
+}
+.review-popup__close {
+  position: absolute;
+  top: 38px;
+  right: 53px;
+}
+@media (max-width: 767px) {
+  .review-popup__close {
+    right: 26px;
+  }
+}
+.review-popup__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.review-popup__content .comments__stars {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+@media (max-width: 767px) {
+  .review-popup__content .comments__stars {
+    font-size: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .review-popup__content .comments__stars {
+    font-size: 32px;
+  }
+}
+.review-popup__title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.review-popup .btn {
+  min-width: 185px;
+  padding: 16px;
+}
+
 .sidebar {
   position: fixed;
   right: 0;

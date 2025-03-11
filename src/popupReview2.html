@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { "title": "Index" })
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+
+        <main class="main">
+            <div class="container">
+
+            </div>
+            <div class="modal _open">
+                <div class="modal__body review-popup">
+                    <button type="button" class="modal__close review-popup__close">
+                        <span class='_icon-close'></span>
+                    </button>
+                    <div class=" modal__content review-popup__content">
+                        <div class="review-popup__title">Удобно ли пользоваться нашим сайтом?</div>
+
+                        <div class="comments__stars">
+                            <div class="comments__star _active">
+                                <span class='_icon-star-red'></span>
+                                <span class='_icon-star'></span>
+                            </div>
+                            <div class="comments__star _active">
+                                <span class='_icon-star-red'></span>
+                                <span class='_icon-star'></span>
+                            </div>
+                            <div class="comments__star _active">
+                                <span class='_icon-star-red'></span>
+                                <span class='_icon-star'></span>
+                            </div>
+                            <div class="comments__star _active">
+                                <span class='_icon-star-red'></span>
+                                <span class='_icon-star'></span>
+                            </div>
+                            <div class="comments__star">
+                                <span class='_icon-star-red'></span>
+                                <span class='_icon-star'></span>
+                            </div>
+                        </div>
+
+                        <button class='btn btn_red' type='button'>Подтвердить</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        @@include('html/footer.html', {})
+    </div>
+
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
