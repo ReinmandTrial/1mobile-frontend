@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { "title": "Profile Feedback" })
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+
+        <main class="main">
+            <div class="container">
+                <div class="user-profile">
+                    <ul class="breadcrumps">
+                        <li class="breadcrumps__item">
+                            <button href="#" class="breadcrumps__link">
+                                <span class="breadcrumps__icon _icon-home"></span>
+                            </button>
+                        </li>
+                        <li class="breadcrumps__item">
+                            <span class='breadcrumps__icon _icon-arrow-open'></span>
+                        </li>
+                        <li class="breadcrumps__item">
+                            Обратная связь
+                        </li>
+                    </ul>
+
+                    <div class="user-profile__container">
+                        <div class="user-profile__title heading-3">
+                            <button type='button' class='user-profile__return'>
+                                <img src="./img/icons/icon-back.svg" alt="icon">
+                            </button>
+                            <span>Обратная связь</span>
+                        </div>
+                        <div class="user-profile__head">
+                            <button type='button' class="user-profile__head-item">История заказов</button>
+                            <button type='button' class="user-profile__head-item">Профиль</button>
+                            <button type='button' class="user-profile__head-item">Избранные товары</button>
+                            <button type='button' class="user-profile__head-item">Мои отзывы</button>
+                            <button type='button' class="user-profile__head-item">Предзаказы</button>
+                            <button type='button' class="user-profile__head-item _active">Обратная связь</button>
+
+                        </div>
+                        <div class="feedback">
+                            <div class="feedback-item">
+                                <h2 class="feedback-item__status">Открытый</h2>
+                                <div class="feedback-item__content">
+                                    <div class="feedback-item__element">
+                                        <span class="_icon-person feedback-item__icon"></span>
+                                        <span>Виноградов Джек</span>
+                                    </div>
+                                    <div class="feedback-item__element">
+                                        <span class="_icon-mail feedback-item__icon"></span>
+                                        <span>Pishisudqa@gmail.com</span>
+                                    </div>
+                                    <div class="feedback-item__element">
+                                        <span class="_icon-phone feedback-item__icon"></span>
+                                        <span>+380 99 649390</span>
+                                    </div>
+                                    <div class="feedback-item__message">
+                                        <div class="feedback-item__element">
+                                            <span class="_icon-chat feedback-item__icon"></span>
+                                            <span>Вот изображение, которое лучше отражает ваш сервис аренды промышленного оборудования, строительных
+                                                инструментов и
+                                                аграрной техники. Если нужно что-то изменить,
+                                                дайте знать!</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="feedback-item">
+                                <h2 class="feedback-item__status blue">Успешный</h2>
+                                <div class="feedback-item__content">
+                                    <div class="feedback-item__element">
+                                        <span class="_icon-person feedback-item__icon"></span>
+                                        <span>Виноградов Джек</span>
+                                    </div>
+                                    <div class="feedback-item__element">
+                                        <span class="_icon-mail feedback-item__icon"></span>
+                                        <span>Pishisudqa@gmail.com</span>
+                                    </div>
+                                    <div class="feedback-item__element">
+                                        <span class="_icon-phone feedback-item__icon"></span>
+                                        <span>+380 99 649390</span>
+                                    </div>
+                                    <div class="feedback-item__message">
+                                        <div class="feedback-item__element">
+                                            <span class="_icon-chat feedback-item__icon"></span>
+                                            <span>Вот изображение, которое лучше отражает ваш сервис аренды промышленного оборудования, строительных
+                                                инструментов и
+                                                аграрной техники. Если нужно что-то изменить,
+                                                дайте знать!</span>
+                                        </div>
+                                        <div class="feedback-item__answer">
+                                            <div class="answer-comments">
+                                                <img src="./img/icons/respond.svg" alt="icon" class="asked-question__icon">
+                                                <div class="answer-comments__body">
+                                                    <div class="answer-comments__name">First mobile
+                                                        <span class='answer-comments__date'>12.08.2022</span>
+                                                    </div>
+                                                    <div class="answer-comments__text">Добрий день! Дуже раді, що вам сподобалось. Чекаємо на вас ще!</div>
+                                                </div>
+                                            </div>
+                                            <div class="feedback-item__date">
+                                                13.08.2022
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </main>
+
+        @@include('html/footer.html', {})
+    </div>
+</body>
+
+</html>
