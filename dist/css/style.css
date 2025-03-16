@@ -9459,6 +9459,7 @@ body:has(.modal._open) {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  color: var(--black-1);
 }
 @media (max-width: 479px) {
   .connect-list {
@@ -9469,7 +9470,7 @@ body:has(.modal._open) {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--black-2);
+  color: var(--black-1);
   font-weight: 500;
   transition: all 0.2s ease 0s;
 }
@@ -9579,13 +9580,21 @@ body:has(.modal._open) {
   flex-direction: column;
   gap: 20px;
   font-size: 15px;
+  color: var(--black-1);
 }
 .policy__ordered-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
   list-style-position: inside;
+}
+.policy__ordered-list > li > span {
   font-weight: 500;
+  font-size: 18px;
+}
+.policy__ordered-list > li::marker {
+  font-size: 18px;
+  color: red;
 }
 .policy__subordered-list {
   font-weight: 400;
@@ -9613,6 +9622,8 @@ ul.policy__unordered-list {
 
 .policy__ordered-list > li::before {
   content: counter(main-counter) ". ";
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* Вложенный уровень (1.1, 1.2) */

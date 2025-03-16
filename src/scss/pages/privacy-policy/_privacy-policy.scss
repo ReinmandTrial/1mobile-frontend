@@ -29,6 +29,7 @@
             flex-direction: column;
             gap: 20px;
             font-size: 15px;
+            color: var(--black-1);
 		}
 
 		// .policy__block
@@ -43,7 +44,18 @@
             flex-direction: column;
             gap: 20px;
             list-style-position: inside;
+
+          & > li > span {
             font-weight: 500;
+            font-size: 18px;
+          }
+
+          & > li::marker {
+  font-size: 18px;
+  color: red;
+
+}
+            
 		}
 		&__subordered-list {
             
@@ -76,7 +88,8 @@ ul.policy__unordered-list {
 
 .policy__ordered-list > li::before {
     content: counter(main-counter) ". ";
-  
+    font-size: 18px;
+    font-weight: 500;
 }
 
 /* Вложенный уровень (1.1, 1.2) */
