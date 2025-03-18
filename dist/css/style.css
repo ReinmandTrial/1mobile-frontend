@@ -9223,7 +9223,7 @@ body:has(.modal._open) {
   display: flex;
   flex-direction: column;
   font-size: 15px;
-  list-style-position: inside;
+  padding-left: 20px;
 }
 .reasons-list.gap {
   gap: 16px;
