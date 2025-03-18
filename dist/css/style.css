@@ -9237,14 +9237,14 @@ body:has(.modal._open) {
   position: relative;
   width: 100%;
   height: 352px;
-  background-image: url("../../../img/about-company/head.png");
+  background-image: url("../img/about-company/head.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .about-head {
-    background-image: url("../../../img/about-company/head-mobile.png");
+    background-image: url("../img/about-company/head-mobile.png");
     border-radius: 0 0 8px 8px;
   }
 }
